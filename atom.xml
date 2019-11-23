@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>polyhedron</title>
+  
+  <subtitle>多面體的雹子 test</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-11-22T04:55:32.805Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Zsjit Ngiam</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/11/22/hello-world/"/>
+    <id>http://yoursite.com/2019/11/22/hello-world/</id>
+    <published>2019-11-22T04:55:32.804Z</published>
+    <updated>2019-11-22T04:55:32.805Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>古代藏語的音變</title>
+    <link href="http://yoursite.com/2019/11/22/ancient-tibetan-sound-change/"/>
+    <id>http://yoursite.com/2019/11/22/ancient-tibetan-sound-change/</id>
+    <published>2019-11-21T17:10:08.000Z</published>
+    <updated>2019-11-22T04:55:32.803Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+    
+      <category term="藏語" scheme="http://yoursite.com/tags/%E8%97%8F%E8%AA%9E/"/>
+    
+      <category term="音韻學" scheme="http://yoursite.com/tags/%E9%9F%B3%E9%9F%BB%E5%AD%B8/"/>
+    
+      <category term="語言學" scheme="http://yoursite.com/tags/%E8%AA%9E%E8%A8%80%E5%AD%B8/"/>
+    
+      <category term="Tibetan" scheme="http://yoursite.com/tags/Tibetan/"/>
+    
+      <category term="phonology" scheme="http://yoursite.com/tags/phonology/"/>
+    
+      <category term="linguistics" scheme="http://yoursite.com/tags/linguistics/"/>
+    
+  </entry>
+  
+</feed>
