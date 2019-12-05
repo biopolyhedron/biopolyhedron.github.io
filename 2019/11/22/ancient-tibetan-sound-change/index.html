@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -24,7 +24,7 @@
     scheme: 'Muse',
     version: '7.6.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -46,13 +46,13 @@
 </script>
 
   <meta name="description" content="本文是 Nathan W. Hill 的«The Historical Phonology of Tibetan, Burman, and Chinese»（《藏語、緬語和漢語的歷史音韻學》）一書的讀書筆記。文中上古藏語一律用國際音標，並以*標記，而傳統藏文一律用Wylie轉寫，需要時用&#x2F; &#x2F;加註國際音標。 藏文在早期藏文到目前定型的藏文之閒，系統性的音變只有 sts &amp;gt; s 一個（如古藏文">
-<meta name="keywords" content="藏語,音韻學,語言學,Tibetan,phonology,linguistics">
+<meta name="keywords" content="linguistics,phonology,語言學,音韻學,藏語,Tibetan">
 <meta property="og:type" content="article">
 <meta property="og:title" content="古代藏語的音變">
 <meta property="og:url" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;2019&#x2F;11&#x2F;22&#x2F;ancient-tibetan-sound-change&#x2F;index.html">
 <meta property="og:site_name" content="多面體的雹子 polyhedron&#39;s blog">
 <meta property="og:description" content="本文是 Nathan W. Hill 的«The Historical Phonology of Tibetan, Burman, and Chinese»（《藏語、緬語和漢語的歷史音韻學》）一書的讀書筆記。文中上古藏語一律用國際音標，並以*標記，而傳統藏文一律用Wylie轉寫，需要時用&#x2F; &#x2F;加註國際音標。 藏文在早期藏文到目前定型的藏文之閒，系統性的音變只有 sts &amp;gt; s 一個（如古藏文">
-<meta property="og:locale" content="zh">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-12-05T10:15:46.472Z">
 <meta name="twitter:card" content="summary">
 
@@ -72,6 +72,15 @@
 
   <title>古代藏語的音變 | 多面體的雹子 polyhedron's blog</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154028988-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-154028988-1');
+      }
+    </script>
 
 
 
@@ -119,11 +128,11 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">聯繫：Telegram @ngiamzsjit ；Telegram 頻道 @polyhedron ；新浪微博 @polyhedron ；知乎 @polyhedron ；Twitter @NgiamZsjit  目前在復旦大學從事分子人類學和語言學硏究  Currently working on molecular anthropology and linguistics at Fudan University in Shanghai</p>
+        <p class="site-subtitle">分子人類學、語言學及各種其它  molecular anthropology, linguistics, etc.</p>
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="تغییر ناوبری">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -137,12 +146,22 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>صفحه اصلی</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>بایگانی</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
   </ul>
@@ -170,7 +189,7 @@
       
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://biopolyhedron.github.io/2019/11/22/ancient-tibetan-sound-change/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -192,22 +211,22 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">نوشته شده در</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="ایجاد شده: 2019-11-22 01:10:08" itemprop="dateCreated datePublished" datetime="2019-11-22T01:10:08+08:00">2019-11-22</time>
+              <time title="创建时间：2019-11-22 01:10:08" itemprop="dateCreated datePublished" datetime="2019-11-22T01:10:08+08:00">2019-11-22</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">ویرایش شده در</span>
-                <time title="تغییر یافته: 2019-12-05 18:15:46" itemprop="dateModified" datetime="2019-12-05T18:15:46+08:00">2019-12-05</time>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-12-05 18:15:46" itemprop="dateModified" datetime="2019-12-05T18:15:46+08:00">2019-12-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">در</span>
+              <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%AA%9E%E8%A8%80%E5%AD%B8/" itemprop="url" rel="index">
                     <span itemprop="name">語言學</span>
@@ -216,6 +235,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2019/11/22/ancient-tibetan-sound-change/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/11/22/ancient-tibetan-sound-change/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -228,29 +261,86 @@
       
         <p>本文是 Nathan W. Hill 的«The Historical Phonology of Tibetan, Burman, and Chinese»（《藏語、緬語和漢語的歷史音韻學》）一書的讀書筆記。文中上古藏語一律用國際音標，並以*標記，而傳統藏文一律用Wylie轉寫，需要時用/ /加註國際音標。</p>
 <p>藏文在早期藏文到目前定型的藏文之閒，系統性的音變只有 sts &gt; s 一個（如古藏文 la stsogs pa &gt; 藏文 la sogs pa），另外普通的 i ི 和反 ï ྀ 在古藏文有區別，但又是亂的，定型的藏文就合併了。還有基字後的 འ 原先經常寫出來，現代就省略了，除非無後加字，如 འདའས་ vdas 現在只寫 འདས་ 了。（按：是否還需要提一下 -ld、-rd、-nd 的次後加字現在不用了呢？）</p>
-<h2 id="一、張琨定律-Chang’s-Law-："><a href="#一、張琨定律-Chang’s-Law-：" class="headerlink" title="一、張琨定律(Chang’s Law)："></a>一、張琨定律(Chang’s Law)：</h2><p>b- 前加字會被後接的鼻音聲母同化：*b-n- &gt; mn-, *bȵ- &gt; mny- /mȵ/<br>例： “壓”過去時 *b-nan-s &gt; mnand </p>
-<h2 id="二、柯蔚南定律-Coblin’s-Law-："><a href="#二、柯蔚南定律-Coblin’s-Law-：" class="headerlink" title="二、柯蔚南定律(Coblin’s Law)："></a>二、柯蔚南定律(Coblin’s Law)：</h2><ol>
-<li><p>*b-b- &gt; b-， *b-p- &gt; p- （同化，太自然了）<br>例：“做”過去時 *b-bya-s &gt; byas<br>（以下C爲輔音，V爲元音，N爲鼻音）</p>
+<h2 id="一-張琨定律changs-law"><a class="markdownIt-Anchor" href="#一-張琨定律changs-law"></a> 一、張琨定律(Chang’s Law)：</h2>
+<p>b- 前加字會被後接的鼻音聲母同化：*b-n- &gt; mn-, *bȵ- &gt; mny- /mȵ/<br />
+例： “壓”過去時 *b-nan-s &gt; mnand</p>
+<h2 id="二-柯蔚南定律coblins-law"><a class="markdownIt-Anchor" href="#二-柯蔚南定律coblins-law"></a> 二、柯蔚南定律(Coblin’s Law)：</h2>
+<ol>
+<li>
+<p>*b-b- &gt; b-， *b-p- &gt; p- （同化，太自然了）<br />
+例：“做”過去時 *b-bya-s &gt; byas<br />
+（以下C爲輔音，V爲元音，N爲鼻音）</p>
 </li>
-<li><p>*ɦCC- &gt; CC-  （當v-前加字不允許形成該三合輔音時）<br>例：“盼望”現在時 *ɦ-rkam &gt; rkam</p>
+<li>
+<p>*ɦCC- &gt; CC-  （當v-前加字不允許形成該三合輔音時）<br />
+例：“盼望”現在時 *ɦ-rkam &gt; rkam</p>
 </li>
-<li><p>*gCa &gt; gCo, *gCCa &gt; Co<br>說明：藏語當動詞詞幹主元音爲a且現在時前加字加g/d-時，很多現在時主元音會變爲o，如“殺”詞幹sad，現在時gsod。一種解釋是go-前綴演變而成（我覺得也可以是gw-，附帶的w引發後面的a圓脣）<br>例：“說”現在時 *gw-zla &gt; zlo，“完成”現在時 *gw-skaŋ &gt; skong</p>
+<li>
+<p>*gCa &gt; gCo, *gCCa &gt; Co<br />
+說明：藏語當動詞詞幹主元音爲a且現在時前加字加g/d-時，很多現在時主元音會變爲o，如“殺”詞幹sad，現在時gsod。一種解釋是go-前綴演變而成（我覺得也可以是gw-，附帶的w引發後面的a圓脣）<br />
+例：“說”現在時 *gw-zla &gt; zlo，“完成”現在時 *gw-skaŋ &gt; skong</p>
 </li>
 </ol>
-<p>本書作者Nathan Hill認爲以上解釋不對，因爲有幾個詞的現在時並不是g-前加字而是v-，但仍然主元音變成了o，如<br>“插入、放置”詞幹*dʑag，現vjog，過bzhag，未gzhag，命zhogs<br>說明現在時的詞幹a變爲o與g-前綴無關，而認爲這是一種從更古代的變形繼承來的特徵。</p>
+<p>本書作者Nathan Hill認爲以上解釋不對，因爲有幾個詞的現在時並不是g-前加字而是v-，但仍然主元音變成了o，如<br />
+“插入、放置”詞幹*dʑag，現vjog，過bzhag，未gzhag，命zhogs<br />
+說明現在時的詞幹a變爲o與g-前綴無關，而認爲這是一種從更古代的變形繼承來的特徵。</p>
 <ol start="4">
-<li>*sNC- &gt; sC-<br>例：“嗅” *s-mnam &gt; snam<br>及<br>向柏霖(Guillaume Jacques)提出的“蛇” *smrul &gt; *smbrul &gt; sbrul （早期緬文 mruy）</li>
+<li>*sNC- &gt; sC-<br />
+例：“嗅” *s-mnam &gt; snam<br />
+及<br />
+向柏霖(Guillaume Jacques)提出的“蛇” *smrul &gt; *smbrul &gt; sbrul （早期緬文 mruy）</li>
 </ol>
-<h2 id="三、田雅客定律-Dempsey’s-Law-："><a href="#三、田雅客定律-Dempsey’s-Law-：" class="headerlink" title="三、田雅客定律(Dempsey’s Law)："></a>三、田雅客定律(Dempsey’s Law)：</h2><p>*e 和 *i 在舌根音 -ŋ 和 -k 前合併。主要是和上古漢語比較後得出。<br>耕部、錫部：<br>藏語“一”gcig &lt; *gtjek，cf. 隻(cjek &lt; *tek)<br>藏語“頸”mjing &lt; *mljeŋ，cf. 領(liengx &lt; *reŋʔ)<br>藏語“名”ming &lt; 早期藏文 mying &lt; *mjeŋ，cf. 名(mjeng &lt; *meŋ)<br>眞部、質部：<br>藏語“節”tshigs，cf. 節(cet &lt; *tsˁik)<br>藏語“蝨”shig &lt; *srik，cf. 蝨(srit &lt; *srik)<br>藏語“樹”shing &lt; *sjiŋ，cf. 薪(sin &lt; *siŋ)<br>藏語“田”zhing &lt; *ljiŋ ，cf. 田(den &lt; *lˁiŋ)</p>
-<h2 id="四、白保羅定律-Benedict’s-Law-："><a href="#四、白保羅定律-Benedict’s-Law-：" class="headerlink" title="四、白保羅定律(Benedict’s Law)："></a>四、白保羅定律(Benedict’s Law)：</h2><p>*lj- &gt; zh-<br>藏語“田”zhing &lt; *ljiŋ ，cf. 田(den &lt; *lˁiŋ)<br>藏語“甜”zhim &lt; *ljim ，cf. 甜(dem &lt; *lˁim)<br>藏語“地”gzhi &lt; *glji ，cf. 地(diih &lt; *lˁejs)，早期緬文 mliy<br>藏語“四”bzhi &lt; *b-lji ，cf. 四(siih &lt; s-lis)，早期緬文 liy<br>此外在藏文內部也有證據支持此演變，因古藏文有 *-j- 作爲敬語中綴，如<br>“乾”skam，“渴”skyem<br>“邊”logs，“體側” *g-l-j-oks &gt; gzhogs<br>“升起”lang，“升起” *b-l-j-eŋ &gt; bzheng</p>
+<h2 id="三-田雅客定律dempseys-law"><a class="markdownIt-Anchor" href="#三-田雅客定律dempseys-law"></a> 三、田雅客定律(Dempsey’s Law)：</h2>
+<p>*e 和 *i 在舌根音 -ŋ 和 -k 前合併。主要是和上古漢語比較後得出。<br />
+耕部、錫部：<br />
+藏語“一”gcig &lt; *gtjek，cf. 隻(cjek &lt; *tek)<br />
+藏語“頸”mjing &lt; *mljeŋ，cf. 領(liengx &lt; *reŋʔ)<br />
+藏語“名”ming &lt; 早期藏文 mying &lt; *mjeŋ，cf. 名(mjeng &lt; *meŋ)<br />
+眞部、質部：<br />
+藏語“節”tshigs，cf. 節(cet &lt; *tsˁik)<br />
+藏語“蝨”shig &lt; *srik，cf. 蝨(srit &lt; *srik)<br />
+藏語“樹”shing &lt; *sjiŋ，cf. 薪(sin &lt; *siŋ)<br />
+藏語“田”zhing &lt; *ljiŋ ，cf. 田(den &lt; *lˁiŋ)</p>
+<h2 id="四-白保羅定律benedicts-law"><a class="markdownIt-Anchor" href="#四-白保羅定律benedicts-law"></a> 四、白保羅定律(Benedict’s Law)：</h2>
+<p>*lj- &gt; zh-<br />
+藏語“田”zhing &lt; *ljiŋ ，cf. 田(den &lt; *lˁiŋ)<br />
+藏語“甜”zhim &lt; *ljim ，cf. 甜(dem &lt; *lˁim)<br />
+藏語“地”gzhi &lt; *glji ，cf. 地(diih &lt; *lˁejs)，早期緬文 mliy<br />
+藏語“四”bzhi &lt; *b-lji ，cf. 四(siih &lt; s-lis)，早期緬文 liy<br />
+此外在藏文內部也有證據支持此演變，因古藏文有 *-j- 作爲敬語中綴，如<br />
+“乾”skam，“渴”skyem<br />
+“邊”logs，“體側” *g-l-j-oks &gt; gzhogs<br />
+“升起”lang，“升起” *b-l-j-eŋ &gt; bzheng</p>
 <p>而現代藏語仍保留 li 而未變成 zhi 的詞需要做出解釋。其中一個解釋是若白保羅定律先於田雅客定律發生，則 *leŋ/lek 變爲 *liŋ/lik 而非繼續變爲 zhing/zhik。有一組漢語同音詞“田”（藏語zhing）和“畋”（藏語“打獵” lings），以藏語“田” *liŋ &gt; zhing 而“畋” *leŋs &gt; lings 來解釋（按：難道上古藏語兩個詞元音不同？）。</p>
-<h2 id="五、邊音之外的輔音的次生顎化："><a href="#五、邊音之外的輔音的次生顎化：" class="headerlink" title="五、邊音之外的輔音的次生顎化："></a>五、邊音之外的輔音的次生顎化：</h2><p>一般發生在 i 元音前，就是<br>*ki &gt; kyi， *kʰi &gt; khyi， *ni &gt; nyi， *si &gt; shi， *ti &gt; ci， *mi &gt; myi（但“名”又從早期藏文的mying變回了傳統藏文的ming了）</p>
-<h2 id="六、孔好古定律-Conrady’s-Law-："><a href="#六、孔好古定律-Conrady’s-Law-：" class="headerlink" title="六、孔好古定律(Conrady’s Law)："></a>六、孔好古定律(Conrady’s Law)：</h2><p>*ɦ- 後面的擦音均變爲塞擦音，清擦音送氣<br>*ɦ-s- &gt; vtsh-， *ɦ-ɕ- &gt; vch-， *ɦ-z- &gt; vdz-， *ɦ-ʑ- &gt; vj-， *ɦ-r- &gt; vdr-<br>特殊地， *ɦ- 後接邊音時發生換位，隨後 ɦ- 消失<br>*ɦ-l- &gt; *ɦdl- &gt; *ɦld- &gt; ld-<br>*ɦ-ɬ- &gt; *ɦtɬ- &gt; *ɦɬt- &gt; lt-<br>相應的顎化<br>*ɦ-lj- &gt; lj-<br>*ɦ-ɬj- &gt; lc- （“鐵” lcags &lt; *ɦɬjaks，漢語 thet &lt; *lhˁik）</p>
-<h2 id="七、包擬古定律-Bodman’s-Law-："><a href="#七、包擬古定律-Bodman’s-Law-：" class="headerlink" title="七、包擬古定律(Bodman’s Law)："></a>七、包擬古定律(Bodman’s Law)：</h2><p>*m-l- &gt; md-<br>*m-lj- &gt; mj-<br>如“箭” *mla &gt; mda，cf. 漢語“射”(zsjek &lt; *C-lak)<br>“尋”（長度單位） *mlom &gt; mdom，cf. 漢語“尋” (zsim &lt; *sə-ləm)</p>
-<h2 id="八、-u-ba-gt-wa"><a href="#八、-u-ba-gt-wa" class="headerlink" title="八、*u-ba &gt; wa"></a>八、*u-ba &gt; wa</h2><p>古藏文有個特點，所有出現 w 下加字的字一定是以 a 結尾的開音節。向柏霖提出這可能是 u 尾字與後綴 ba 縮合而來。如 grwa 有 gru 的異寫，rwa 有 ru 的異寫，而 ba 是常見後綴。而且也可解釋 w 下加字只出現在名詞，而以 u 結尾的動詞不受影響。</p>
-<h2 id="九、-w-gt-y"><a href="#九、-w-gt-y" class="headerlink" title="九、*w- &gt; y-"></a>九、*w- &gt; y-</h2><p>麥沛德(Boyd Michailovsky)和馬秀珍(Martine Mazaudon)對比東部藏語支語言發現古代藏語的 *w- 與 *j- 合併爲 y- 。而向柏霖看到只寫例子似乎全是 i 或 e 元音的，合併到第五條顎化裏面就行了。</p>
-<h2 id="十、Laufer’s-Law：-wa-gt-o"><a href="#十、Laufer’s-Law：-wa-gt-o" class="headerlink" title="十、Laufer’s Law： *wa &gt; o"></a>十、Laufer’s Law： *wa &gt; o</h2><p>很多是和古漢語比較出來的。但漢語也有 *o &gt; *wa 的音變（如歌、祭、元部）。好在我看了一下書上的例字很多是陽、鐸、魚部的，而藏文例字都是k組合口。如：<br>“蕨麻” gro-ma &lt; *grwa-ma，cf. “芋” yoh &lt; *ɢw(r)as<br>“去” vgro &lt; *ɦgwra ，cf. “于” yo &lt; *ɢwra<br>“胃” grod &lt; *gwrat ，cf. “胃” yoih &lt; *ɢwrət-s<br>“行” vgrod &lt; *gwrat ，cf. “越” yat &lt; *ɢwat</p>
-<h2 id="十一、-aw-gt-o，-ew-gt-o"><a href="#十一、-aw-gt-o，-ew-gt-o" class="headerlink" title="十一、 *aw &gt; o， *ew &gt; o"></a>十一、 *aw &gt; o， *ew &gt; o</h2><p>很多是和漢語同源詞對比得出。</p>
+<h2 id="五-邊音之外的輔音的次生顎化"><a class="markdownIt-Anchor" href="#五-邊音之外的輔音的次生顎化"></a> 五、邊音之外的輔音的次生顎化：</h2>
+<p>一般發生在 i 元音前，就是<br />
+*ki &gt; kyi， *kʰi &gt; khyi， *ni &gt; nyi， *si &gt; shi， *ti &gt; ci， *mi &gt; myi（但“名”又從早期藏文的mying變回了傳統藏文的ming了）</p>
+<h2 id="六-孔好古定律conradys-law"><a class="markdownIt-Anchor" href="#六-孔好古定律conradys-law"></a> 六、孔好古定律(Conrady’s Law)：</h2>
+<p>*ɦ- 後面的擦音均變爲塞擦音，清擦音送氣<br />
+*ɦ-s- &gt; vtsh-， *ɦ-ɕ- &gt; vch-， *ɦ-z- &gt; vdz-， *ɦ-ʑ- &gt; vj-， *ɦ-r- &gt; vdr-<br />
+特殊地， *ɦ- 後接邊音時發生換位，隨後 ɦ- 消失<br />
+*ɦ-l- &gt; *ɦdl- &gt; *ɦld- &gt; ld-<br />
+*ɦ-ɬ- &gt; *ɦtɬ- &gt; *ɦɬt- &gt; lt-<br />
+相應的顎化<br />
+*ɦ-lj- &gt; lj-<br />
+*ɦ-ɬj- &gt; lc- （“鐵” lcags &lt; *ɦɬjaks，漢語 thet &lt; *lhˁik）</p>
+<h2 id="七-包擬古定律bodmans-law"><a class="markdownIt-Anchor" href="#七-包擬古定律bodmans-law"></a> 七、包擬古定律(Bodman’s Law)：</h2>
+<p>*m-l- &gt; md-<br />
+*m-lj- &gt; mj-<br />
+如“箭” *mla &gt; mda，cf. 漢語“射”(zsjek &lt; *C-lak)<br />
+“尋”（長度單位） *mlom &gt; mdom，cf. 漢語“尋” (zsim &lt; *sə-ləm)</p>
+<h2 id="八-u-ba-wa"><a class="markdownIt-Anchor" href="#八-u-ba-wa"></a> 八、*u-ba &gt; wa</h2>
+<p>古藏文有個特點，所有出現 w 下加字的字一定是以 a 結尾的開音節。向柏霖提出這可能是 u 尾字與後綴 ba 縮合而來。如 grwa 有 gru 的異寫，rwa 有 ru 的異寫，而 ba 是常見後綴。而且也可解釋 w 下加字只出現在名詞，而以 u 結尾的動詞不受影響。</p>
+<h2 id="九-w-y-"><a class="markdownIt-Anchor" href="#九-w-y-"></a> 九、*w- &gt; y-</h2>
+<p>麥沛德(Boyd Michailovsky)和馬秀珍(Martine Mazaudon)對比東部藏語支語言發現古代藏語的 *w- 與 *j- 合併爲 y- 。而向柏霖看到只寫例子似乎全是 i 或 e 元音的，合併到第五條顎化裏面就行了。</p>
+<h2 id="十-laufers-law-wa-o"><a class="markdownIt-Anchor" href="#十-laufers-law-wa-o"></a> 十、Laufer’s Law： *wa &gt; o</h2>
+<p>很多是和古漢語比較出來的。但漢語也有 *o &gt; *wa 的音變（如歌、祭、元部）。好在我看了一下書上的例字很多是陽、鐸、魚部的，而藏文例字都是k組合口。如：<br />
+“蕨麻” gro-ma &lt; *grwa-ma，cf. “芋” yoh &lt; *ɢw®as<br />
+“去” vgro &lt; *ɦgwra ，cf. “于” yo &lt; *ɢwra<br />
+“胃” grod &lt; *gwrat ，cf. “胃” yoih &lt; *ɢwrət-s<br />
+“行” vgrod &lt; *gwrat ，cf. “越” yat &lt; *ɢwat</p>
+<h2 id="十一-aw-o-ew-o"><a class="markdownIt-Anchor" href="#十一-aw-o-ew-o"></a> 十一、 *aw &gt; o， *ew &gt; o</h2>
+<p>很多是和漢語同源詞對比得出。</p>
 <p>感想：好像每個西方的漢藏語言學家都有個漢語名字，有些還不是太好査。好在网上都査到了。</p>
 
     </div>
@@ -261,12 +351,12 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%97%8F%E8%AA%9E/" rel="tag"># 藏語</a>
-              <a href="/tags/%E9%9F%B3%E9%9F%BB%E5%AD%B8/" rel="tag"># 音韻學</a>
-              <a href="/tags/%E8%AA%9E%E8%A8%80%E5%AD%B8/" rel="tag"># 語言學</a>
-              <a href="/tags/Tibetan/" rel="tag"># Tibetan</a>
-              <a href="/tags/phonology/" rel="tag"># phonology</a>
               <a href="/tags/linguistics/" rel="tag"># linguistics</a>
+              <a href="/tags/phonology/" rel="tag"># phonology</a>
+              <a href="/tags/%E8%AA%9E%E8%A8%80%E5%AD%B8/" rel="tag"># 語言學</a>
+              <a href="/tags/%E9%9F%B3%E9%9F%BB%E5%AD%B8/" rel="tag"># 音韻學</a>
+              <a href="/tags/%E8%97%8F%E8%AA%9E/" rel="tag"># 藏語</a>
+              <a href="/tags/Tibetan/" rel="tag"># Tibetan</a>
           </div>
 
         
@@ -292,6 +382,13 @@
 
           </div>
           
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
         </div>
           
@@ -307,16 +404,16 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          فهرست مطالب
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          نمای کلی
+          站点概览
         </li>
       </ul>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、張琨定律-Chang’s-Law-："><span class="nav-number">1.</span> <span class="nav-text">一、張琨定律(Chang’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、柯蔚南定律-Coblin’s-Law-："><span class="nav-number">2.</span> <span class="nav-text">二、柯蔚南定律(Coblin’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、田雅客定律-Dempsey’s-Law-："><span class="nav-number">3.</span> <span class="nav-text">三、田雅客定律(Dempsey’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、白保羅定律-Benedict’s-Law-："><span class="nav-number">4.</span> <span class="nav-text">四、白保羅定律(Benedict’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、邊音之外的輔音的次生顎化："><span class="nav-number">5.</span> <span class="nav-text">五、邊音之外的輔音的次生顎化：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、孔好古定律-Conrady’s-Law-："><span class="nav-number">6.</span> <span class="nav-text">六、孔好古定律(Conrady’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七、包擬古定律-Bodman’s-Law-："><span class="nav-number">7.</span> <span class="nav-text">七、包擬古定律(Bodman’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#八、-u-ba-gt-wa"><span class="nav-number">8.</span> <span class="nav-text">八、*u-ba &gt; wa</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#九、-w-gt-y"><span class="nav-number">9.</span> <span class="nav-text">九、*w- &gt; y-</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#十、Laufer’s-Law：-wa-gt-o"><span class="nav-number">10.</span> <span class="nav-text">十、Laufer’s Law： *wa &gt; o</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#十一、-aw-gt-o，-ew-gt-o"><span class="nav-number">11.</span> <span class="nav-text">十一、 *aw &gt; o， *ew &gt; o</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一-張琨定律changs-law"><span class="nav-number">1.</span> <span class="nav-text"> 一、張琨定律(Chang’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二-柯蔚南定律coblins-law"><span class="nav-number">2.</span> <span class="nav-text"> 二、柯蔚南定律(Coblin’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三-田雅客定律dempseys-law"><span class="nav-number">3.</span> <span class="nav-text"> 三、田雅客定律(Dempsey’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四-白保羅定律benedicts-law"><span class="nav-number">4.</span> <span class="nav-text"> 四、白保羅定律(Benedict’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五-邊音之外的輔音的次生顎化"><span class="nav-number">5.</span> <span class="nav-text"> 五、邊音之外的輔音的次生顎化：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六-孔好古定律conradys-law"><span class="nav-number">6.</span> <span class="nav-text"> 六、孔好古定律(Conrady’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七-包擬古定律bodmans-law"><span class="nav-number">7.</span> <span class="nav-text"> 七、包擬古定律(Bodman’s Law)：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#八-u-ba-wa"><span class="nav-number">8.</span> <span class="nav-text"> 八、*u-ba &gt; wa</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#九-w-y-"><span class="nav-number">9.</span> <span class="nav-text"> 九、*w- &gt; y-</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#十-laufers-law-wa-o"><span class="nav-number">10.</span> <span class="nav-text"> 十、Laufer’s Law： *wa &gt; o</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#十一-aw-o-ew-o"><span class="nav-number">11.</span> <span class="nav-text"> 十一、 *aw &gt; o， *ew &gt; o</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -331,19 +428,55 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">پست ها</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">دسته بندی ها</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
         <span class="site-state-item-count">12</span>
-        <span class="site-state-item-name">برجسب ها</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/mailto:biopolyhedron@gmail.com" title="E-Mail → mailto:biopolyhedron@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/ychromosome" title="新浪微雹 → https:&#x2F;&#x2F;weibo.com&#x2F;ychromosome" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微雹</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/polyhedron" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-zhihu"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://scholar.google.com/citations?user=ewSaZskAAAAJ" title="Google scholar → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user=ewSaZskAAAAJ" rel="noopener" target="_blank"><i class="fa fa-fw fa-"></i>Google scholar</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/ngiamzsjit" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;ngiamzsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/polyhedron" title="Telegram channel → https:&#x2F;&#x2F;t.me&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram-plane"></i>Telegram channel</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/NgiamZsjit" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;NgiamZsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/biopolyhedron" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;biopolyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.yoogene.com/" title="源基因遺傳測試 → https:&#x2F;&#x2F;www.yoogene.com&#x2F;" rel="noopener" target="_blank"><i class="fa fa-fw fa-dna"></i>源基因遺傳測試</a>
+      </span>
+  </div>
 
 
 
@@ -363,17 +496,17 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2019.11.22 – 
   <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Zsjit Ngiam</span>
 </div>
-  <div class="powered-by">قدرت گرفته از <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">پوسته – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
+  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
   </div>
 
         
@@ -418,6 +551,38 @@
   
 
   
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://polyhedron.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {page: {
+            url: "https://biopolyhedron.github.io/2019/11/22/ancient-tibetan-sound-change/",
+            identifier: "2019/11/22/ancient-tibetan-sound-change/",
+            title: "古代藏語的音變"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://polyhedron.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    window.addEventListener('load', loadComments, false);
+</script>
 
 </body>
 </html>

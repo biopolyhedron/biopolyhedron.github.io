@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -24,7 +24,7 @@
     scheme: 'Muse',
     version: '7.6.0',
     exturl: false,
-    sidebar: {"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},
+    sidebar: {"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},
     copycode: {"enable":false,"show_result":false,"style":null},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
@@ -50,7 +50,7 @@
 <meta property="og:title" content="多面體的雹子 polyhedron&#39;s blog">
 <meta property="og:url" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;index.html">
 <meta property="og:site_name" content="多面體的雹子 polyhedron&#39;s blog">
-<meta property="og:locale" content="zh">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 
 <link rel="canonical" href="https://biopolyhedron.github.io/">
@@ -69,6 +69,15 @@
 
   <title>多面體的雹子 polyhedron's blog</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154028988-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-154028988-1');
+      }
+    </script>
 
 
 
@@ -116,11 +125,11 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-        <p class="site-subtitle">聯繫：Telegram @ngiamzsjit ；Telegram 頻道 @polyhedron ；新浪微博 @polyhedron ；知乎 @polyhedron ；Twitter @NgiamZsjit  目前在復旦大學從事分子人類學和語言學硏究  Currently working on molecular anthropology and linguistics at Fudan University in Shanghai</p>
+        <p class="site-subtitle">分子人類學、語言學及各種其它  molecular anthropology, linguistics, etc.</p>
   </div>
 
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="تغییر ناوبری">
+    <div class="toggle" aria-label="切换导航栏">
       <span class="toggle-line toggle-line-first"></span>
       <span class="toggle-line toggle-line-middle"></span>
       <span class="toggle-line toggle-line-last"></span>
@@ -134,12 +143,22 @@
   <ul id="menu" class="menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>صفحه اصلی</a>
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>بایگانی</a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
 
   </li>
   </ul>
@@ -167,7 +186,7 @@
         
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://biopolyhedron.github.io/2019/11/22/ancient-tibetan-sound-change/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -190,22 +209,22 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">نوشته شده در</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="ایجاد شده: 2019-11-22 01:10:08" itemprop="dateCreated datePublished" datetime="2019-11-22T01:10:08+08:00">2019-11-22</time>
+              <time title="创建时间：2019-11-22 01:10:08" itemprop="dateCreated datePublished" datetime="2019-11-22T01:10:08+08:00">2019-11-22</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">ویرایش شده در</span>
-                <time title="تغییر یافته: 2019-12-05 18:15:46" itemprop="dateModified" datetime="2019-12-05T18:15:46+08:00">2019-12-05</time>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-12-05 18:15:46" itemprop="dateModified" datetime="2019-12-05T18:15:46+08:00">2019-12-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">در</span>
+              <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%AA%9E%E8%A8%80%E5%AD%B8/" itemprop="url" rel="index">
                     <span itemprop="name">語言學</span>
@@ -214,6 +233,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2019/11/22/ancient-tibetan-sound-change/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/11/22/ancient-tibetan-sound-change/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -226,29 +259,86 @@
       
           <p>本文是 Nathan W. Hill 的«The Historical Phonology of Tibetan, Burman, and Chinese»（《藏語、緬語和漢語的歷史音韻學》）一書的讀書筆記。文中上古藏語一律用國際音標，並以*標記，而傳統藏文一律用Wylie轉寫，需要時用/ /加註國際音標。</p>
 <p>藏文在早期藏文到目前定型的藏文之閒，系統性的音變只有 sts &gt; s 一個（如古藏文 la stsogs pa &gt; 藏文 la sogs pa），另外普通的 i ི 和反 ï ྀ 在古藏文有區別，但又是亂的，定型的藏文就合併了。還有基字後的 འ 原先經常寫出來，現代就省略了，除非無後加字，如 འདའས་ vdas 現在只寫 འདས་ 了。（按：是否還需要提一下 -ld、-rd、-nd 的次後加字現在不用了呢？）</p>
-<h2 id="一、張琨定律-Chang’s-Law-："><a href="#一、張琨定律-Chang’s-Law-：" class="headerlink" title="一、張琨定律(Chang’s Law)："></a>一、張琨定律(Chang’s Law)：</h2><p>b- 前加字會被後接的鼻音聲母同化：*b-n- &gt; mn-, *bȵ- &gt; mny- /mȵ/<br>例： “壓”過去時 *b-nan-s &gt; mnand </p>
-<h2 id="二、柯蔚南定律-Coblin’s-Law-："><a href="#二、柯蔚南定律-Coblin’s-Law-：" class="headerlink" title="二、柯蔚南定律(Coblin’s Law)："></a>二、柯蔚南定律(Coblin’s Law)：</h2><ol>
-<li><p>*b-b- &gt; b-， *b-p- &gt; p- （同化，太自然了）<br>例：“做”過去時 *b-bya-s &gt; byas<br>（以下C爲輔音，V爲元音，N爲鼻音）</p>
+<h2 id="一-張琨定律changs-law"><a class="markdownIt-Anchor" href="#一-張琨定律changs-law"></a> 一、張琨定律(Chang’s Law)：</h2>
+<p>b- 前加字會被後接的鼻音聲母同化：*b-n- &gt; mn-, *bȵ- &gt; mny- /mȵ/<br />
+例： “壓”過去時 *b-nan-s &gt; mnand</p>
+<h2 id="二-柯蔚南定律coblins-law"><a class="markdownIt-Anchor" href="#二-柯蔚南定律coblins-law"></a> 二、柯蔚南定律(Coblin’s Law)：</h2>
+<ol>
+<li>
+<p>*b-b- &gt; b-， *b-p- &gt; p- （同化，太自然了）<br />
+例：“做”過去時 *b-bya-s &gt; byas<br />
+（以下C爲輔音，V爲元音，N爲鼻音）</p>
 </li>
-<li><p>*ɦCC- &gt; CC-  （當v-前加字不允許形成該三合輔音時）<br>例：“盼望”現在時 *ɦ-rkam &gt; rkam</p>
+<li>
+<p>*ɦCC- &gt; CC-  （當v-前加字不允許形成該三合輔音時）<br />
+例：“盼望”現在時 *ɦ-rkam &gt; rkam</p>
 </li>
-<li><p>*gCa &gt; gCo, *gCCa &gt; Co<br>說明：藏語當動詞詞幹主元音爲a且現在時前加字加g/d-時，很多現在時主元音會變爲o，如“殺”詞幹sad，現在時gsod。一種解釋是go-前綴演變而成（我覺得也可以是gw-，附帶的w引發後面的a圓脣）<br>例：“說”現在時 *gw-zla &gt; zlo，“完成”現在時 *gw-skaŋ &gt; skong</p>
+<li>
+<p>*gCa &gt; gCo, *gCCa &gt; Co<br />
+說明：藏語當動詞詞幹主元音爲a且現在時前加字加g/d-時，很多現在時主元音會變爲o，如“殺”詞幹sad，現在時gsod。一種解釋是go-前綴演變而成（我覺得也可以是gw-，附帶的w引發後面的a圓脣）<br />
+例：“說”現在時 *gw-zla &gt; zlo，“完成”現在時 *gw-skaŋ &gt; skong</p>
 </li>
 </ol>
-<p>本書作者Nathan Hill認爲以上解釋不對，因爲有幾個詞的現在時並不是g-前加字而是v-，但仍然主元音變成了o，如<br>“插入、放置”詞幹*dʑag，現vjog，過bzhag，未gzhag，命zhogs<br>說明現在時的詞幹a變爲o與g-前綴無關，而認爲這是一種從更古代的變形繼承來的特徵。</p>
+<p>本書作者Nathan Hill認爲以上解釋不對，因爲有幾個詞的現在時並不是g-前加字而是v-，但仍然主元音變成了o，如<br />
+“插入、放置”詞幹*dʑag，現vjog，過bzhag，未gzhag，命zhogs<br />
+說明現在時的詞幹a變爲o與g-前綴無關，而認爲這是一種從更古代的變形繼承來的特徵。</p>
 <ol start="4">
-<li>*sNC- &gt; sC-<br>例：“嗅” *s-mnam &gt; snam<br>及<br>向柏霖(Guillaume Jacques)提出的“蛇” *smrul &gt; *smbrul &gt; sbrul （早期緬文 mruy）</li>
+<li>*sNC- &gt; sC-<br />
+例：“嗅” *s-mnam &gt; snam<br />
+及<br />
+向柏霖(Guillaume Jacques)提出的“蛇” *smrul &gt; *smbrul &gt; sbrul （早期緬文 mruy）</li>
 </ol>
-<h2 id="三、田雅客定律-Dempsey’s-Law-："><a href="#三、田雅客定律-Dempsey’s-Law-：" class="headerlink" title="三、田雅客定律(Dempsey’s Law)："></a>三、田雅客定律(Dempsey’s Law)：</h2><p>*e 和 *i 在舌根音 -ŋ 和 -k 前合併。主要是和上古漢語比較後得出。<br>耕部、錫部：<br>藏語“一”gcig &lt; *gtjek，cf. 隻(cjek &lt; *tek)<br>藏語“頸”mjing &lt; *mljeŋ，cf. 領(liengx &lt; *reŋʔ)<br>藏語“名”ming &lt; 早期藏文 mying &lt; *mjeŋ，cf. 名(mjeng &lt; *meŋ)<br>眞部、質部：<br>藏語“節”tshigs，cf. 節(cet &lt; *tsˁik)<br>藏語“蝨”shig &lt; *srik，cf. 蝨(srit &lt; *srik)<br>藏語“樹”shing &lt; *sjiŋ，cf. 薪(sin &lt; *siŋ)<br>藏語“田”zhing &lt; *ljiŋ ，cf. 田(den &lt; *lˁiŋ)</p>
-<h2 id="四、白保羅定律-Benedict’s-Law-："><a href="#四、白保羅定律-Benedict’s-Law-：" class="headerlink" title="四、白保羅定律(Benedict’s Law)："></a>四、白保羅定律(Benedict’s Law)：</h2><p>*lj- &gt; zh-<br>藏語“田”zhing &lt; *ljiŋ ，cf. 田(den &lt; *lˁiŋ)<br>藏語“甜”zhim &lt; *ljim ，cf. 甜(dem &lt; *lˁim)<br>藏語“地”gzhi &lt; *glji ，cf. 地(diih &lt; *lˁejs)，早期緬文 mliy<br>藏語“四”bzhi &lt; *b-lji ，cf. 四(siih &lt; s-lis)，早期緬文 liy<br>此外在藏文內部也有證據支持此演變，因古藏文有 *-j- 作爲敬語中綴，如<br>“乾”skam，“渴”skyem<br>“邊”logs，“體側” *g-l-j-oks &gt; gzhogs<br>“升起”lang，“升起” *b-l-j-eŋ &gt; bzheng</p>
+<h2 id="三-田雅客定律dempseys-law"><a class="markdownIt-Anchor" href="#三-田雅客定律dempseys-law"></a> 三、田雅客定律(Dempsey’s Law)：</h2>
+<p>*e 和 *i 在舌根音 -ŋ 和 -k 前合併。主要是和上古漢語比較後得出。<br />
+耕部、錫部：<br />
+藏語“一”gcig &lt; *gtjek，cf. 隻(cjek &lt; *tek)<br />
+藏語“頸”mjing &lt; *mljeŋ，cf. 領(liengx &lt; *reŋʔ)<br />
+藏語“名”ming &lt; 早期藏文 mying &lt; *mjeŋ，cf. 名(mjeng &lt; *meŋ)<br />
+眞部、質部：<br />
+藏語“節”tshigs，cf. 節(cet &lt; *tsˁik)<br />
+藏語“蝨”shig &lt; *srik，cf. 蝨(srit &lt; *srik)<br />
+藏語“樹”shing &lt; *sjiŋ，cf. 薪(sin &lt; *siŋ)<br />
+藏語“田”zhing &lt; *ljiŋ ，cf. 田(den &lt; *lˁiŋ)</p>
+<h2 id="四-白保羅定律benedicts-law"><a class="markdownIt-Anchor" href="#四-白保羅定律benedicts-law"></a> 四、白保羅定律(Benedict’s Law)：</h2>
+<p>*lj- &gt; zh-<br />
+藏語“田”zhing &lt; *ljiŋ ，cf. 田(den &lt; *lˁiŋ)<br />
+藏語“甜”zhim &lt; *ljim ，cf. 甜(dem &lt; *lˁim)<br />
+藏語“地”gzhi &lt; *glji ，cf. 地(diih &lt; *lˁejs)，早期緬文 mliy<br />
+藏語“四”bzhi &lt; *b-lji ，cf. 四(siih &lt; s-lis)，早期緬文 liy<br />
+此外在藏文內部也有證據支持此演變，因古藏文有 *-j- 作爲敬語中綴，如<br />
+“乾”skam，“渴”skyem<br />
+“邊”logs，“體側” *g-l-j-oks &gt; gzhogs<br />
+“升起”lang，“升起” *b-l-j-eŋ &gt; bzheng</p>
 <p>而現代藏語仍保留 li 而未變成 zhi 的詞需要做出解釋。其中一個解釋是若白保羅定律先於田雅客定律發生，則 *leŋ/lek 變爲 *liŋ/lik 而非繼續變爲 zhing/zhik。有一組漢語同音詞“田”（藏語zhing）和“畋”（藏語“打獵” lings），以藏語“田” *liŋ &gt; zhing 而“畋” *leŋs &gt; lings 來解釋（按：難道上古藏語兩個詞元音不同？）。</p>
-<h2 id="五、邊音之外的輔音的次生顎化："><a href="#五、邊音之外的輔音的次生顎化：" class="headerlink" title="五、邊音之外的輔音的次生顎化："></a>五、邊音之外的輔音的次生顎化：</h2><p>一般發生在 i 元音前，就是<br>*ki &gt; kyi， *kʰi &gt; khyi， *ni &gt; nyi， *si &gt; shi， *ti &gt; ci， *mi &gt; myi（但“名”又從早期藏文的mying變回了傳統藏文的ming了）</p>
-<h2 id="六、孔好古定律-Conrady’s-Law-："><a href="#六、孔好古定律-Conrady’s-Law-：" class="headerlink" title="六、孔好古定律(Conrady’s Law)："></a>六、孔好古定律(Conrady’s Law)：</h2><p>*ɦ- 後面的擦音均變爲塞擦音，清擦音送氣<br>*ɦ-s- &gt; vtsh-， *ɦ-ɕ- &gt; vch-， *ɦ-z- &gt; vdz-， *ɦ-ʑ- &gt; vj-， *ɦ-r- &gt; vdr-<br>特殊地， *ɦ- 後接邊音時發生換位，隨後 ɦ- 消失<br>*ɦ-l- &gt; *ɦdl- &gt; *ɦld- &gt; ld-<br>*ɦ-ɬ- &gt; *ɦtɬ- &gt; *ɦɬt- &gt; lt-<br>相應的顎化<br>*ɦ-lj- &gt; lj-<br>*ɦ-ɬj- &gt; lc- （“鐵” lcags &lt; *ɦɬjaks，漢語 thet &lt; *lhˁik）</p>
-<h2 id="七、包擬古定律-Bodman’s-Law-："><a href="#七、包擬古定律-Bodman’s-Law-：" class="headerlink" title="七、包擬古定律(Bodman’s Law)："></a>七、包擬古定律(Bodman’s Law)：</h2><p>*m-l- &gt; md-<br>*m-lj- &gt; mj-<br>如“箭” *mla &gt; mda，cf. 漢語“射”(zsjek &lt; *C-lak)<br>“尋”（長度單位） *mlom &gt; mdom，cf. 漢語“尋” (zsim &lt; *sə-ləm)</p>
-<h2 id="八、-u-ba-gt-wa"><a href="#八、-u-ba-gt-wa" class="headerlink" title="八、*u-ba &gt; wa"></a>八、*u-ba &gt; wa</h2><p>古藏文有個特點，所有出現 w 下加字的字一定是以 a 結尾的開音節。向柏霖提出這可能是 u 尾字與後綴 ba 縮合而來。如 grwa 有 gru 的異寫，rwa 有 ru 的異寫，而 ba 是常見後綴。而且也可解釋 w 下加字只出現在名詞，而以 u 結尾的動詞不受影響。</p>
-<h2 id="九、-w-gt-y"><a href="#九、-w-gt-y" class="headerlink" title="九、*w- &gt; y-"></a>九、*w- &gt; y-</h2><p>麥沛德(Boyd Michailovsky)和馬秀珍(Martine Mazaudon)對比東部藏語支語言發現古代藏語的 *w- 與 *j- 合併爲 y- 。而向柏霖看到只寫例子似乎全是 i 或 e 元音的，合併到第五條顎化裏面就行了。</p>
-<h2 id="十、Laufer’s-Law：-wa-gt-o"><a href="#十、Laufer’s-Law：-wa-gt-o" class="headerlink" title="十、Laufer’s Law： *wa &gt; o"></a>十、Laufer’s Law： *wa &gt; o</h2><p>很多是和古漢語比較出來的。但漢語也有 *o &gt; *wa 的音變（如歌、祭、元部）。好在我看了一下書上的例字很多是陽、鐸、魚部的，而藏文例字都是k組合口。如：<br>“蕨麻” gro-ma &lt; *grwa-ma，cf. “芋” yoh &lt; *ɢw(r)as<br>“去” vgro &lt; *ɦgwra ，cf. “于” yo &lt; *ɢwra<br>“胃” grod &lt; *gwrat ，cf. “胃” yoih &lt; *ɢwrət-s<br>“行” vgrod &lt; *gwrat ，cf. “越” yat &lt; *ɢwat</p>
-<h2 id="十一、-aw-gt-o，-ew-gt-o"><a href="#十一、-aw-gt-o，-ew-gt-o" class="headerlink" title="十一、 *aw &gt; o， *ew &gt; o"></a>十一、 *aw &gt; o， *ew &gt; o</h2><p>很多是和漢語同源詞對比得出。</p>
+<h2 id="五-邊音之外的輔音的次生顎化"><a class="markdownIt-Anchor" href="#五-邊音之外的輔音的次生顎化"></a> 五、邊音之外的輔音的次生顎化：</h2>
+<p>一般發生在 i 元音前，就是<br />
+*ki &gt; kyi， *kʰi &gt; khyi， *ni &gt; nyi， *si &gt; shi， *ti &gt; ci， *mi &gt; myi（但“名”又從早期藏文的mying變回了傳統藏文的ming了）</p>
+<h2 id="六-孔好古定律conradys-law"><a class="markdownIt-Anchor" href="#六-孔好古定律conradys-law"></a> 六、孔好古定律(Conrady’s Law)：</h2>
+<p>*ɦ- 後面的擦音均變爲塞擦音，清擦音送氣<br />
+*ɦ-s- &gt; vtsh-， *ɦ-ɕ- &gt; vch-， *ɦ-z- &gt; vdz-， *ɦ-ʑ- &gt; vj-， *ɦ-r- &gt; vdr-<br />
+特殊地， *ɦ- 後接邊音時發生換位，隨後 ɦ- 消失<br />
+*ɦ-l- &gt; *ɦdl- &gt; *ɦld- &gt; ld-<br />
+*ɦ-ɬ- &gt; *ɦtɬ- &gt; *ɦɬt- &gt; lt-<br />
+相應的顎化<br />
+*ɦ-lj- &gt; lj-<br />
+*ɦ-ɬj- &gt; lc- （“鐵” lcags &lt; *ɦɬjaks，漢語 thet &lt; *lhˁik）</p>
+<h2 id="七-包擬古定律bodmans-law"><a class="markdownIt-Anchor" href="#七-包擬古定律bodmans-law"></a> 七、包擬古定律(Bodman’s Law)：</h2>
+<p>*m-l- &gt; md-<br />
+*m-lj- &gt; mj-<br />
+如“箭” *mla &gt; mda，cf. 漢語“射”(zsjek &lt; *C-lak)<br />
+“尋”（長度單位） *mlom &gt; mdom，cf. 漢語“尋” (zsim &lt; *sə-ləm)</p>
+<h2 id="八-u-ba-wa"><a class="markdownIt-Anchor" href="#八-u-ba-wa"></a> 八、*u-ba &gt; wa</h2>
+<p>古藏文有個特點，所有出現 w 下加字的字一定是以 a 結尾的開音節。向柏霖提出這可能是 u 尾字與後綴 ba 縮合而來。如 grwa 有 gru 的異寫，rwa 有 ru 的異寫，而 ba 是常見後綴。而且也可解釋 w 下加字只出現在名詞，而以 u 結尾的動詞不受影響。</p>
+<h2 id="九-w-y-"><a class="markdownIt-Anchor" href="#九-w-y-"></a> 九、*w- &gt; y-</h2>
+<p>麥沛德(Boyd Michailovsky)和馬秀珍(Martine Mazaudon)對比東部藏語支語言發現古代藏語的 *w- 與 *j- 合併爲 y- 。而向柏霖看到只寫例子似乎全是 i 或 e 元音的，合併到第五條顎化裏面就行了。</p>
+<h2 id="十-laufers-law-wa-o"><a class="markdownIt-Anchor" href="#十-laufers-law-wa-o"></a> 十、Laufer’s Law： *wa &gt; o</h2>
+<p>很多是和古漢語比較出來的。但漢語也有 *o &gt; *wa 的音變（如歌、祭、元部）。好在我看了一下書上的例字很多是陽、鐸、魚部的，而藏文例字都是k組合口。如：<br />
+“蕨麻” gro-ma &lt; *grwa-ma，cf. “芋” yoh &lt; *ɢw®as<br />
+“去” vgro &lt; *ɦgwra ，cf. “于” yo &lt; *ɢwra<br />
+“胃” grod &lt; *gwrat ，cf. “胃” yoih &lt; *ɢwrət-s<br />
+“行” vgrod &lt; *gwrat ，cf. “越” yat &lt; *ɢwat</p>
+<h2 id="十一-aw-o-ew-o"><a class="markdownIt-Anchor" href="#十一-aw-o-ew-o"></a> 十一、 *aw &gt; o， *ew &gt; o</h2>
+<p>很多是和漢語同源詞對比得出。</p>
 <p>感想：好像每個西方的漢藏語言學家都有個漢語名字，有些還不是太好査。好在网上都査到了。</p>
 
       
@@ -268,7 +358,7 @@
         
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block home" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://biopolyhedron.github.io/2016/02/25/middle-chinese-uvular/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -291,22 +381,22 @@
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
-              <span class="post-meta-item-text">نوشته شده در</span>
+              <span class="post-meta-item-text">发表于</span>
 
-              <time title="ایجاد شده: 2016-02-25 13:29:04" itemprop="dateCreated datePublished" datetime="2016-02-25T13:29:04+08:00">2016-02-25</time>
+              <time title="创建时间：2016-02-25 13:29:04" itemprop="dateCreated datePublished" datetime="2016-02-25T13:29:04+08:00">2016-02-25</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
-                <span class="post-meta-item-text">ویرایش شده در</span>
-                <time title="تغییر یافته: 2019-12-05 18:15:48" itemprop="dateModified" datetime="2019-12-05T18:15:48+08:00">2019-12-05</time>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-12-05 20:51:01" itemprop="dateModified" datetime="2019-12-05T20:51:01+08:00">2019-12-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
-              <span class="post-meta-item-text">در</span>
+              <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/%E8%AA%9E%E8%A8%80%E5%AD%B8/" itemprop="url" rel="index">
                     <span itemprop="name">語言學</span>
@@ -315,6 +405,20 @@
             </span>
 
           
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2016/02/25/middle-chinese-uvular/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/02/25/middle-chinese-uvular/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 
         </div>
       </header>
@@ -325,276 +429,294 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="摘要"><a href="#摘要" class="headerlink" title="摘要"></a>摘要</h1><p>中古時，爲何梵語ka kha等音特地使用“迦、佉”等三等字對譯而不用一等字，一直是一大疑案。本文通過整理《廣韻》反切，認爲見、谿、疑母三等與非三等分爲兩套不同聲母，三等爲一般的舌根音，而一、二、四等並非舌根音。同時兩套聲母在二等、四等反切時還偶有對立情況發生。本文通過突厥語對音等證據認爲中古漢語的見、谿、疑、匣母在一、二、四等爲小舌音。其上限至遲在東漢，而下限應該在唐代。</p>
-<h1 id="關鍵詞"><a href="#關鍵詞" class="headerlink" title="關鍵詞"></a>關鍵詞</h1><p>切韻音系 等韻 小舌音 牙音</p>
-<h1 id="Abstract"><a href="#Abstract" class="headerlink" title="Abstract"></a>Abstract</h1><p>In Middle Chinese, it was mysterious why transliteration from Sanskrit ka kha into Chinese with third děng syllables (commonly reconstructed as /ki̯ɑ/ /kʰi̯ɑ/) rather than with first děng (commonly reconstructed as /kɑ kʰɑ/). By examine fǎnqiē in Guǎngyùn, I distinguished the commonly proposed initials k-, kh-, ng- into two groups, i.e. 3rd děng syllables with velar consonants, while 1st, 2nd and 4th děng were not velar. Although the two groups were largely complementary for most finals, there were sporadic cases that the two groups were contrasting when spelt with certain 2nd and 4th děng finals. Through Middle Turkic transliterations, I speculate that the 1st, 2nd and 4th děng syllables with commonly reconstructed k-, kh-, ng-, and ɣ- initials were in fact uvular /q qʰ ɴ ʁ/, and this reconstruction applies for since at latest Eastern Hàn Dynasty (1st century) till Táng Dynasty (9th century).</p>
-<h1 id="Keywords"><a href="#Keywords" class="headerlink" title="Keywords"></a>Keywords</h1><p>Qieyun, phonology, uvular, K- group initials</p>
-<h1 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h1><h2 id="梵漢對音證據"><a href="#梵漢對音證據" class="headerlink" title="梵漢對音證據"></a>梵漢對音證據</h2><p>大家早就注意到，梵漢對音中，梵語中大量沒有y /j/下加字的音節採用漢語的三等字來對譯，譬如：</p>
-<p><u>揭</u>諦 gate    <u>佛</u>陀 buddha</p>
+          <h1 id="摘要"><a class="markdownIt-Anchor" href="#摘要"></a> 摘要</h1>
+<p>中古時，爲何梵語ka kha等音特地使用“迦、佉”等三等字對譯而不用一等字，一直是一大疑案。本文通過整理《廣韻》反切，認爲見、谿、疑母三等與非三等分爲兩套不同聲母，三等爲一般的舌根音，而一、二、四等並非舌根音。同時兩套聲母在二等、四等反切時還偶有對立情況發生。本文通過突厥語對音等證據認爲中古漢語的見、谿、疑、匣母在一、二、四等爲小舌音。其上限至遲在東漢，而下限應該在唐代。</p>
+<h1 id="關鍵詞"><a class="markdownIt-Anchor" href="#關鍵詞"></a> 關鍵詞</h1>
+<p>切韻音系 等韻 小舌音 牙音</p>
+<h1 id="abstract"><a class="markdownIt-Anchor" href="#abstract"></a> Abstract</h1>
+<p>In Middle Chinese, it was mysterious why transliteration from Sanskrit ka kha into Chinese with third děng syllables (commonly reconstructed as /ki̯ɑ/ /kʰi̯ɑ/) rather than with first děng (commonly reconstructed as /kɑ kʰɑ/). By examine fǎnqiē in Guǎngyùn, I distinguished the commonly proposed initials k-, kh-, ng- into two groups, i.e. 3rd děng syllables with velar consonants, while 1st, 2nd and 4th děng were not velar. Although the two groups were largely complementary for most finals, there were sporadic cases that the two groups were contrasting when spelt with certain 2nd and 4th děng finals. Through Middle Turkic transliterations, I speculate that the 1st, 2nd and 4th děng syllables with commonly reconstructed k-, kh-, ng-, and ɣ- initials were in fact uvular /q qʰ ɴ ʁ/, and this reconstruction applies for since at latest Eastern Hàn Dynasty (1st century) till Táng Dynasty (9th century).</p>
+<h1 id="keywords"><a class="markdownIt-Anchor" href="#keywords"></a> Keywords</h1>
+<p>Qieyun, phonology, uvular, K- group initials</p>
+<h1 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h1>
+<h2 id="梵漢對音證據"><a class="markdownIt-Anchor" href="#梵漢對音證據"></a> 梵漢對音證據</h2>
+<p>大家早就注意到，梵漢對音中，梵語中大量沒有y /j/下加字的音節採用漢語的三等字來對譯，譬如：</p>
+<p><ins>揭</ins>諦 gate	<ins>佛</ins>陀 buddha</p>
 <p>更有一些見組三等開口戈韻字，如“迦”、“佉”，專門用來對譯梵語的ka, kha這樣的音節，這些三等字依照現在通常的擬音，是/ki̯ɑ/ /kʰi̯ɑ/這樣，帶有/i̯/介音的。而大家都知道，見母和谿母有相應的一等歌韻字，即普遍認爲不帶介音的音節，如“歌”、“軻”的擬音一般認爲是/kɑ/和/kʰɑ/。依通常標準來看，一等的/kɑ/和/kʰɑ/明顯比三等的/ki̯ɑ/和/kʰi̯ɑ/更接近梵語ka和kha的音，那爲何對音時偏要捨近求遠，採用漢語有/i̯/介音的三等韻字呢？有一種想法，是梵語的k組輔音本來帶有輕度顎化，類似/kʲ/甚至/c/這樣。但這樣存在一個問題：k組已經是梵語發音部位最靠後的一組輔音了，如果本身是顎化的是很奇怪的，很少有哪個音系僅有顎化的/kʲ/而沒有普通的/k/的。另外，梵語本來存在顎化的k，如kya，假如ka本身存在顎化，ka和kya就難以區分了，這顯然不符合梵文嚴格表音的精神。還有一種可能，即三等戈韻的“迦”和一等歌韻的“歌”的主元音有明顯不同，梵語ka的元音更接近前者。但這也有問題，即梵語a, ha, ta, sa, la用一等歌韻的“阿”、“訶”、“多”、“娑”、“羅”等譯，pa, ba是用一等戈韻的“波”、“婆”等譯的，而ṣa /ʂa/, śa /ɕa/, ya /ja/等也可以用二等麻韻的“沙”和三等麻韻的“奢”、“耶”等來譯。因此梵漢對音上，元音並不是很嚴格的，尤其是歌韻可以說是譯a元音最常見的辦法，因此梵語的ka和kha對譯漢語時要拋棄歌韻的常見字而另取三等戈韻的字是沒有道理的。</p>
 <p>排除了以上可能，我這裏提出另外一種假說，即<strong>漢語見組一等的“歌”、“軻”這樣的字聲母並不是/k/和/kʰ/，而是另外一組音，我認爲最可能且唯一的選項就是小舌音/q/和/qʰ/，而見組三等字的聲母仍爲舌根音/k/和/kʰ/</strong>。以下我通過多種材料來詳解此假說。</p>
-<h2 id="反切證據"><a href="#反切證據" class="headerlink" title="反切證據"></a>反切證據</h2><p>如果說見組一等和三等有兩個不同的聲母，那麼隨之而來的就有了兩個問題：一、見組的二等和四等是什麼聲母；二、其它的脣、舌、齒、喉音的一、三等各是一個還是兩個聲母？這時候，我們可以再回頭用陳澧經典的繫聯法來幫一下忙。衆所周知，《廣韻》裏，各聲母的一等和三等字是較少互切的，一般一等字的反切上字都是一等，而三等字的反切上字都是三等。但二等字如何呢？我把《廣韻》裏二等字所用反切上字的等（按反切等，即按切韻音系韻母歸納的等）統計了一下：</p>
+<h2 id="反切證據"><a class="markdownIt-Anchor" href="#反切證據"></a> 反切證據</h2>
+<p>如果說見組一等和三等有兩個不同的聲母，那麼隨之而來的就有了兩個問題：一、見組的二等和四等是什麼聲母；二、其它的脣、舌、齒、喉音的一、三等各是一個還是兩個聲母？這時候，我們可以再回頭用陳澧經典的繫聯法來幫一下忙。衆所周知，《廣韻》裏，各聲母的一等和三等字是較少互切的，一般一等字的反切上字都是一等，而三等字的反切上字都是三等。但二等字如何呢？我把《廣韻》裏二等字所用反切上字的等（按反切等，即按切韻音系韻母歸納的等）統計了一下：</p>
 <table>
 <thead>
 <tr>
-<th align="center">聲母</th>
-<th align="center">一等上字</th>
-<th align="right">小韻數</th>
-<th align="center">二等上字</th>
-<th align="right">小韻數</th>
-<th align="center">三等上字</th>
-<th align="right">小韻數</th>
+<th style="text-align:center">聲母</th>
+<th style="text-align:center">一等上字</th>
+<th style="text-align:right">小韻數</th>
+<th style="text-align:center">二等上字</th>
+<th style="text-align:right">小韻數</th>
+<th style="text-align:center">三等上字</th>
+<th style="text-align:right">小韻數</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">幫</td>
-<td align="center">博布北愽補</td>
-<td align="right">19</td>
-<td align="center">伯巴百</td>
-<td align="right">3</td>
-<td align="center">方甫脯必</td>
-<td align="right">6</td>
+<tbody>
+<tr>
+<td style="text-align:center">幫</td>
+<td style="text-align:center">博布北愽補</td>
+<td style="text-align:right">19</td>
+<td style="text-align:center">伯巴百</td>
+<td style="text-align:right">3</td>
+<td style="text-align:center">方甫脯必</td>
+<td style="text-align:right">6</td>
 </tr>
 <tr>
-<td align="center">滂</td>
-<td align="center">普</td>
-<td align="right">11</td>
-<td align="center"></td>
-<td align="right">0</td>
-<td align="center">匹</td>
-<td align="right">7</td>
+<td style="text-align:center">滂</td>
+<td style="text-align:center">普</td>
+<td style="text-align:right">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">匹</td>
+<td style="text-align:right">7</td>
 </tr>
 <tr>
-<td align="center">並</td>
-<td align="center">薄步蒲傍</td>
-<td align="right">24</td>
-<td align="center">白</td>
-<td align="right">2</td>
-<td align="center">防扶</td>
-<td align="right">2</td>
+<td style="text-align:center">並</td>
+<td style="text-align:center">薄步蒲傍</td>
+<td style="text-align:right">24</td>
+<td style="text-align:center">白</td>
+<td style="text-align:right">2</td>
+<td style="text-align:center">防扶</td>
+<td style="text-align:right">2</td>
 </tr>
 <tr>
-<td align="center">明</td>
-<td align="center">莫謨</td>
-<td align="right">23</td>
-<td align="center"></td>
-<td align="right">0</td>
-<td align="center">武亡</td>
-<td align="right">6</td>
+<td style="text-align:center">明</td>
+<td style="text-align:center">莫謨</td>
+<td style="text-align:right">23</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">武亡</td>
+<td style="text-align:right">6</td>
 </tr>
 <tr>
-<td align="center">端知</td>
-<td align="center">丁都德</td>
-<td align="right">6</td>
-<td align="center">卓</td>
-<td align="right">1</td>
-<td align="center">陟竹中張猪</td>
-<td align="right">20</td>
+<td style="text-align:center">端知</td>
+<td style="text-align:center">丁都德</td>
+<td style="text-align:right">6</td>
+<td style="text-align:center">卓</td>
+<td style="text-align:right">1</td>
+<td style="text-align:center">陟竹中張猪</td>
+<td style="text-align:right">20</td>
 </tr>
 <tr>
-<td align="center">透徹</td>
-<td align="center">他</td>
-<td align="right">2</td>
-<td align="center"></td>
-<td align="right">0</td>
-<td align="center">丑敕辿</td>
-<td align="right">19</td>
+<td style="text-align:center">透徹</td>
+<td style="text-align:center">他</td>
+<td style="text-align:right">2</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">丑敕辿</td>
+<td style="text-align:right">19</td>
 </tr>
 <tr>
-<td align="center">定澄</td>
-<td align="center">徒</td>
-<td align="right">2</td>
-<td align="center">宅瑒</td>
-<td align="right">5</td>
-<td align="center">柱直丈除佇墜</td>
-<td align="right">15</td>
+<td style="text-align:center">定澄</td>
+<td style="text-align:center">徒</td>
+<td style="text-align:right">2</td>
+<td style="text-align:center">宅瑒</td>
+<td style="text-align:right">5</td>
+<td style="text-align:center">柱直丈除佇墜</td>
+<td style="text-align:right">15</td>
 </tr>
 <tr>
-<td align="center">泥娘</td>
-<td align="center">諾奴乃</td>
-<td align="right">9</td>
-<td align="center">拏</td>
-<td align="right">1</td>
-<td align="center">女妳尼</td>
-<td align="right">18</td>
+<td style="text-align:center">泥娘</td>
+<td style="text-align:center">諾奴乃</td>
+<td style="text-align:right">9</td>
+<td style="text-align:center">拏</td>
+<td style="text-align:right">1</td>
+<td style="text-align:center">女妳尼</td>
+<td style="text-align:right">18</td>
 </tr>
 <tr>
-<td align="center">精莊</td>
-<td align="center">子</td>
-<td align="right">1</td>
-<td align="center"></td>
-<td align="right">0</td>
-<td align="center">側阻莊鄒簪</td>
-<td align="right">24</td>
+<td style="text-align:center">精莊</td>
+<td style="text-align:center">子</td>
+<td style="text-align:right">1</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">側阻莊鄒簪</td>
+<td style="text-align:right">24</td>
 </tr>
 <tr>
-<td align="center">清初</td>
-<td align="center"></td>
-<td align="right">0</td>
-<td align="center">叉</td>
-<td align="right">1</td>
-<td align="center">楚初測</td>
-<td align="right">28</td>
+<td style="text-align:center">清初</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">叉</td>
+<td style="text-align:right">1</td>
+<td style="text-align:center">楚初測</td>
+<td style="text-align:right">28</td>
 </tr>
 <tr>
-<td align="center">從崇</td>
-<td align="center"></td>
-<td align="right">0</td>
-<td align="center">犲査</td>
-<td align="right">3</td>
-<td align="center">士仕鉏助鋤雛</td>
-<td align="right">29</td>
+<td style="text-align:center">從崇</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">犲査</td>
+<td style="text-align:right">3</td>
+<td style="text-align:center">士仕鉏助鋤雛</td>
+<td style="text-align:right">29</td>
 </tr>
 <tr>
-<td align="center">心生</td>
-<td align="center"></td>
-<td align="right">0</td>
-<td align="center">山砂沙</td>
-<td align="right">9</td>
-<td align="center">所數色生</td>
-<td align="right">28</td>
+<td style="text-align:center">心生</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">山砂沙</td>
+<td style="text-align:right">9</td>
+<td style="text-align:center">所數色生</td>
+<td style="text-align:right">28</td>
 </tr>
 <tr>
-<td align="center">見</td>
-<td align="center">古谷公</td>
-<td align="right">53</td>
-<td align="center">佳乖格</td>
-<td align="right">3</td>
-<td align="center"></td>
-<td align="right">0</td>
+<td style="text-align:center">見</td>
+<td style="text-align:center">古谷公</td>
+<td style="text-align:right">53</td>
+<td style="text-align:center">佳乖格</td>
+<td style="text-align:right">3</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">0</td>
 </tr>
 <tr>
-<td align="center">谿</td>
-<td align="center">苦口可恪枯</td>
-<td align="right">33</td>
-<td align="center">客楷</td>
-<td align="right">2</td>
-<td align="center">丘乞起</td>
-<td align="right">5</td>
+<td style="text-align:center">谿</td>
+<td style="text-align:center">苦口可恪枯</td>
+<td style="text-align:right">33</td>
+<td style="text-align:center">客楷</td>
+<td style="text-align:right">2</td>
+<td style="text-align:center">丘乞起</td>
+<td style="text-align:right">5</td>
 </tr>
 <tr>
-<td align="center">疑</td>
-<td align="center">五吾</td>
-<td align="right">33</td>
-<td align="center"></td>
-<td align="right">0</td>
-<td align="center">擬玉</td>
-<td align="right">2</td>
+<td style="text-align:center">疑</td>
+<td style="text-align:center">五吾</td>
+<td style="text-align:right">33</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">擬玉</td>
+<td style="text-align:right">2</td>
 </tr>
 <tr>
-<td align="center">影</td>
-<td align="center">烏鷖（四等）</td>
-<td align="right">24</td>
-<td align="center">握</td>
-<td align="right">1</td>
-<td align="center">於乙委</td>
-<td align="right">20</td>
+<td style="text-align:center">影</td>
+<td style="text-align:center">烏鷖（四等）</td>
+<td style="text-align:right">24</td>
+<td style="text-align:center">握</td>
+<td style="text-align:right">1</td>
+<td style="text-align:center">於乙委</td>
+<td style="text-align:right">20</td>
 </tr>
 <tr>
-<td align="center">曉</td>
-<td align="center">火呼虎荒</td>
-<td align="right">24</td>
-<td align="center">花</td>
-<td align="right">1</td>
-<td align="center">許喜虛</td>
-<td align="right">14</td>
+<td style="text-align:center">曉</td>
+<td style="text-align:center">火呼虎荒</td>
+<td style="text-align:right">24</td>
+<td style="text-align:center">花</td>
+<td style="text-align:right">1</td>
+<td style="text-align:center">許喜虛</td>
+<td style="text-align:right">14</td>
 </tr>
 <tr>
-<td align="center">匣</td>
-<td align="center">戶胡何侯乎</td>
-<td align="right">50</td>
-<td align="center">下獲懷</td>
-<td align="right">11</td>
-<td align="center"></td>
-<td align="right">-</td>
+<td style="text-align:center">匣</td>
+<td style="text-align:center">戶胡何侯乎</td>
+<td style="text-align:right">50</td>
+<td style="text-align:center">下獲懷</td>
+<td style="text-align:right">11</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">-</td>
 </tr>
 <tr>
-<td align="center">來</td>
-<td align="center">賴盧魯</td>
-<td align="right">3</td>
-<td align="center"></td>
-<td align="right">0</td>
-<td align="center">呂力</td>
-<td align="right">8</td>
+<td style="text-align:center">來</td>
+<td style="text-align:center">賴盧魯</td>
+<td style="text-align:right">3</td>
+<td style="text-align:center"></td>
+<td style="text-align:right">0</td>
+<td style="text-align:center">呂力</td>
+<td style="text-align:right">8</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>首先，我們能觀察到，見母二等的切上字以一等爲主，全無三等，谿、疑母二等也僅有少量三等上字，三個聲母的各小韻的上字三等僅爲一等的5.9%。相比來說，脣音聲母二等字的反切上字三等數量爲一等的27%。另外攷慮到谿母和疑母的這7例反切沒有一個常用字或常用義，其中還有谿母刪韻的“馯，丘姦切”（三等上字）和“豻鬜，可顏切”（一等上字）重出，及谿母二等麻韻的“𣘟，乞加切”（三等上字）和“䶗㤉𡤫，苦加切”（一等上字）重出。同樣檢査一下《廣韻》四等字的反切（表略），雖然和二等字類似，脣音、齒音、曉母、影母、來母的四等也常有以三等字作反切上字的，但見組只有一例“趝，紀念切”是以三等爲上字的。而有意思的是，這個反切和“兼，古念切”（一等上字）構成了對立，也是所有四等反切中唯一一組重小韻。</p>
 <p>由此，可以先下一個結論，即通常中古漢語見組的見、谿、羣母二等和四等字聲母與一等相同，而不同於三等。另外兩類聲母的出現並不完全互補，而是偶爾存在對立情況。而通過以上方法，我們也可以發現其它組聲母中，脣音二等雖然用一等作上字爲主，但三等並不太少；舌音知組和來母的二等明顯偏三等，但和一等仍未完全脫離關係；齒音莊組二三等聲母相同，而不同於一等精組；喉音影母、曉母則一、三等都能切。這樣，用繫聯法即能得出結論：<strong>按切韻音系，見組（此處指見、谿、疑母）一、二、四等和三等爲不同聲母，齒音一、四等精組和二、三等莊組爲不同聲母，而脣音、舌音、影母、曉母各等聲母相同或相近</strong>。</p>
 <p>由此，在切韻時代，見組一、二、四等的聲母不同於三等，前者並不是舌根音，所以在譯梵語ka, kha時纔需要用見組三等舌根音造字。而見組一等不是舌根音的話，一等又應該比三等更偏後，那有塞音的位置的備選項有小舌音、會厭音和喉音。會厭音在整個東亞、東北亞都未見實例，也就不攷慮了。喉塞音也已經有影母占位了。此外既然見組一等的各種現代方言和對音基本都是/k/，喉音變成或對成舌根音也不太可能。還有，會厭音和喉音沒有同部位的鼻音，無法解釋疑母一三等分切。那麼見組一二四等發小舌音也就成了最可能的解釋。</p>
-<h2 id="亞洲部分其它語言中小舌音的情況"><a href="#亞洲部分其它語言中小舌音的情況" class="headerlink" title="亞洲部分其它語言中小舌音的情況"></a>亞洲部分其它語言中小舌音的情況</h2><p>小舌音在亞洲並不算少見，尤其在阿爾泰語和亞非語系中。阿拉伯語舌根塞音 ك /k/和小舌塞音 ق /q/是兩個音位。而在阿爾泰語中，情況各不相同。</p>
+<h2 id="亞洲部分其它語言中小舌音的情況"><a class="markdownIt-Anchor" href="#亞洲部分其它語言中小舌音的情況"></a> 亞洲部分其它語言中小舌音的情況</h2>
+<p>小舌音在亞洲並不算少見，尤其在阿爾泰語和亞非語系中。阿拉伯語舌根塞音 ك /k/和小舌塞音 ق /q/是兩個音位。而在阿爾泰語中，情況各不相同。</p>
 <p>滿語g, k, h（按 Möllendorf 轉寫）實際發音部位有小舌音/q qʰ χ/和舌根音/k kʰ x/兩組，其中小舌音拼陽性元音a /ɑ/, o /ɔ/, ū /ʊ/，而舌根音拼陰性元音e /ɤ/和中性元音i /i/, u /u/，如ᡴᠠ ka /qʰɑ/, ᡴᠣ ko /qʰɔ/, ᡴᡡ kū /qʰʊ/和 ᡴᡝ ke /kʰə/, ᡴᡳ ki /kʰi/, ᡴᡠ ku /kʰu/。也就是說，按轉寫，兩種發音部位算同一音位，與不同元音相配時互補，但在滿文字母是當兩個音位，形狀有所區別的。此外，滿文爲了對譯舌根音聲母的漢字，又發明了ᠺᠠ k’a /kʰɑ/, ᠺᠣ k’o /kʰɔ/這樣的舌根音拼陽性元音的拼法，說明滿語原本是能有意識區分舌根音和小舌音的。</p>
 <p>傳統蒙古語的元音有陽性元音ᠠ a, ᠣ o,ᠤ u（o u元音同形），陰性元音e ᠡ, ö ᠥ, ü ᠦ（ö ü元音也同形）和中性元音i ᠢ共7個。舌根、小舌輔音有g和k兩個，現代的讀音分別是/k q/和/x χ/，情況和滿語類似，陰性元音全部爲後元音，g拼寫輔音是ᠭᠠ ga /qa/, ᠭᠡ ge /kɤ/, ᠭᠢ gi /ki/, ᠭᠣ go /qɔ/, ᠭᠤ gu /qʊ/, ᠭᠥ gö /ko/, ᠭᠦ gü /ku/，也是轉寫時算同一音位，但文字按陽性或陰、中性有兩種寫法。</p>
 <p>維吾爾語的舌根、小舌輔音有舌根塞音ك‎ k /kʰ/, گ‎ g /g/、小舌塞音ق‎ q /qʰ/和小舌擦音خ x /χ/, غ‎ ğ /ʁ/。元音有陽性元音ا a /ɑ/, و o /o/, ۇ u /u/，陰性元音ە e /ɛ/, ۆ ö /ø/, ۈ ü /y/和中性元音ې é /e/（由ا a或ە e弱化而來）, ى i /i/，共8個。維吾爾語的k和q在詞根是存在對立的，均可以拼陰性和陽性元音。然而在後綴是互補的，如-qa ~ -ğa ~ -ke ~ -ge後綴，輔音依前面的清濁和元音的陰陽性（即元音和諧）而變化，如at &gt; atqa, akam &gt; akamğa, mektep &gt; mektepke, depter &gt; depterge。顯然小舌濁擦音ğ /ʁ/可以視作小舌濁塞音/ɢ/的擦化，而小舌清擦音خ /χ/有另外來源。（滿、蒙、維語各有一個輔音字母/ŋ/，但後面不能直接接元音或所接元音有限，也不隨陰陽性元音和諧而有所區別，在此不討論。）</p>
 <p>以上用來說明小舌音不算是少見的語音，小舌音與舌根音對立（多見於借詞）或者隨陰陽性元音交替（多見於阿爾泰語本族詞、黏着後綴）現象均有，且在有小舌音的阿爾泰語中，小舌音出現的頻率和舌根音接近（因爲陰陽性詞彙數量接近）而非遠少於舌根音。而更讓我驚訝的例子，是我曾經見過一個北京土著說話時漢語拼音g, k, h聲母都有小舌音的自由變體，如“哥、看、好”之類字（當然此現象在北京也不普遍，且他本人未意識到區別，多數人也注意不到）。</p>
-<h2 id="直接對音證據"><a href="#直接對音證據" class="headerlink" title="直接對音證據"></a>直接對音證據</h2><p>固然小舌音不少見，但說見組一、二、四等是小舌音也需要更直接的證據。梵漢對音ka不用“哥”而用“迦”只是見組一等不讀舌根音的證據，而非讀小舌的證據，因爲古典梵語沒有小舌音。常用的幾種材料，如漢語方言、朝鮮語、日語和越南語的對音也不好用，因爲都沒有成音位的小舌音。突厥語算一個比較直接的證據，包括漢語從突厥語的借詞及突厥語從漢語的借詞。“可汗”應算一例（最早出現於柔然王号），古突厥文qağan，沒有譯成“佉汗”。古突厥語陽性元音音節對漢語見組一二四等韻的例子還有：</p>
+<h2 id="直接對音證據"><a class="markdownIt-Anchor" href="#直接對音證據"></a> 直接對音證據</h2>
+<p>固然小舌音不少見，但說見組一、二、四等是小舌音也需要更直接的證據。梵漢對音ka不用“哥”而用“迦”只是見組一等不讀舌根音的證據，而非讀小舌的證據，因爲古典梵語沒有小舌音。常用的幾種材料，如漢語方言、朝鮮語、日語和越南語的對音也不好用，因爲都沒有成音位的小舌音。突厥語算一個比較直接的證據，包括漢語從突厥語的借詞及突厥語從漢語的借詞。“可汗”應算一例（最早出現於柔然王号），古突厥文qağan，沒有譯成“佉汗”。古突厥語陽性元音音節對漢語見組一二四等韻的例子還有：</p>
 <table>
 <thead>
 <tr>
-<th align="center"></th>
-<th align="center"></th>
-<th align="center"></th>
-<th align="center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">qarluq</td>
-<td align="center"><u>葛</u>邏祿</td>
-<td align="center">qïrqïz</td>
-<td align="center"><u>黠戛</u>斯</td>
+<tbody>
+<tr>
+<td style="text-align:center">qarluq</td>
+<td style="text-align:center"><ins>葛</ins>邏祿</td>
+<td style="text-align:center">qïrqïz</td>
+<td style="text-align:center"><ins>黠戛</ins>斯</td>
 </tr>
 <tr>
-<td align="center">tarqat</td>
-<td align="center">達<u>干</u></td>
-<td align="center">yağlaqar</td>
-<td align="center">藥羅<u>葛</u></td>
+<td style="text-align:center">tarqat</td>
+<td style="text-align:center">達<ins>干</ins></td>
+<td style="text-align:center">yağlaqar</td>
+<td style="text-align:center">藥羅<ins>葛</ins></td>
 </tr>
 <tr>
-<td align="center">qatun</td>
-<td align="center"><u>可</u>敦</td>
-<td align="center">qutluğ</td>
-<td align="center"><u>骨</u>咄祿</td>
+<td style="text-align:center">qatun</td>
+<td style="text-align:center"><ins>可</ins>敦</td>
+<td style="text-align:center">qutluğ</td>
+<td style="text-align:center"><ins>骨</ins>咄祿</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>而古突厥語陰性元音音節對漢語見組三等字：</p>
 <table>
 <thead>
 <tr>
-<th align="center"></th>
-<th align="center"></th>
-<th align="center"></th>
-<th align="center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="center">ötükän</td>
-<td align="center">於都<u>斤</u></td>
-<td align="center">türk(üt)</td>
-<td align="center">突<u>厥</u></td>
+<tbody>
+<tr>
+<td style="text-align:center">ötükän</td>
+<td style="text-align:center">於都<ins>斤</ins></td>
+<td style="text-align:center">türk(üt)</td>
+<td style="text-align:center">突<ins>厥</ins></td>
 </tr>
 <tr>
-<td align="center">bilgä</td>
-<td align="center">毗<u>伽</u></td>
-<td align="center">käm</td>
-<td align="center"><u>劒</u>（河）</td>
+<td style="text-align:center">bilgä</td>
+<td style="text-align:center">毗<ins>伽</ins></td>
+<td style="text-align:center">käm</td>
+<td style="text-align:center"><ins>劒</ins>（河）</td>
 </tr>
 <tr>
-<td align="center">kögmän</td>
-<td align="center"><u>曲</u>曼</td>
-<td align="center"></td>
-<td align="center"></td>
+<td style="text-align:center">kögmän</td>
+<td style="text-align:center"><ins>曲</ins>曼</td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>以上例子雖然不多，但完全符合小舌音q, ğ對漢語見組及匣母一二等、舌根音k, g對漢語見組三等的規律。同時說明了，梵漢對音不用漢語一二四等韻字不是因爲習慣問題，而確實是實際發音的緣故。</p>
 <p>應當注意，古突厥文的元音字母a/ä和i從寫法上都不分陰陽性元音，轉寫爲kä和qa的音節在書寫上僅靠輔音來分。但由此尚不能簡單說突厥語的k和q一定是對立的輔音，因爲在古突厥文中，輔音不只k/q和g/ğ分陰陽性，b, d, t, l, n, r, s, y這些明顯應該是輔音陰陽性發音相同而元音有別的情況，也是靠輔音的陰陽性兩種寫法區別的。這樣很難說古突厥文的陰陽性對立到底主要體現在元音還是輔音上了。</p>
-<h2 id="切韻音系中見組一三等爲不同音位"><a href="#切韻音系中見組一三等爲不同音位" class="headerlink" title="切韻音系中見組一三等爲不同音位"></a>切韻音系中見組一三等爲不同音位</h2><p>儘管偶見見組一三等字的對立，但畢竟主體來看見組一三等仍是在不同韻之閒互補的，且因爲見組各等字閒存在大量諧聲，它們的來源也應該是相同的，只是以不同的等爲條件分化了。在此情況下，我們是否需要將中古時一二四等的小舌音和三等的舌根音認爲是兩個不同音位呢？我認爲是必要的。首先是《廣韻》後面附《辯字五音法》中寫道：</p>
+<h2 id="切韻音系中見組一三等爲不同音位"><a class="markdownIt-Anchor" href="#切韻音系中見組一三等爲不同音位"></a> 切韻音系中見組一三等爲不同音位</h2>
+<p>儘管偶見見組一三等字的對立，但畢竟主體來看見組一三等仍是在不同韻之閒互補的，且因爲見組各等字閒存在大量諧聲，它們的來源也應該是相同的，只是以不同的等爲條件分化了。在此情況下，我們是否需要將中古時一二四等的小舌音和三等的舌根音認爲是兩個不同音位呢？我認爲是必要的。首先是《廣韻》後面附《辯字五音法》中寫道：</p>
 <blockquote>
 <p>凡呼吸文字即有五音：脣聲、舌聲、牙聲、喉聲、齒聲等。一、脣聲并、餅；二、舌聲靈、歷；三、齒聲陟、珍；四、牙聲迦、佉；五、喉聲綱、各。</p>
 </blockquote>
 <p>其中“牙聲”即見組三等，而“喉聲”爲見組三等。儘管這裏面五音並沒有列出所有常見聲母組，且劃分與後世的韻圖不同，但直接透出了見組一等與三等發音部位不同且見組一等發音部位更靠後。</p>
-<h2 id="匣母的擦化"><a href="#匣母的擦化" class="headerlink" title="匣母的擦化"></a>匣母的擦化</h2><p>將舌根音與小舌音的音位明確分開有助於解釋匣母擦化的問題。</p>
-<p>中古匣母缺乏三等，僅有一、二、四等。從上古諧聲來看，相當一部分的匣母字（至少是開口的大部分）和見、谿、羣母聲旁關係密切，在上古應爲同一位置的濁音，即舌根塞音/g/（可能也有擦音/ɣ/）。可以想象，如果後世所有一、二、四等韻的聲母位置後移，舌根塞音/g/成爲小舌塞音/ɢ/，而濁塞音的發音部位越向後則越難發音 [CjyoHeuxNuung][] ，於是自發擦化成爲小舌擦音/ʁ/，與原先濁擦音/ɣ/或/ʁ/或/ɦ/的非三等合流成中古的匣母。這就應該是羣母和匣母雖然發音位置不同（一爲“牙音”、一爲“喉音”）、發音方式也不同（一爲濁塞音、一爲濁擦音）但在等的配合上卻互補的原因（而原本的擦音/ɣ/的三等變爲云母，仍和羣母對立，但和匣母互補）。突厥語、維吾爾語輔音的不整齊，即有/g/, /ʁ/而無/ɢ/，也應該是相同情況。這種先後化再擦化的解釋比傳統上說的/g/在顎化（三等）時纔能保留，而非顎化時會擦化更容易理解一些，否則爲何/g/這個音一直存在而不早變掉？還有一個問題，匣母和曉母、影母均屬“喉音”而非“牙音”，這樣似乎也可以把擦化後的匣母擬成/ɦ/。很可能中古時期/ʁ/和/ɦ/是變體，有時代和方言差別。</p>
-<h2 id="見組小舌音的年代"><a href="#見組小舌音的年代" class="headerlink" title="見組小舌音的年代"></a>見組小舌音的年代</h2><p>除上文所提的突厥語對音外，曾曉渝的《見母的上古音值》 [CongHeuxJyo][] 一文中也提出了大量例證，發現在水語、苗語及白語碧江方言中，早期漢語借詞的見母非三等借詞爲/q/聲母，而三等借詞多爲/k/聲母，以此認爲這是上古漢語的特徵。但我對該文的異議是，該文的證據應當只適合中古漢語，並無充足證據推及上古，尤其諧聲時代和《詩經》、《楚辭》時代，上古的情況仍應另外討論。我認爲，鑑於見組一、三等之閒廣泛的諧聲關係（《見母的上古音值》一文認爲只有12%的聲符混諧見母三等和非三等，但如果仔細檢査，混諧的比例要大得多，此處不詳述）以及韻的分佈的相對完整的互補關係，中古的舌根音和小舌音仍應該是從上古同一組聲母分化而來的，而非本來就是兩組不同位置的輔音，而舌根音和小舌音的分化條件是三等/非三等（且暫不論三等的實質是什麼，/j/介音也好，緊元音也好，短元音也好，非咽化也好）。</p>
-<p>這樣，既然見組三等和非三等有個分化的過程，我們就應該尋找一下這個時閒點。方法仍是對音，這裏採用了俞敏的《後漢三國梵漢對音譜》 [JyoMinx][] 。比較嚴格的判斷標準是這樣的：看某個梵語音節在漢語有一三等兩種選項時如何選擇。比如對梵語ka音節的同時有一等“歌”和三等“迦”小韻，選擇哪個則說明問題。而對梵語gam音節的有一等“含”，並無合適的羣母三等嚴韻字可譯，則這種情況不能說明“含”字是不是小舌聲母。</p>
+<h2 id="匣母的擦化"><a class="markdownIt-Anchor" href="#匣母的擦化"></a> 匣母的擦化</h2>
+<p>將舌根音與小舌音的音位明確分開有助於解釋匣母擦化的問題。</p>
+<p>中古匣母缺乏三等，僅有一、二、四等。從上古諧聲來看，相當一部分的匣母字（至少是開口的大部分）和見、谿、羣母聲旁關係密切，在上古應爲同一位置的濁音，即舌根塞音/g/（可能也有擦音/ɣ/）。可以想象，如果後世所有一、二、四等韻的聲母位置後移，舌根塞音/g/成爲小舌塞音/ɢ/，而濁塞音的發音部位越向後則越難發音<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，於是自發擦化成爲小舌擦音/ʁ/，與原先濁擦音/ɣ/或/ʁ/或/ɦ/的非三等合流成中古的匣母。這就應該是羣母和匣母雖然發音位置不同（一爲“牙音”、一爲“喉音”）、發音方式也不同（一爲濁塞音、一爲濁擦音）但在等的配合上卻互補的原因（而原本的擦音/ɣ/的三等變爲云母，仍和羣母對立，但和匣母互補）。突厥語、維吾爾語輔音的不整齊，即有/g/, /ʁ/而無/ɢ/，也應該是相同情況。這種先後化再擦化的解釋比傳統上說的/g/在顎化（三等）時纔能保留，而非顎化時會擦化更容易理解一些，否則爲何/g/這個音一直存在而不早變掉？還有一個問題，匣母和曉母、影母均屬“喉音”而非“牙音”，這樣似乎也可以把擦化後的匣母擬成/ɦ/。很可能中古時期/ʁ/和/ɦ/是變體，有時代和方言差別。</p>
+<h2 id="見組小舌音的年代"><a class="markdownIt-Anchor" href="#見組小舌音的年代"></a> 見組小舌音的年代</h2>
+<p>除上文所提的突厥語對音外，曾曉渝的《見母的上古音值》<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>一文中也提出了大量例證，發現在水語、苗語及白語碧江方言中，早期漢語借詞的見母非三等借詞爲/q/聲母，而三等借詞多爲/k/聲母，以此認爲這是上古漢語的特徵。但我對該文的異議是，該文的證據應當只適合中古漢語，並無充足證據推及上古，尤其諧聲時代和《詩經》、《楚辭》時代，上古的情況仍應另外討論。我認爲，鑑於見組一、三等之閒廣泛的諧聲關係（《見母的上古音值》一文認爲只有12%的聲符混諧見母三等和非三等，但如果仔細檢査，混諧的比例要大得多，此處不詳述）以及韻的分佈的相對完整的互補關係，中古的舌根音和小舌音仍應該是從上古同一組聲母分化而來的，而非本來就是兩組不同位置的輔音，而舌根音和小舌音的分化條件是三等/非三等（且暫不論三等的實質是什麼，/j/介音也好，緊元音也好，短元音也好，非咽化也好）。</p>
+<p>這樣，既然見組三等和非三等有個分化的過程，我們就應該尋找一下這個時閒點。方法仍是對音，這裏採用了俞敏的《後漢三國梵漢對音譜》<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup>。比較嚴格的判斷標準是這樣的：看某個梵語音節在漢語有一三等兩種選項時如何選擇。比如對梵語ka音節的同時有一等“歌”和三等“迦”小韻，選擇哪個則說明問題。而對梵語gam音節的有一等“含”，並無合適的羣母三等嚴韻字可譯，則這種情況不能說明“含”字是不是小舌聲母。</p>
 <p>於是我揀選了一下《對音譜》中的字，挑出了滿足如下條件的對音：1. 梵文字頭爲k, kh，主元音不爲i且沒有y下加字（因主元音爲i或下加字音爲y的基本只能用三等字譯）；2. 對譯的漢字爲《切韻》音系見組字；3. 有合適的三等/非三等競爭的選項。因爲後漢三國時也許匣母已經擦化，梵語g和gh字頭因此可能更傾向用羣母而非匣母來對譯，因此此處不列入討論。以梵文拉丁轉寫排序如下（表中“譯經師”一列直接引用《對音譜》文中的簡寫）：</p>
 <table>
 <thead>
@@ -606,7 +728,8 @@
 <th>競爭字</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>ka</td>
 <td>n</td>
 <td>姑</td>
@@ -970,27 +1093,30 @@
 <td>3</td>
 <td>摳</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>可以看到，所有這些譯音字的k, kh開頭音節中，三等字占了41/52，約79%。如果把譯經師按年代分類，a–j爲東漢，而n–q爲孫吳，則用字總結如下：</p>
 <table>
 <thead>
 <tr>
 <th></th>
-<th align="right">a-j</th>
-<th align="right">n-q</th>
+<th style="text-align:right">a-j</th>
+<th style="text-align:right">n-q</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>非三等</td>
-<td align="right">2</td>
-<td align="right">8</td>
+<td style="text-align:right">2</td>
+<td style="text-align:right">8</td>
 </tr>
 <tr>
 <td>三等</td>
-<td align="right">13</td>
-<td align="right">23</td>
+<td style="text-align:right">13</td>
+<td style="text-align:right">23</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>可見，梵語k字頭音節的音譯從東漢代起就嚴重偏向選用見組三等而非見組一等。那麼，我們就可以得出結論，<strong>見組一等字在東漢已經有不讀舌根音/k/的傾向了</strong>（儘管可能有地區差異，孫吳時閒晚，反而更傾向混用）。梵語g和gh字頭絕大多數是用羣母字譯的，只有少數“gam含(k)、gām含(a)、gaṅ恒(k)、gat曷(o)、gup合(o)”這樣的匣母一等，說明匣母從/g/後化和擦化並不完全，可能有地區差異。</p>
 <p>再看看時閒下限。《唐梵翻對字音般若波羅蜜多心經》用的應該是唐朝時的西北方音，因爲裏面梵文濁送氣音用漢語全濁聲母字來對譯，而梵文濁不送氣音用漢語次濁聲母字來對譯。因其對音相當嚴謹（儘管有後人傳抄造成的錯誤），更改了很多因漢字之前發生語音變化而造成的梵漢讀音不合的現象（如v對應輕脣微母），因此可以用來硏究唐代的西北方音。《心經》裏梵文所有k, kh, g, gh起首的音節對應的漢字如下：</p>
 <table>
@@ -1001,7 +1127,8 @@
 <th>梵文音節</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr>
 <td>迦</td>
 <td>3</td>
 <td>ka</td>
@@ -1066,12 +1193,24 @@
 <td>3</td>
 <td>ghrā</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>很明顯，除了一個ga是用疑母一等的“誐”來譯的，其餘清一色是三等字。而漢語也沒有疑母三等戈韻的相應字，只能用一等字了。也這說明<strong>直到唐代西北方言時，見組一等字仍然不是舌根音</strong>。gan對三等“彥”而不對一等“岸”也說明了疑母一等字和見組一等一樣不是舌根音。</p>
 <p>而到了唐末的守温三十字母時，已經提出了“見谿羣來疑”等字母名稱，也即不論當時三等與非三等字是否發音已經完全相同，至少可以認爲守温把它們都歸納爲相同音位了。因此我認爲<strong>見組三等與非三等的合併（即舌根音與小舌音在音位上的合併）應發生在唐代</strong>。</p>
 <p>最後，關於中古三等/非三等對立的性質已有多種解釋，如介音說、咽化說、長短音說等，本文並未能給出一個答案。但至少對於部分聲母來說，不同等用不同聲母來解釋是有先例的，如端組和知組的對立即是如此，儘管有相同的來源。見組在某個歷史階段因爲等的不同而分化爲兩組聲母也是完全可以想象的。見組在中古漢語後期的演化中重新分化組合成爲兩組不同位置的音位，我將有另文詳述。</p>
-<h1 id="參攷文獻"><a href="#參攷文獻" class="headerlink" title="參攷文獻"></a>參攷文獻</h1><p>[CjyoHeuxNuung]: 朱曉農. 从群母论浊声和摩擦——实验音韵学在汉语音韵学中的实验. 语言研究, 2003, 23(2): 5-18.<br>[CongHeuxJyo]: 曾曉渝. 见母的上古音值. 中国语文, 2003, 293: 109-120.<br>[JyoMinx]: 俞敏. 后汉三国梵汉对音谱 [M]. 俞敏语言学论文集. 北京; 商务印书馆.</p>
+<h1 id="參攷文獻"><a class="markdownIt-Anchor" href="#參攷文獻"></a> 參攷文獻</h1>
 <p>說明：本文早在大約2015年的時候寫成，2016.02.23發在人人网日誌上，現在原文已經找不到了，但還有時光軸可以證明。本文於2016.02.25投稿至《中國語文》，但數年未得到任何回覆。2019.12.05搬運到“多面體的雹子”上，並做markdown處理。</p>
+<hr class="footnotes-sep" />
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>朱曉農. 从群母论浊声和摩擦——实验音韵学在汉语音韵学中的实验. 语言研究, 2003, 23(2): 5-18. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>曾曉渝. 见母的上古音值. 中国语文, 2003, 293: 109-120. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>俞敏. 后汉三国梵汉对音谱 [M]. 俞敏语言学论文集. 北京; 商务印书馆. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
       
     </div>
@@ -1110,10 +1249,10 @@
 
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc">
-          فهرست مطالب
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          نمای کلی
+          站点概览
         </li>
       </ul>
 
@@ -1133,19 +1272,55 @@
           <a href="/archives/">
         
           <span class="site-state-item-count">2</span>
-          <span class="site-state-item-name">پست ها</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">دسته بندی ها</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
         <span class="site-state-item-count">12</span>
-        <span class="site-state-item-name">برجسب ها</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/mailto:biopolyhedron@gmail.com" title="E-Mail → mailto:biopolyhedron@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/ychromosome" title="新浪微雹 → https:&#x2F;&#x2F;weibo.com&#x2F;ychromosome" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微雹</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/polyhedron" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-zhihu"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://scholar.google.com/citations?user=ewSaZskAAAAJ" title="Google scholar → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user=ewSaZskAAAAJ" rel="noopener" target="_blank"><i class="fa fa-fw fa-"></i>Google scholar</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/ngiamzsjit" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;ngiamzsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/polyhedron" title="Telegram channel → https:&#x2F;&#x2F;t.me&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram-plane"></i>Telegram channel</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/NgiamZsjit" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;NgiamZsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/biopolyhedron" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;biopolyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.yoogene.com/" title="源基因遺傳測試 → https:&#x2F;&#x2F;www.yoogene.com&#x2F;" rel="noopener" target="_blank"><i class="fa fa-fw fa-dna"></i>源基因遺傳測試</a>
+      </span>
+  </div>
 
 
 
@@ -1165,17 +1340,17 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2019.11.22 – 
   <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Zsjit Ngiam</span>
 </div>
-  <div class="powered-by">قدرت گرفته از <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.0.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
   </div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">پوسته – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
+  <div class="theme-info">主题 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
   </div>
 
         
@@ -1220,6 +1395,17 @@
   
 
   
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://polyhedron.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
 
 </body>
 </html>
