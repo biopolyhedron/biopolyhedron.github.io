@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://biopolyhedron.github.io/"/>
-  <updated>2020-02-19T04:46:22.409Z</updated>
+  <updated>2020-04-16T14:26:25.244Z</updated>
   <id>https://biopolyhedron.github.io/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>人類學雜記——54. Y染色體Q單倍羣的新樹形</title>
+    <link href="https://biopolyhedron.github.io/2020/04/16/Y-Q-tree-refresh/"/>
+    <id>https://biopolyhedron.github.io/2020/04/16/Y-Q-tree-refresh/</id>
+    <published>2020-04-16T13:54:53.000Z</published>
+    <updated>2020-04-16T14:26:25.244Z</updated>
+    
+    <content type="html"><![CDATA[<p>我集合了一些最近測試的Q-M242支系的全序列，包括復旦和源基因捕獲測試的Y染色體高通量數據、公開可得的一些數據（比如1000Genomes）和一些在別的機構測試上傳到源基因的bam，計算並細化了Q單倍羣的樹形。更新的樹形（含部分重要節點的共祖年代）見 <a href="https://yoogene.com/goods/yfullreport" target="_blank" rel="noopener">源基因网站</a> 裏面的“Y染色體樹”。<br /><img src="/images/miscanthrop_54_1.png" alt="圖1 源基因Y染色體樹" /></p><p>樹實際上做了兩棵，一棵是帶有所有樣本的，即使測序質量稍差（read數偏少或者可以用來比對的區段偏少）的樣本也都放了進來，盡可能包括所有質量尚可的位點，做了一棵簡約樹（maximum parsimony，或者在一些輭件中稱最小演化樹，minimum evolution），這就是在上面源基因网站看到的樹。目前我們已經定義了69個支系。我們手裏擁有的Q高通量序列數多於這個支系數。而我們近年來定義一個支系的原則是，只有多於一個樣本（且不是父子、祖孫這樣非常近的關係）擁有獨特的共同的突變位點，我們纔會定義這個支系及命名相應位點，以免單個樣本發生測序錯誤，或者一些染色體結構特徵導致一些位點容易發生回復突變導致把過多不靠譜的位點加到樹上。</p><p>另一棵就是下面的算齡樹。這棵樹只保留了質量好的樣本及SNP區段，以保證每一個樣本在每一個位點都有可靠的測序結果。我們只保留了45個Q-M242的序列，時閒是用BEAST計算的（實際都有95%置信區閒，可以在源基因网站的樹上査到。）<br /><img src="/images/Q_2_date_MCC_public.trees.png" alt="圖2 Y染色體Q-M120的算齡樹" /></p><p>這棵樹上，右邊每一個端點代表一個男性的序列，橫坐標爲時閒。樹上每個支系名稱用藍字標在共祖的枝上方，比如Q-M242，Q爲支系名稱，而爲了明確，把定義的一個位點（如M242）標註在後面（因爲在不同版本的樹上，可能相同支系名稱會有不同所指）。而節點的年代用紅字標在節點的右側，單位爲千年。需要說明的是，靠近末端的支系經常算出的時閒會偏老一些（即新近的突變速率會偏快一些），但在沒有好的古DNA校正的情況下先只能按固定突變率來計算。</p><p>因爲我已經好久沒講過Y染色體了，所以回憶一下整個的Y染色體樹。如下：<br /><img src="/images/Y_all_tree_20200416.png" alt="圖3 Y染色體大樹" /></p><p>（本棵Y染色體樹已經加入了丹尼索瓦人的Y染色體。）大家可以看到，Q-M242單倍羣的“兄弟”單倍羣是R-M207，二者皆爲P-M45的下游支系，二者分開時閒約3.4万年。而Q單倍羣內部分開最早在3.1万年前。Q單倍羣在全世界的分佈是這樣：<br /><img src="/images/Y_world_freq/Q.png" alt="圖4 Q單倍羣全球頻率" /></p><p>即主要分佈於亞洲和美洲（這個地圖指500年前土著的單倍羣，不包括哥倫布時期以後的移民）。在亞洲比例不高，比如在中國是2%左右，而在北亞一些族羣，有少數如葉尼塞語系的Ket人中比例較高。而在美洲土著中Q普遍多於90%。然而從支系角度，我們發現Q的早期分支基本都位於亞洲，包括南亞、中亞、北亞、中國等地，而美洲土著的Q大多數集中於Q1b1a1a-M3這一支。因此說明整個Q-M242應當在約3万年前發源於亞洲，直到約1.5万年前進入北美而迅速擴張（還不清楚具體位置應該在阿拉斯加還是落基山以東），因爲有始祖效應，因此能在美洲土著中占絕大多數的比例，而非比例最高的地方爲起源地。</p><p>在美洲的Q1b1a1a-M3這一支下的Q1b1a1a1-M848的下游，形成了一個超大的星形擴張（圖2中的紫框），目前來看可能至少20支直接的下游，其年代目前算出來大約爲1.5万年前。（也許應該命名爲Qβ-M848了，但我手裏美洲樣本序列太少，沒法很好給出下游命名。）很多支系分佈都很散亂，在南北美多個族羣裏都有。</p><p>而中國（尤其漢族）最主要的支系是Q1a1a-M120，尤其是在Qα-F1626下形成了一個密集擴張（圖2中的綠框），年代目前算出來是5640年（實際會比這個更晚近，可能在4000多年）。從Y-STR來看，Qα-F1626這支有一個明顯的特點，DYS391取低值，多數爲9，而Qα1a2-F4529這支普遍取值爲6，僅通過DYS391=6這一個點即能相對準確地判斷一個樣本屬於Qα1a2-F4529。<br /><img src="/images/yoo_China_Q_202004.png" alt="圖5 Q1a1a-M120漢族各省分佈" /></p><p>總體來說，Q1a1a-M120在漢族平均在2%左右，在北方部分省份能到10%左右，在其它各民族中基本也是0~10%的比例。而Q*-M242(xM120) （即整個Q-M242除掉Q1a1a-M120的部分）在全國更少，僅在維吾爾族裏比例稍高（有Q1a2-M25和Q2a1-M378）。</p><p>結合分佈（漢族各處較均勻，北方多）和擴散年代（四五千年），我們猜測Q1a1a-M120是華夏形成早期即融入的一支，但也非全部在4000多年前就融入了，約3000年前西周時期山西橫北倗國墓地和約2500年前戰國時期的寧夏彭陽遊牧人羣也都發現了這一支Y染色體。而這一支是否與青銅器、小麥等傳入中國有關，還需要進一步檢測西北地區的古DNA纔能揭曉。</p><p>如果大家想要知道自己的父系屬於Y染色體的什麼類型，可以參加源基因的測試（需要男性樣本，如果是女性對自己的父系感興趣，可以測自己的父親或兄弟）。在 <a href="https://yoogene.com/" target="_blank" rel="noopener">源基因网站</a> 購買一個測試即可。“父系基礎版”僅測Y-STR，用於比對兩個家族是否近支關係，而“父系尊享版”檢測Y染色體&gt;10Mbp的區域，可以幫助我們細化這棵Y染色體譜系樹（尊享版建議在网站上聯繫客服參加團購），計算兩個人共祖的年代，也可以選擇把自己的Y染色體加到這棵樹相應的位置上（分子人類學愛好者中俗稱“上樹”）。</p><p>而如果您已經在其它機構對自己的Y染色體做過高通量測序，或者檢測過自己的全基因組（需要30×以上，需要拆分出Y染色體部分），也同樣歡迎您上傳自己的Y染色體bam文件（不支持僅包括位點的vcf等其它格式文件，在源基因网站註冊、登錄後點“數據導入”），源基因目前階段也能免費給您判斷所屬支系，計算兩個人的共祖年代（但用某些機構測出的bam，計算值可能誤差較大，最建議在源基因測），“上樹”，及使用您的序列來細化樹形。</p><p>我們對Y染色體各支系的細化是按大單倍羣一個個輪替的，已經完成一輪C、O、Q單倍羣，目前正在計算N單倍羣的樹，再下一步是D。如果您屬於D-M174單倍羣並在我或源基因之外的其它檢測機構獲得了Y染色體bam文件，歡迎盡快向源基因上傳。（其它單倍羣樹形也會輪替更新，只是時閒會稍後一些。）​​​​</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+    
+      <category term="人類學雜記" scheme="https://biopolyhedron.github.io/categories/%E4%BA%BA%E9%A1%9E%E5%AD%B8%E9%9B%9C%E8%A8%98/"/>
+    
+    
+      <category term="Y chromosome" scheme="https://biopolyhedron.github.io/tags/Y-chromosome/"/>
+    
+      <category term="Q-M242" scheme="https://biopolyhedron.github.io/tags/Q-M242/"/>
+    
+      <category term="Haplogroup Q" scheme="https://biopolyhedron.github.io/tags/Haplogroup-Q/"/>
+    
+      <category term="Miscellanea anthropologica" scheme="https://biopolyhedron.github.io/tags/Miscellanea-anthropologica/"/>
+    
+      <category term="Y染色體" scheme="https://biopolyhedron.github.io/tags/Y%E6%9F%93%E8%89%B2%E9%AB%94/"/>
+    
+      <category term="Q單倍羣" scheme="https://biopolyhedron.github.io/tags/Q%E5%96%AE%E5%80%8D%E7%BE%A3/"/>
+    
+      <category term="人類學雜記" scheme="https://biopolyhedron.github.io/tags/%E4%BA%BA%E9%A1%9E%E5%AD%B8%E9%9B%9C%E8%A8%98/"/>
+    
+  </entry>
   
   <entry>
     <title>Covid-19演化樹定根 Rooting of Covid-19 phylogenetic tree</title>
@@ -43,13 +84,13 @@
     
       <category term="冠狀病毒" scheme="https://biopolyhedron.github.io/tags/%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92/"/>
     
-      <category term="新冠肺炎" scheme="https://biopolyhedron.github.io/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/"/>
-    
       <category term="Wuhan" scheme="https://biopolyhedron.github.io/tags/Wuhan/"/>
     
       <category term="coronavirus" scheme="https://biopolyhedron.github.io/tags/coronavirus/"/>
     
       <category term="2019-nCoV" scheme="https://biopolyhedron.github.io/tags/2019-nCoV/"/>
+    
+      <category term="新冠肺炎" scheme="https://biopolyhedron.github.io/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/"/>
     
       <category term="Covid-19" scheme="https://biopolyhedron.github.io/tags/Covid-19/"/>
     
@@ -90,15 +131,15 @@
     
       <category term="冠狀病毒" scheme="https://biopolyhedron.github.io/tags/%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92/"/>
     
-      <category term="新冠肺炎" scheme="https://biopolyhedron.github.io/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/"/>
-    
       <category term="Wuhan" scheme="https://biopolyhedron.github.io/tags/Wuhan/"/>
     
       <category term="coronavirus" scheme="https://biopolyhedron.github.io/tags/coronavirus/"/>
     
-      <category term="furin" scheme="https://biopolyhedron.github.io/tags/furin/"/>
-    
       <category term="2019-nCoV" scheme="https://biopolyhedron.github.io/tags/2019-nCoV/"/>
+    
+      <category term="新冠肺炎" scheme="https://biopolyhedron.github.io/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/"/>
+    
+      <category term="furin" scheme="https://biopolyhedron.github.io/tags/furin/"/>
     
       <category term="Covid-19" scheme="https://biopolyhedron.github.io/tags/Covid-19/"/>
     
