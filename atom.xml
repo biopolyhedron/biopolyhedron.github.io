@@ -84,23 +84,23 @@
     
       <category term="冠狀病毒" scheme="https://biopolyhedron.github.io/tags/%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92/"/>
     
-      <category term="Wuhan" scheme="https://biopolyhedron.github.io/tags/Wuhan/"/>
-    
-      <category term="coronavirus" scheme="https://biopolyhedron.github.io/tags/coronavirus/"/>
-    
-      <category term="2019-nCoV" scheme="https://biopolyhedron.github.io/tags/2019-nCoV/"/>
-    
       <category term="新冠肺炎" scheme="https://biopolyhedron.github.io/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/"/>
-    
-      <category term="Covid-19" scheme="https://biopolyhedron.github.io/tags/Covid-19/"/>
-    
-      <category term="SARS-CoV-2" scheme="https://biopolyhedron.github.io/tags/SARS-CoV-2/"/>
     
       <category term="演化樹" scheme="https://biopolyhedron.github.io/tags/%E6%BC%94%E5%8C%96%E6%A8%B9/"/>
     
       <category term="定根" scheme="https://biopolyhedron.github.io/tags/%E5%AE%9A%E6%A0%B9/"/>
     
+      <category term="Wuhan" scheme="https://biopolyhedron.github.io/tags/Wuhan/"/>
+    
+      <category term="coronavirus" scheme="https://biopolyhedron.github.io/tags/coronavirus/"/>
+    
       <category term="phylogeny" scheme="https://biopolyhedron.github.io/tags/phylogeny/"/>
+    
+      <category term="2019-nCoV" scheme="https://biopolyhedron.github.io/tags/2019-nCoV/"/>
+    
+      <category term="Covid-19" scheme="https://biopolyhedron.github.io/tags/Covid-19/"/>
+    
+      <category term="SARS-CoV-2" scheme="https://biopolyhedron.github.io/tags/SARS-CoV-2/"/>
     
   </entry>
   
@@ -131,19 +131,19 @@
     
       <category term="冠狀病毒" scheme="https://biopolyhedron.github.io/tags/%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92/"/>
     
+      <category term="新冠肺炎" scheme="https://biopolyhedron.github.io/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/"/>
+    
       <category term="Wuhan" scheme="https://biopolyhedron.github.io/tags/Wuhan/"/>
     
       <category term="coronavirus" scheme="https://biopolyhedron.github.io/tags/coronavirus/"/>
     
       <category term="2019-nCoV" scheme="https://biopolyhedron.github.io/tags/2019-nCoV/"/>
     
-      <category term="新冠肺炎" scheme="https://biopolyhedron.github.io/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/"/>
-    
-      <category term="furin" scheme="https://biopolyhedron.github.io/tags/furin/"/>
-    
       <category term="Covid-19" scheme="https://biopolyhedron.github.io/tags/Covid-19/"/>
     
       <category term="SARS-CoV-2" scheme="https://biopolyhedron.github.io/tags/SARS-CoV-2/"/>
+    
+      <category term="furin" scheme="https://biopolyhedron.github.io/tags/furin/"/>
     
   </entry>
   
