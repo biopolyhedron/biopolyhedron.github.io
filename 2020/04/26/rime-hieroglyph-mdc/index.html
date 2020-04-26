@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://biopolyhedron.github.io').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="我做了一個埃及象形文字聖書體的輸入法，字符基於 Unicode 編碼。輸入法編碼有幾部分，每個基本符号都有一個 Gardiner code 的輸入方法，A-Z 爲大分類，每一個符号再接以數字，如 A、B、C、D 各代表男人、女人、人格化的神、人體部分。比如 𓀀 是 A1，𓏠 是 Y5 等等。 然後從1980年代起有一個埃及學家制訂的用 ASCII 碼轉寫聖書體的規則，稱作 Manuel de">
+<meta name="keywords" content="埃及語,象形文字,聖書體,rime,輸入法,Egyptian,hieroglyph,IME,MdC,Manuel de Codage">
+<meta property="og:type" content="article">
+<meta property="og:title" content="rime埃及象形文字聖書體輸入法">
+<meta property="og:url" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;2020&#x2F;04&#x2F;26&#x2F;rime-hieroglyph-mdc&#x2F;index.html">
+<meta property="og:site_name" content="多面體的雹子 polyhedron&#39;s blog">
+<meta property="og:description" content="我做了一個埃及象形文字聖書體的輸入法，字符基於 Unicode 編碼。輸入法編碼有幾部分，每個基本符号都有一個 Gardiner code 的輸入方法，A-Z 爲大分類，每一個符号再接以數字，如 A、B、C、D 各代表男人、女人、人格化的神、人體部分。比如 𓀀 是 A1，𓏠 是 Y5 等等。 然後從1980年代起有一個埃及學家制訂的用 ASCII 碼轉寫聖書體的規則，稱作 Manuel de">
+<meta property="og:locale" content="zh-HK">
+<meta property="og:image" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;images&#x2F;Amenhotep.jpg">
+<meta property="og:updated_time" content="2020-04-26T15:09:20.578Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;images&#x2F;Amenhotep.jpg">
+
+<link rel="canonical" href="https://biopolyhedron.github.io/2020/04/26/rime-hieroglyph-mdc/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css"><style>
+#needsharebutton-postbottom {
+  cursor: pointer;
+  height: 26px;
+  margin-top: 10px;
+  position: relative;
+}
+#needsharebutton-postbottom .btn {
+  border: 1px solid $btn-default-border-color;
+  border-radius: 3px;
+  display: initial;
+  padding: 1px 4px;
+}
+</style>
+  <title>rime埃及象形文字聖書體輸入法 | 多面體的雹子 polyhedron's blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154028988-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-154028988-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="多面體的雹子 polyhedron's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">多面體的雹子 polyhedron's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">分子人類學、語言學及各種其它  molecular anthropology, linguistics, etc.</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首䈎</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-HK">
+    <link itemprop="mainEntityOfPage" href="https://biopolyhedron.github.io/2020/04/26/rime-hieroglyph-mdc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zsjit Ngiam">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="多面體的雹子 polyhedron's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          rime埃及象形文字聖書體輸入法
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時閒：2020-04-26 21:43:31 / 修改時閒：23:09:20" itemprop="dateCreated datePublished" datetime="2020-04-26T21:43:31+08:00">2020-04-26</time>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2020/04/26/rime-hieroglyph-mdc/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2020/04/26/rime-hieroglyph-mdc/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>我做了一個埃及象形文字聖書體的輸入法，字符基於 Unicode 編碼。輸入法編碼有幾部分，每個基本符号都有一個 Gardiner code 的輸入方法，A-Z 爲大分類，每一個符号再接以數字，如 A、B、C、D 各代表男人、女人、人格化的神、人體部分。比如 𓀀 是 A1，𓏠 是 Y5 等等。</p>
+<p>然後從1980年代起有一個埃及學家制訂的用 ASCII 碼轉寫聖書體的規則，稱作 <a href="http://www.catchpenny.org/codage/" target="_blank" rel="noopener">Manuel de Codage</a> ，簡稱 MdC 。在以上的分類形碼以外，還有音碼，每個音素用一個大寫或小寫字母表示。對於已知發音的符号（可以理解爲偏旁，包括意符、形旁和聲旁）也可以用音來表示。比如 𓏠 (Y5) 的發音是 mn 。和漢字一樣，聖書體的同音字和多音字都很多，但 MdC 爲了便於記憶及避免歧義，指定了一組單音素、二音素、多音素的基本符号，比如 i 就是 𓇋 ，而不會輸入同音的 𓀀 等字符。</p>
+<p>因爲聖書體並非單一的從左到右線性書寫，MdC 還有組合規則，比如 ‘-’ 爲左右排列， ‘:’ 爲上下排列， ‘*’ 爲下一級的左右排列，即結合順序是先 * ，再 : ，再 - 。比如 Amenhotep 的名字如圖<br />
+<img src="/images/Amenhotep.jpg" alt="𓍹𓇋𓏠𓐰𓈖𓊵𓐰𓏏𓐱𓊪𓍺 " /><br />
+，在王名框（用 ‘&lt; &gt;’ 表示）內的符号從左向右、從上到下的符号讀音分別是 𓇋 i、𓏠 mn、𓈖 n、𓊵 Htp、𓏏 t、𓊪 p，則其 MdC 轉寫爲</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;-i-mn:n-Htp:t*p-&gt;</span><br></pre></td></tr></table></figure>
+<p>，Unicode 輸出爲 𓍹𓇋𓏠𓐰𓈖𓊵𓐰𓏏𓐱𓊪𓍺 。</p>
+<p>當然了，因爲 rime 系輸入法有選字的功能，我們不必拘泥於嚴格的 MdC 功能而要求無歧義，而可以加入更多的編碼。一次輸入也可以輸入一個“字”甚至多個“字”，而不必一次只輸出一個偏旁/獨體字。<br />
+我這裏定的規則爲：輸入 MdC 的音碼，若以 ‘;’ 結尾則爲 MdC 標準所無的單個符号，而以 ‘~’ 結尾則輸出一個組合字。<br />
+例如 ‘mniw’ 輸出標準的 MdC 字符 𓀦 (A33)，而 ‘mniw;’ 輸出同音的字符 𓀸 (A47)，而 ‘mniw~’ 輸出同音的組合字 𓀰𓅱𓀀 (A42-w-A1)。如有更多的同音字也都在接 ‘;’ 或 ‘~’ 的碼裏面選，而不耽誤 MdC 的盲打。當然現在詞表還只是一個示意，非常不全，待以後慢慢補充了。</p>
+<h2 id="下載和安裝說明"><a class="markdownIt-Anchor" href="#下載和安裝說明"></a> 下載和安裝說明</h2>
+<p>rime聖書體下載： <a href="https://github.com/biopolyhedron/rime-hieroglyph-mdc" target="_blank" rel="noopener">https://github.com/biopolyhedron/rime-hieroglyph-mdc</a></p>
+<p>安裝好 小狼毫/trime/prime/中州韻/鼠鬚管 等輸入法後，將兩個 .yaml 文件複製入 rime 系輸入法的“用戶文件夾”後，“重新部署”即可運行。若未能自動加入本輸入法，可能需要在 default.custom.yaml 文件中的 patch/schema_list: 下加入一行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- &#123;schema: hieroglyph_mdc&#125;</span><br></pre></td></tr></table></figure>
+<p>再部署。</p>
+<p>聖書體普通字符（U+13000 ~ U+1342F）若未能自動支持，可在 Win10 中査找 ‘Segoe UI Historic’ 字體（ ‘seguihis.ttf’ 文件），或下載 ‘Noto Sans Egyptian Hieroglyphs’ 字體。而目前尚無能夠正確顯示聖書體字符組合（需要正確解釋控制符 U+13430 ~ U+1343F ）的字體，不過在可以先加上控制符輸入着，假裝能夠看見正常的顯示，等待能夠正確顯示的字體出現。</p>
+<p>其餘說明都在 hieroglyph_mdc.schema.yaml 的文件頭裏面，及自己看 hieroglyph_mdc.dict.yaml 就好了。</p>
+<p>另外有能用 MdC 轉寫法正確顯示聖書體的 Java 小程序，叫 JSesh，在這裏下載： <a href="https://jsesh.qenherkhopeshef.org/" target="_blank" rel="noopener">https://jsesh.qenherkhopeshef.org/</a></p>
+<p>在我的 github <a href="https://github.com/biopolyhedron" target="_blank" rel="noopener">https://github.com/biopolyhedron</a> 裏面還有中古全拼和中古三拼，西夏文四角輸入法，及各種基於拉丁轉寫及 QWERTY 鍵盤的輸入方案（比如藏文、維吾爾文、蒙古文、滿文、緬文、朝鮮文、梵文天城體、拉丁字母（含各種附加符号，可輸入國際音標）、阿拉伯字母（含各種附加符号）、基利爾字母（可輸入俄文和新蒙文）等等，其中有部分是和其他朋友合作的。</p>
+<p>假如您覺得我的輸入法特有用，下面有“打賞”按鈕，隨便給點兒就行。</p>
+
+    </div>
+
+    
+    
+    <div class="post-widgets">
+    <div class="likely">
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.js"></script><div class="post-widgets">
+      <div id="needsharebutton-postbottom">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打賞
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Zsjit Ngiam 支付寶">
+        <p>支付寶</p>
+      </div>
+      <div style="display: inline-block;">
+        <img src="/images/dogecoin.png" alt="Zsjit Ngiam dogecoin">
+        <p>dogecoin</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%9F%83%E5%8F%8A%E8%AA%9E/" rel="tag"># 埃及語</a>
+              <a href="/tags/%E8%B1%A1%E5%BD%A2%E6%96%87%E5%AD%97/" rel="tag"># 象形文字</a>
+              <a href="/tags/%E8%81%96%E6%9B%B8%E9%AB%94/" rel="tag"># 聖書體</a>
+              <a href="/tags/rime/" rel="tag"># rime</a>
+              <a href="/tags/%E8%BC%B8%E5%85%A5%E6%B3%95/" rel="tag"># 輸入法</a>
+              <a href="/tags/Egyptian/" rel="tag"># Egyptian</a>
+              <a href="/tags/hieroglyph/" rel="tag"># hieroglyph</a>
+              <a href="/tags/IME/" rel="tag"># IME</a>
+              <a href="/tags/MdC/" rel="tag"># MdC</a>
+              <a href="/tags/Manuel-de-Codage/" rel="tag"># Manuel de Codage</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/16/Y-Q-tree-refresh/" rel="prev" title="人類學雜記——54. Y染色體Q單倍羣的新樹形">
+      <i class="fa fa-chevron-left"></i> 人類學雜記——54. Y染色體Q單倍羣的新樹形
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概覽
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下載和安裝說明"><span class="nav-number">1.</span> <span class="nav-text"> 下載和安裝說明</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Zsjit Ngiam</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="/mailto:biopolyhedron@gmail.com" title="E-Mail → mailto:biopolyhedron@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/ychromosome" title="新浪微雹 → https:&#x2F;&#x2F;weibo.com&#x2F;ychromosome" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微雹</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/polyhedron" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-zhihu"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://scholar.google.com/citations?user=ewSaZskAAAAJ" title="Google scholar → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user=ewSaZskAAAAJ" rel="noopener" target="_blank"><i class="fa fa-fw fa-"></i>Google scholar</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/ngiamzsjit" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;ngiamzsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/polyhedron" title="Telegram channel → https:&#x2F;&#x2F;t.me&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram-plane"></i>Telegram channel</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/NgiamZsjit" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;NgiamZsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/biopolyhedron" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;biopolyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.yoogene.com/goods/goodslist/invite_token/5b2389a3b808b3310364956ecd94fd27" title="源基因遺傳測試 → https:&#x2F;&#x2F;www.yoogene.com&#x2F;goods&#x2F;goodslist&#x2F;invite_token&#x2F;5b2389a3b808b3310364956ecd94fd27" rel="noopener" target="_blank"><i class="fa fa-fw fa-dna"></i>源基因遺傳測試</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019.11.22 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zsjit Ngiam</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 強力驅動 v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主題 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/muse.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://polyhedron.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {page: {
+            url: "https://biopolyhedron.github.io/2020/04/26/rime-hieroglyph-mdc/",
+            identifier: "2020/04/26/rime-hieroglyph-mdc/",
+            title: "rime埃及象形文字聖書體輸入法"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://polyhedron.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    window.addEventListener('load', loadComments, false);
+</script>
+
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+      pbOptions = {};
+        pbOptions.iconStyle = "box";
+        pbOptions.boxForm = "horizontal";
+        pbOptions.position = "bottomCenter";
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+  </script>
+</body>
+</html>
