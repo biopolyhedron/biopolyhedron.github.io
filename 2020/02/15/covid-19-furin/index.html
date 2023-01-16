@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.0.0">
+<meta name="generator" content="Hexo 6.3.0">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
@@ -46,20 +46,30 @@
 </script>
 
   <meta name="description" content="完了，這回我眞看出問題了。還是序列比對，之前有個地方我沒注意，就是S蛋白(spike)中閒有一個內切位置，在病毒進入細胞後，蛋白內切酶把S蛋白切成兩個亞基，在很多冠狀病毒一般是由胰蛋白酶(trypsin)完成的，包括SARS等。 這次問題就是在這個內切位置上了。之前我比對序列的時候，沒有留意這個位置。而這個位置正好是Covid-19和其它所有毒株，包括與其最近的雲南蝙蝠冠狀病毒 RaTG13都不同">
-<meta name="keywords" content="武漢,冠狀病毒,新冠肺炎,Wuhan,coronavirus,2019-nCoV,Covid-19,SARS-CoV-2,furin">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Covid-19的furin識別位點爲人爲製造的探討">
-<meta property="og:url" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;2020&#x2F;02&#x2F;15&#x2F;covid-19-furin&#x2F;index.html">
+<meta property="og:url" content="https://biopolyhedron.github.io/2020/02/15/covid-19-furin/index.html">
 <meta property="og:site_name" content="多面體的雹子 polyhedron&#39;s blog">
 <meta property="og:description" content="完了，這回我眞看出問題了。還是序列比對，之前有個地方我沒注意，就是S蛋白(spike)中閒有一個內切位置，在病毒進入細胞後，蛋白內切酶把S蛋白切成兩個亞基，在很多冠狀病毒一般是由胰蛋白酶(trypsin)完成的，包括SARS等。 這次問題就是在這個內切位置上了。之前我比對序列的時候，沒有留意這個位置。而這個位置正好是Covid-19和其它所有毒株，包括與其最近的雲南蝙蝠冠狀病毒 RaTG13都不同">
-<meta property="og:locale" content="zh-HK">
-<meta property="og:image" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;images&#x2F;covid-19-furin_1.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;images&#x2F;covid-19-furin_2.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;images&#x2F;covid-19-furin_3.jpg">
-<meta property="og:image" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;images&#x2F;covid-19-furin_4.png">
-<meta property="og:updated_time" content="2020-02-19T03:02:47.296Z">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/covid-19-furin_1.jpg">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/covid-19-furin_2.jpg">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/covid-19-furin_3.jpg">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/covid-19-furin_4.png">
+<meta property="article:published_time" content="2020-02-15T10:50:40.000Z">
+<meta property="article:modified_time" content="2020-02-19T03:02:47.296Z">
+<meta property="article:author" content="Zsjit Ngiam">
+<meta property="article:tag" content="武漢">
+<meta property="article:tag" content="冠狀病毒">
+<meta property="article:tag" content="Wuhan">
+<meta property="article:tag" content="coronavirus">
+<meta property="article:tag" content="2019-nCoV">
+<meta property="article:tag" content="新冠肺炎">
+<meta property="article:tag" content="furin">
+<meta property="article:tag" content="Covid-19">
+<meta property="article:tag" content="SARS-CoV-2">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;biopolyhedron.github.io&#x2F;images&#x2F;covid-19-furin_1.jpg">
+<meta name="twitter:image" content="https://biopolyhedron.github.io/images/covid-19-furin_1.jpg">
 
 <link rel="canonical" href="https://biopolyhedron.github.io/2020/02/15/covid-19-furin/">
 
@@ -276,9 +286,9 @@
 <p>所以，這個地方眞的很像人工設計的了。不過現在還沒有一個除這個位點以外其它部分都特別像Covid-19的母本病毒序列被公佈。</p>
 <p>參攷文章：</p>
 <ol>
-<li><a href="http://www.chinaxiv.org/abs/202002.00004" target="_blank" rel="noopener">李鑫 (2020) 武汉2019冠状病毒S蛋白可能存在Furin蛋白酶切位点</a></li>
-<li><a href="https://www.biorxiv.org/content/10.1101/2020.02.07.939207v1" target="_blank" rel="noopener">Wong MC (2020) Evidence of recombination in coronaviruses implicating pangolin origins of nCoV-2019</a></li>
-<li><a href="https://www.pnas.org/content/106/14/5871" target="_blank" rel="noopener">Belouzard S (2009) Activation of the SARS coronavirus spike protein via sequential proteolytic cleavage at two distinct sites</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.chinaxiv.org/abs/202002.00004">李鑫 (2020) 武汉2019冠状病毒S蛋白可能存在Furin蛋白酶切位点</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.biorxiv.org/content/10.1101/2020.02.07.939207v1">Wong MC (2020) Evidence of recombination in coronaviruses implicating pangolin origins of nCoV-2019</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.pnas.org/content/106/14/5871">Belouzard S (2009) Activation of the SARS coronavirus spike protein via sequential proteolytic cleavage at two distinct sites</a></li>
 </ol>
 <hr />
 <p>以上爲我發在新浪微雹的原文。</p>
@@ -288,9 +298,9 @@
 <li>本文我沒有指責任何人，病毒是無意或惡意放出並不知道，在武漢爆發也不說明就是中國人放出。</li>
 </ul>
 <p>文章發出半天之後，我迫於一些不方便說的壓力，在微雹上隱藏了這篇文章。</p>
-<p>這篇發出以後，我收到了微雹上另外幾位老師的回覆討論，包括 <a href="https://www.weibo.com/2750621294/IujP58EjO?type=comment" target="_blank" rel="noopener">@內含子 的評論</a> 和 <a href="https://weibo.com/5701449711/IuiCG9xSf" target="_blank" rel="noopener">@fengfeixue0219 的評論</a> 。兼聽則明，我也推薦我的讀者能來看一下這兩篇，我認爲這是很有價值的討論，我也能從中學習到自己不熟悉的知識。我盡管未能被他們說服，但有一些點還是可以說一下的：</p>
+<p>這篇發出以後，我收到了微雹上另外幾位老師的回覆討論，包括 <a target="_blank" rel="noopener" href="https://www.weibo.com/2750621294/IujP58EjO?type=comment">@內含子 的評論</a> 和 <a target="_blank" rel="noopener" href="https://weibo.com/5701449711/IuiCG9xSf">@fengfeixue0219 的評論</a> 。兼聽則明，我也推薦我的讀者能來看一下這兩篇，我認爲這是很有價值的討論，我也能從中學習到自己不熟悉的知識。我盡管未能被他們說服，但有一些點還是可以說一下的：</p>
 <ul>
-<li>雖然我之前也寫過兩篇東西，說新冠病毒不像人爲製造的，那是當時我能看到的證據。一次是印度團隊提出新冠病毒的S蛋白前段的幾個插入被認爲是與HIV有關，還有一篇是James Lyons-Weiler提出新冠病毒是由不同病毒拼接而成，而且用了一個pShuttle-SN vector，我認爲這兩個東西的分析方法都有問題，見 《<a href="/2020/02/01/coronavirus-spike-alignment/">武漢冠狀病毒是人工改造插入了HIV片段？</a>》和《<a href="https://zhuanlan.zhihu.com/p/105160041" target="_blank" rel="noopener">武漢肺炎病毒爲人工製造可能性的探討</a>》，所以他們提出的以我來看都不是有效的說明新冠病毒爲拼接而成的證據。而這次討論的PRRA的furin識別位點的證據和上面說的有所不同。</li>
+<li>雖然我之前也寫過兩篇東西，說新冠病毒不像人爲製造的，那是當時我能看到的證據。一次是印度團隊提出新冠病毒的S蛋白前段的幾個插入被認爲是與HIV有關，還有一篇是James Lyons-Weiler提出新冠病毒是由不同病毒拼接而成，而且用了一個pShuttle-SN vector，我認爲這兩個東西的分析方法都有問題，見 《<a href="/2020/02/01/coronavirus-spike-alignment/">武漢冠狀病毒是人工改造插入了HIV片段？</a>》和《<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/105160041">武漢肺炎病毒爲人工製造可能性的探討</a>》，所以他們提出的以我來看都不是有效的說明新冠病毒爲拼接而成的證據。而這次討論的PRRA的furin識別位點的證據和上面說的有所不同。</li>
 <li>突變可以是人爲設計，也可以是自然演化。區別在於，自然演化的突變一般是在基因組全序列的各處隨機、散在地分佈，隨機突變完了，哪個能活下來繁衍後代，物競天擇適者生存之後你就能觀察到哪個。而如果是人設計一個東西，按照工程學的原理，應該希望產品功能可控、可預測、成功率高，這樣人盡量通過較少的操作來實現改造。因此如果說兩個序列同樣有n個位點的差異，如果這些位點很隨機地分佈在各處，就會更像是自然演化，而如果這些位點很密集分佈在某個區域，且功能以現有的方法能預測，就更像是人爲的。</li>
 <li>兩位老師的回覆提到自然選擇也可能造成插入，這個我是同意的。所以我也只能說是像設計的，而不敢確定就是。</li>
 <li>這種奇特的插入突變如果能較大幅度增強病毒的自我繁殖能力（受到正選擇），那麼即使這種插入突變發生的機率遠小於單鹼基替換，我們也是會看到這種突變的。</li>
@@ -308,6 +318,15 @@
     
     <div class="post-widgets">
     <div class="likely">
+        <div class="twitter">Tweet</div>
+        <div class="facebook">Share</div>
+        <div class="linkedin">Link</div>
+        <div class="gplus">Plus</div>
+        <div class="vkontakte">Share</div>
+        <div class="odnoklassniki">Class</div>
+        <div class="telegram">Send</div>
+        <div class="whatsapp">Send</div>
+        <div class="pinterest">Pin</div>
     </div>
   </div>
   <script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.js"></script><div class="post-widgets">
@@ -341,13 +360,13 @@
           <div class="post-tags">
               <a href="/tags/%E6%AD%A6%E6%BC%A2/" rel="tag"># 武漢</a>
               <a href="/tags/%E5%86%A0%E7%8B%80%E7%97%85%E6%AF%92/" rel="tag"># 冠狀病毒</a>
-              <a href="/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/" rel="tag"># 新冠肺炎</a>
               <a href="/tags/Wuhan/" rel="tag"># Wuhan</a>
               <a href="/tags/coronavirus/" rel="tag"># coronavirus</a>
               <a href="/tags/2019-nCoV/" rel="tag"># 2019-nCoV</a>
+              <a href="/tags/%E6%96%B0%E5%86%A0%E8%82%BA%E7%82%8E/" rel="tag"># 新冠肺炎</a>
+              <a href="/tags/furin/" rel="tag"># furin</a>
               <a href="/tags/Covid-19/" rel="tag"># Covid-19</a>
               <a href="/tags/SARS-CoV-2/" rel="tag"># SARS-CoV-2</a>
-              <a href="/tags/furin/" rel="tag"># furin</a>
           </div>
 
         
@@ -420,7 +439,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
@@ -433,7 +452,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">42</span>
+        <span class="site-state-item-count">44</span>
         <span class="site-state-item-name">標籤</span></a>
       </div>
   </nav>
@@ -443,7 +462,7 @@
         <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
       </span>
       <span class="links-of-author-item">
-        <a href="/mailto:biopolyhedron@gmail.com" title="E-Mail → mailto:biopolyhedron@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="mailto:biopolyhedron@gmail.com" title="E-Mail → mailto:biopolyhedron@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
         <a href="https://weibo.com/ychromosome" title="新浪微雹 → https:&#x2F;&#x2F;weibo.com&#x2F;ychromosome" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微雹</a>
@@ -452,7 +471,7 @@
         <a href="https://www.zhihu.com/people/polyhedron" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-zhihu"></i>知乎</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://scholar.google.com/citations?user=ewSaZskAAAAJ" title="Google scholar → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user=ewSaZskAAAAJ" rel="noopener" target="_blank"><i class="fa fa-fw fa-"></i>Google scholar</a>
+        <a href="https://scholar.google.com/citations?user=ewSaZskAAAAJ" title="Google scholar → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user&#x3D;ewSaZskAAAAJ" rel="noopener" target="_blank"><i class="fa fa-fw fa-"></i>Google scholar</a>
       </span>
       <span class="links-of-author-item">
         <a href="https://t.me/ngiamzsjit" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;ngiamzsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
@@ -490,13 +509,13 @@
 <div class="copyright">
   
   &copy; 2019.11.22 – 
-  <span itemprop="copyrightYear">2020</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Zsjit Ngiam</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 強力驅動 v4.0.0
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 強力驅動 v6.3.0
   </div>
   <span class="post-meta-divider">|</span>
   <div class="theme-info">主題 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
@@ -519,32 +538,49 @@
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
 <script src="/js/schemes/muse.js"></script>
+
+
 <script src="/js/next-boot.js"></script>
 
 
 
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
+  
+
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+      pbOptions = {};
+        pbOptions.iconStyle = "box";
+        pbOptions.boxForm = "horizontal";
+        pbOptions.position = "bottomCenter";
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+  </script>
 <script>
   function loadCount() {
     var d = document, s = d.createElement('script');
@@ -577,14 +613,5 @@
     window.addEventListener('load', loadComments, false);
 </script>
 
-  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
-  <script>
-      pbOptions = {};
-        pbOptions.iconStyle = "box";
-        pbOptions.boxForm = "horizontal";
-        pbOptions.position = "bottomCenter";
-        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-      new needShareButton('#needsharebutton-postbottom', pbOptions);
-  </script>
 </body>
 </html>
