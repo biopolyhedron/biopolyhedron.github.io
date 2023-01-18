@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://biopolyhedron.github.io').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="以下是我根據泰語拼寫和我的語言學知識，綜合我的漢藏、侗臺、梵、越南語知識對泰語音韻的一個總結。總結方法出來的和一般的泰語敎材挺不一樣的，但熟悉漢語音韻學的人應該一看就能懂。聲母分組按清濁那套，聲母轉寫按梵語轉寫，元音（韻）的標記因爲看不懂來源，暫時按越南語那套轉寫。歡迎大家糾錯、提出修改意見。 （說一下，爲什麼我寫“臺”（濁聲母字dai）而非“台”（次清聲母thai），因爲“臺”中古是濁聲母字，李">
+<meta property="og:type" content="article">
+<meta property="og:title" content="泰語音系、泰文拼寫總結">
+<meta property="og:url" content="https://biopolyhedron.github.io/2016/10/21/thai-script-phonology/index.html">
+<meta property="og:site_name" content="多面體的雹子 polyhedron&#39;s blog">
+<meta property="og:description" content="以下是我根據泰語拼寫和我的語言學知識，綜合我的漢藏、侗臺、梵、越南語知識對泰語音韻的一個總結。總結方法出來的和一般的泰語敎材挺不一樣的，但熟悉漢語音韻學的人應該一看就能懂。聲母分組按清濁那套，聲母轉寫按梵語轉寫，元音（韻）的標記因爲看不懂來源，暫時按越南語那套轉寫。歡迎大家糾錯、提出修改意見。 （說一下，爲什麼我寫“臺”（濁聲母字dai）而非“台”（次清聲母thai），因爲“臺”中古是濁聲母字，李">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/thai-consonant-table.png">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/thai-tone-table.png">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/thai-monophthong-table.png">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/thai-compound-vowel.png">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/thai-numeral.png">
+<meta property="article:published_time" content="2016-10-21T02:53:54.000Z">
+<meta property="article:modified_time" content="2023-01-18T03:07:06.793Z">
+<meta property="article:author" content="Zsjit Ngiam">
+<meta property="article:tag" content="音韻學">
+<meta property="article:tag" content="語言學">
+<meta property="article:tag" content="phonology">
+<meta property="article:tag" content="linguistics">
+<meta property="article:tag" content="泰語">
+<meta property="article:tag" content="仡臺語">
+<meta property="article:tag" content="Thai language">
+<meta property="article:tag" content="Kra-Dai">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://biopolyhedron.github.io/images/thai-consonant-table.png">
+
+<link rel="canonical" href="https://biopolyhedron.github.io/2016/10/21/thai-script-phonology/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css"><style>
+#needsharebutton-postbottom {
+  cursor: pointer;
+  height: 26px;
+  margin-top: 10px;
+  position: relative;
+}
+#needsharebutton-postbottom .btn {
+  border: 1px solid $btn-default-border-color;
+  border-radius: 3px;
+  display: initial;
+  padding: 1px 4px;
+}
+</style>
+  <title>泰語音系、泰文拼寫總結 | 多面體的雹子 polyhedron's blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154028988-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-154028988-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="多面體的雹子 polyhedron's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">多面體的雹子 polyhedron's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">分子人類學、語言學及各種其它  molecular anthropology, linguistics, etc.</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首䈎</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-HK">
+    <link itemprop="mainEntityOfPage" href="https://biopolyhedron.github.io/2016/10/21/thai-script-phonology/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zsjit Ngiam">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="多面體的雹子 polyhedron's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          泰語音系、泰文拼寫總結
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時閒：2016-10-21 10:53:54" itemprop="dateCreated datePublished" datetime="2016-10-21T10:53:54+08:00">2016-10-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時閒：2023-01-18 11:07:06" itemprop="dateModified" datetime="2023-01-18T11:07:06+08:00">2023-01-18</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AA%9E%E8%A8%80%E5%AD%B8/" itemprop="url" rel="index">
+                    <span itemprop="name">語言學</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2016/10/21/thai-script-phonology/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/10/21/thai-script-phonology/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>以下是我根據泰語拼寫和我的語言學知識，綜合我的漢藏、侗臺、梵、越南語知識對泰語音韻的一個總結。總結方法出來的和一般的泰語敎材挺不一樣的，但熟悉漢語音韻學的人應該一看就能懂。聲母分組按清濁那套，聲母轉寫按梵語轉寫，元音（韻）的標記因爲看不懂來源，暫時按越南語那套轉寫。歡迎大家糾錯、提出修改意見。</p>
+<p>（說一下，爲什麼我寫“臺”（濁聲母字dai）而非“台”（次清聲母thai），因爲“臺”中古是濁聲母字，李方桂的《比較台語手冊》裏面泰語稱“暹羅語”，大概“台”就是“泰”。然而泰文的“泰”拼寫是ไทย（轉寫daiy），現代泰語清化送氣讀/tʰai̯˧˧/，我覺得表示僮侗語還是寫“臺”字好一些。）</p>
+<p>這是泰語的字母表（聲母表）：<br />
+<img src="/images/thai-consonant-table.png" alt="圖1" /></p>
+<p>泰文的輔音字母基本都是繼承自梵文的（黃色陰影），小部分是變體，也有的也許沒有梵文或巴利文來源。僅塞音字母按照發音方法就分成了5類，分別是內爆、清不送氣和3類清送氣。梵文、巴利文原始字母及借詞的清不送氣的บ p、ด t、ฎ ṭ在泰文就是第一行內爆（จ c、ก k沒內爆音），而漢語早期借詞的全清是第二行普通不送氣清音ป pp、ต tt（僅限聲母，韻尾仍寫作บ p、ด t，見後述）。聲母部位就是按梵語的5套（但捲舌和非捲舌的已經合併爲一類）以及喉音。然後還有表示清濁擦音的符号。所有全濁音全都清化了（但在聲調上有影響，見後），塞音清化成送氣音。ฃ x和ฅ ğ兩個字母在現代泰文中已經取消。輔音字母的筆順有個非常簡單的規律：一律從小圓圈開始。</p>
+<p>我這裏面的轉寫基本上按梵文的。但這並不完全符合泰文創製時的泰語音系。按照梁敏、張均如的《民族語言學論稿》，臺語原有6類聲母：I. 先喉塞及喉塞音（把喉塞也放一起，是因爲在某些臺語裏調類分化和第II類不同）；II. 普通不送氣清塞音（後面簡稱“普清”）；III. 送氣清塞、塞擦音；IV. 清擦音及清鼻、邊音；V. 濁塞音和塞擦音；VI.濁鼻、邊、半元音。</p>
+<p>對比字母表格，發現對應關係如下：第I類就是第1行內爆（複合輔音อย qy發音爲/j/但調類分化同全清）；第II類就是第2行普清；第III類就是第3行送氣清音；第IV類的清擦音在字母表裏也是有的，而原始清鼻、邊音在泰文是用複合輔音表示的，包括หง hng、หน hn、หม hm、หย hy、หญ hñ、หว hw、หร hr、หล hl，發音已與相應的次濁聲母相同，但調類分化如次清聲母；第V類按漢語是全濁，對應字母表裏面兩行濁塞/塞擦音和一行擦音。其中兩行濁塞音發音完全相同，在泰語都是清化成送氣的，應該就是爲了寫梵巴語詞而全盤引入的；第VI類就是普通的鼻、邊、半元音了。</p>
+<p>臺語和漢語一樣，也是先有了平、上、去、入四個調類，而後再根據聲母的清濁來區分陰陽。但有一點與漢語不同：漢語通常是全清、次清的調類分化完全相同，而全濁、次濁經常不同（如全濁上聲普遍變同去聲，以及北京話入聲全濁歸陽平而次濁歸去聲），臺語的普遍情況是全濁、次濁調類分化相同，而全清、次清有區別，有時第I類“先喉塞”和第II類普清也有區別。按一般泰語課本，全清的兩組稱“中輔音”，次清的兩組稱“高輔音”，濁的兩組稱“低輔音”。泰文按拼法，處於平、上、去、入有區別而聲母未清化、陰陽調類不分的階段。</p>
+<p>按照一般的侗臺語學界習慣，陰陽平、陰陽上、陰陽去、陰陽入依次標爲1-8調，奇數調爲陰調，偶數調爲陽調。則總體規律如下：</p>
+<p><img src="/images/thai-tone-table.png" alt="圖2" /></p>
+<p>因爲入聲的調值可以歸併進相近的舒聲（類似於廣州話的7短、7長、8三個調可分別歸入1、5、6調），泰語一般只算是有5個調，即1——次清平，調值爲215（升調）；2——全清平及陽平，調值爲332或33（中平）；3——陰上、陽去及長陽入，調值爲51（降調）、4——陽上及短陽入，調值爲453或55（高調）、5——陰去及陰入，調值爲211或11（低調）。以上的聲調編号是按侗臺語傳統順序來的，如果是按一般的泰語課本，則分別是第5調（升調）、第1調（中平）、第3調（降調）、第4調（高調）、第2調（低調）。</p>
+<p>剛說了，泰文處於平、上、去、入有區別而聲母未清化、陰陽調類不分的階段，上聲標◌้ (轉寫作x)、去聲標◌่（轉寫作h），而平、入聲不標。而依現代泰語，所有聲母都可以與5個現代調相配。那麼送氣輔音是從在古代兩類演化來的，第III類到現在有1, 3, 5調，第V類到現在有2, 4, 3調，就都能拼出來了。對於鼻音、邊音、半元音、擦音來說，同樣是第IV類有1, 3, 5調，第VI類有2, 4, 3調，也是齊的。但對於兩組中輔音（內爆及普清），因爲正常只能有2, 3, 5調，在需要拼出1、4調詞的時候（一些擬聲詞、變調詞和晚期借詞之類）就需要有另外的調号，即表示1調（升調）的◌๋（轉寫作+）和表示4調（高調）的◌๊（轉寫作^）。</p>
+<p>另外，舒、入聲調是這麼劃分的：長元音開音節算舒聲，短元音開音節算短入聲（這種情況也有說是有/ʔ/韻尾的），所有/m n ŋ/尾音節算舒聲，長元音/p t k/尾算長入，短元音/p t k/算短入。短入都是4（高）、5（低）調，長入都是3（降）、5（低）調。</p>
+<p>泰語輔音韻尾就是/m n ŋ p t k/這6個，入聲也跟漢語南方方言一樣，都是清且不除阻的。拼寫如下：<br />
+/m/ ม m, มิ mi<br />
+/n/ น n, ณ ṇ, ญ ñ, ร r, ล l, ฬ ḷ<br />
+/ŋ/ ง ng<br />
+/p/ บ p, ป pp, พ b, ภ bh<br />
+/t/ ด t, ต tt, ถ th, ท d, ธ dh, ฎ ṭ, ฏ ṭṭ, ฐ ṭh, ฑ ḍ, ฒ ḍh, จ c, ช j, ซ z, ศ ś, ษ ṣ, ส s,ติ tti, ตุ ttu，共18種<br />
+/k/ ก k,ข kh,ค g,ฆ gh</p>
+<p>韻尾除了最常見的ม m、น n、ง ng、บ p、ด t、ก k是本族詞或漢借詞以外，其它的基本都是梵巴語等的借詞，規律是塞音歸同部位塞音，擦音、塞擦音歸/t/，邊音、顫音都歸/n/。ญ ñ在聲母歸/j/但在韻尾歸/n/。</p>
+<p>泰文是印度系文字，理論上屬於元音附標文字（即短元音a不標，其它元音標符号），但實際上因爲泰語元音極多，且單獨出現拼短a輔音的音節也極少出現且也有附標（而作爲前置音節的短a很常見），也不用virāma的符号，所以其實已經是準alphabet文字而非abugida文字了。前置音節短a大體上是說，如果兩個輔音字母能構成一個複輔音就按複輔音來，例如ppr, ppl, kr, gr, kw, hm, hn, hl, qy等等幾個，而如果不能構成複輔音，則前面字母拼爲一個帶短弱a元音的前置音節。</p>
+<p>泰語的元音系統很複雜，光單元音就有9對，各分長短，元音來源也我這裏就按越南語的字母來轉寫了。</p>
+<p><img src="/images/thai-monophthong-table.png" alt="圖3" /></p>
+<p>其中虛點圓圈代表聲母所在位置。如果聲母不止一個字母，則元音左邊的部分放在所有輔音字母左邊，而上面、下面的部分及聲調符号在聲母右邊的字母上面。</p>
+<p>表格裏面，如果某個元音有兩種拼法，則前面的表示開音節，後面的表示後接輔音的閉音節。比如開音節ka寫成กะ，而閉音節kap就寫成กับ。很多情況下，開音節都是加一個ะ表示短元音，而在閉音節時，就把ะ挪到聲母上面變成◌ั或者◌็。</p>
+<p>泰語還有很多複元音，如表格：</p>
+<p><img src="/images/thai-compound-vowel.png" alt="圖4" /></p>
+<p>所有複元音，不論二合還是三合元音都是前響複元音，沒有介音（介音ย y（只出現在อ q）或ว w算在複合輔音裏了，不算入韻母）。但如果按照元音開口度來看，還是能分成前開二合元音、後開二合元音和中開三合元音三類。即後開二合元音是ia, ưa, ua三個，這三個後面又能夠接輔音韻尾或-i, -w。前開二合元音有3個是基本的，也有專門的字母表示，是ai, aư, au三個。其餘的前開二合元音及所有3個三合元音都是由相應的單元音或後開二合元音加上-y或-w規則構成了。另外ไ◌ ai, ใ◌ aư, ◌ัย ay三個韻母的發音已經相同，都讀/ai̯/了。</p>
+<p>另外，泰文也有表示梵語元音ṛ ṝ ḷ ḹ（這個ḷ的拉丁轉寫跟前面輔音裏巴利文的ḷ一樣了，但並不是一回事兒，那個是捲舌l）的符号，分別是ฤ ṛ /rɯ/、ฤา ṝ /rɯː/、ฦ ḷ /lɯ/、ฦๅ ḹ /lɯː/，本來後面兩個本來就很少出現，只有轉寫梵巴語的理論價值。還有anusvāra，就是◌ํา，轉寫爲aṃ吧，發音同◌ัม am，都是/am/。</p>
+<p>舉幾個泰語數詞的例子：</p>
+<p><img src="/images/thai-numeral.png" alt="圖5" /></p>
+<p>（橋本萬太郎說：越南語固有詞能數到9999，万以上改用漢字詞；朝鮮語固有詞能數到99，百以上改用漢字詞；日本語固有詞能數到10，十一以上改用漢字詞；泰語固有詞能數到1，二以上改用漢字詞。）</p>
+<p>還要吐槽一下泰文的Unicode：一般的印度系文字，不論印度文字還是藏文、緬文（說的是Padauk等遵循Unicode的字體，不是Zawgyi），Unicode順序都是按照發音順序來的，比如ति ti的編碼順序是先寫त ta再寫◌ि i。而泰文Unicode編碼是按書寫的左右來的，而且還有一些奇怪的疊壓規則，比如ต้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้้這樣的（一個個上聲符号就能依次往上疊）。這樣一個元音就能被聲母和聲調拆成3個部分，比如เกี้ยง kiangx這樣一個音節的Unicode字符順序是êê k i x y ng，其中表示ia這個複元音的是êê - i - y三塊兒。連遵循發音或轉寫順序的輸入法都很難設計。</p>
+<h2 id="參攷資料"><a class="markdownIt-Anchor" href="#參攷資料"></a> 參攷資料：</h2>
+<ol>
+<li>維基百科<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Thai_script">[[en:Thai_alphabet]]</a> <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%B3%B0%E8%AF%AD">[[泰語]]</a> <a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%B3%B0%E6%96%87%E5%AD%97">[[泰文字]]</a> 等詞條</li>
+<li>梁敏、張均如《民族語言學論稿》</li>
+<li>《泰語敎程》（第一冊） 北京大學出版社</li>
+<li>李方桂《比較台語手冊》</li>
+</ol>
+<hr />
+<p>本文於2016-10-21發佈於本人新浪博客 <a target="_blank" rel="noopener" href="https://blog.sina.com.cn/s/blog_465ddf790102wxbv.html">https://blog.sina.com.cn/s/blog_465ddf790102wxbv.html</a> ，但已無法訪問，故搬遷至github的雹。</p>
+
+    </div>
+
+    
+    
+    <div class="post-widgets">
+    <div class="likely">
+        <div class="twitter">Tweet</div>
+        <div class="facebook">Share</div>
+        <div class="linkedin">Link</div>
+        <div class="gplus">Plus</div>
+        <div class="vkontakte">Share</div>
+        <div class="odnoklassniki">Class</div>
+        <div class="telegram">Send</div>
+        <div class="whatsapp">Send</div>
+        <div class="pinterest">Pin</div>
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.js"></script><div class="post-widgets">
+      <div id="needsharebutton-postbottom">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打賞
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Zsjit Ngiam 支付寶">
+        <p>支付寶</p>
+      </div>
+      <div style="display: inline-block;">
+        <img src="/images/dogecoin.png" alt="Zsjit Ngiam dogecoin">
+        <p>dogecoin</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%9F%B3%E9%9F%BB%E5%AD%B8/" rel="tag"># 音韻學</a>
+              <a href="/tags/%E8%AA%9E%E8%A8%80%E5%AD%B8/" rel="tag"># 語言學</a>
+              <a href="/tags/phonology/" rel="tag"># phonology</a>
+              <a href="/tags/linguistics/" rel="tag"># linguistics</a>
+              <a href="/tags/%E6%B3%B0%E8%AA%9E/" rel="tag"># 泰語</a>
+              <a href="/tags/%E4%BB%A1%E8%87%BA%E8%AA%9E/" rel="tag"># 仡臺語</a>
+              <a href="/tags/Thai-language/" rel="tag"># Thai language</a>
+              <a href="/tags/Kra-Dai/" rel="tag"># Kra-Dai</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2016/02/25/middle-chinese-uvular/" rel="prev" title="論中古漢語見組一、二、四等字聲母爲小舌音  The 1st, 2nd, and 4th děng of K- group initials in Middle Chinese were uvular">
+      <i class="fa fa-chevron-left"></i> 論中古漢語見組一、二、四等字聲母爲小舌音  The 1st, 2nd, and 4th děng of K- group initials in Middle Chinese were uvular
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/11/22/ancient-tibetan-sound-change/" rel="next" title="古代藏語的音變">
+      古代藏語的音變 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概覽
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%83%E6%94%B7%E8%B3%87%E6%96%99"><span class="nav-number">1.</span> <span class="nav-text"> 參攷資料：</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Zsjit Ngiam</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">46</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:biopolyhedron@gmail.com" title="E-Mail → mailto:biopolyhedron@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/ychromosome" title="新浪微雹 → https:&#x2F;&#x2F;weibo.com&#x2F;ychromosome" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微雹</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/polyhedron" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-zhihu"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://scholar.google.com/citations?user=ewSaZskAAAAJ" title="Google scholar → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user&#x3D;ewSaZskAAAAJ" rel="noopener" target="_blank"><i class="fa fa-fw fa-"></i>Google scholar</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/ngiamzsjit" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;ngiamzsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/polyhedron" title="Telegram channel → https:&#x2F;&#x2F;t.me&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram-plane"></i>Telegram channel</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/NgiamZsjit" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;NgiamZsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/biopolyhedron" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;biopolyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.yoogene.com/goods/goodslist/invite_token/5b2389a3b808b3310364956ecd94fd27" title="源基因遺傳測試 → https:&#x2F;&#x2F;www.yoogene.com&#x2F;goods&#x2F;goodslist&#x2F;invite_token&#x2F;5b2389a3b808b3310364956ecd94fd27" rel="noopener" target="_blank"><i class="fa fa-fw fa-dna"></i>源基因遺傳測試</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019.11.22 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zsjit Ngiam</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 強力驅動 v6.3.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主題 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+      pbOptions = {};
+        pbOptions.iconStyle = "box";
+        pbOptions.boxForm = "horizontal";
+        pbOptions.position = "bottomCenter";
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+  </script>
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://polyhedron.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {page: {
+            url: "https://biopolyhedron.github.io/2016/10/21/thai-script-phonology/",
+            identifier: "2016/10/21/thai-script-phonology/",
+            title: "泰語音系、泰文拼寫總結"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://polyhedron.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    window.addEventListener('load', loadComments, false);
+</script>
+
+</body>
+</html>
