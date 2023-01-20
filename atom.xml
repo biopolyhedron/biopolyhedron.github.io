@@ -257,6 +257,43 @@
   </entry>
   
   <entry>
+    <title>日語東京話的聲調規律</title>
+    <link href="https://biopolyhedron.github.io/2018/02/25/japanese-tokyo-accent/"/>
+    <id>https://biopolyhedron.github.io/2018/02/25/japanese-tokyo-accent/</id>
+    <published>2018-02-25T06:23:32.000Z</published>
+    <updated>2023-01-20T03:24:45.877Z</updated>
+    
+    <content type="html"><![CDATA[<p>本文爲學習筆記，原文是英文版的原口莊輔（Shōsuke Haraguchi）的Accent一文。</p><p>因爲原文還包括了日本各地聲調特徵的一個總結及大阪話聲調的詳細描述，這裏我就不作翻譯了，有興趣的可以自己找來看。我只記一下東京話的聲調特徵。</p><p>首先是一般的中文日語課本都會講的音拍與音高問題。日語的一個簡單假名、拗音以及撥音ん、促音っ都算一個音拍。於是，一個漢字的音讀都是一個或者兩個音拍的：こ是一個音拍、こう是兩個音拍、こく是兩個音拍、こっ是兩個音拍、こん是兩個音拍，しゃ是一個音拍、しゅう是兩個音拍，這樣。</p><p>然後是基本的調形。東京話有如下規律：</p><p>一、一個音拍只能爲高調或低調，不可能有升調或降調；</p><p>二、一個文節（ぶんせつ，即一個詞連同後面的後綴部分）中只能有一個連續的高調段，所以一個文節（不攷慮單音拍的文節）的調形只能是HL、LH、LHL（L爲低調、H爲高調）三種；</p><p>三、第一音拍和第二音拍的高低一定是反的。</p><p>這樣，一個 n 音拍的文節只能有 n 種情況。平板形 LH，即第一音拍低，第二音拍至尾都是高的；頭高形HL，即第一音拍高，第二至尾都是低的；中高形，即第一音拍低，第二至中閒第 m 個音拍高，第 m+1 至尾是低的。而一個單詞如果最後一拍是高的攷慮到後綴，又有後綴高（平板）和後綴低（中高）兩種情況。因此一個 n 音拍的單詞的調形可能有 n+1 種情況。把高調段最後一個音拍作爲調核，則頭高型調核爲第一音拍（1調），中高形的調核爲第 m 個音拍時爲 m 調（當 m = n 時，單詞爲尾高形，但後綴爲低調）、平板形（無調核）爲0調。</p><p>例如はし有0調的“端”、1調的“箸”、2調的“橋”三個詞三種情況。當後面接助詞が的時候，分別是（小寫表示低調，大寫表示高調，'表示之前的音拍爲調核）：</p><p>端が 0調 平板形 haSI-GA</p><p>箸が 1調 頭高形 HA’si-ga</p><p>橋が 2調 中高形 haSI’-ga</p><p>（後面也會用-1調、-2調的寫法表示重音在倒數第幾個音拍上。）</p><p>以上是中文日語課本上常講的，後面就是一般課本上不太講的了。</p><p>書上給了一個統計：多達55%的詞是無調核的（平板形）。在有調核的詞中，大約75%的詞的調核在倒數第三音拍上。</p><p>日語除了音拍以外，其實也是有音節概念的，而且在聲調的解釋上有重要用途。含有長音、拗音、促音的都是兩個音拍爲一個音節。因此日語裏一個漢字的音讀，其實只有出現入聲韻尾且未促化的情況下纔是兩個音節，其餘都是一個音節，即上面列的こ、こう、こっ、こん、しゃ、しゅう都是一個音節，只有こく是兩個音節。這樣能解釋爲什麼“日本人”是nIHO’n-zin，而“中國人”是tyuUGOKU’-zin，明明構詞方式一樣，前者是-4調，而後者-3調。因爲含有長音、促音、撥音的雙音拍音節的第二音拍不能承載調核，ほん作爲重音音節，調核只能在其第一音拍。而ごく是兩個音節，第二音拍可以承載調核。</p><p>因爲單詞的調核還是可以在一些字典上査到的，但加了後綴以後的文節整體的調形，各種地方介紹都比較少。這篇文章分名詞、動詞、形容詞三大類情況比較詳細討論了幾種不同後綴情況。</p><h1 id="名詞"><a class="markdownIt-Anchor" href="#名詞"></a> 名詞</h1><ol><li><p>最普通的單音節後綴，比如を、が、は之類，就是按照前述的規律加在名詞本身的調型後即可，即有調核的詞後綴爲低調、無調核的平板形後綴爲高調。</p></li><li><p>對於一般的有調核的後綴，如まで(MA’de)、です(DE’su)，如前接詞有調核，則後綴本身的重音消除，均爲低音。如前詞爲平板型，則後綴的調核保留：</p></li></ol><p>0調 さくらまで saKURA-MA’de</p><p>3調 おとこまで oTOKO’-made</p><p>2調こころまで koKO’ro-made</p><p>1調からすまで KA’rasu-made</p><ol start="3"><li>屬格後綴の對於非頭重型的詞，如果重音在最後音節（而不一定是最後音拍），有消除重音的作用（如平板型）。</li></ol><p>頭重 HL 型如一般的非重音後綴：</p><p>齒の HA’-no</p><p>今日の KYO’o-no</p><p>本の HO’n-no</p><p>嵐の A’rasi-no</p><p>尾音節重的 LH 或 LHL 型，の會消除尾音節重音）：</p><p>（-1調） 川の kaWA-NO （對比“川を” kaWA’-o）</p><p>（-1調） 頭の aTAMA-NO （對比 aTAMA’-o）</p><p>（-2調） 日本の niHON-NO （對比 niHO’n-o）</p><p>（-2調） 昨日の kiNOO-NO （對比 kiNO’o-o）</p><p>非尾音節重音型不消除重音：</p><p>（-2調） 團扇の uTI’wa-no</p><p>（-3調） 色紙の iRO’gami-no</p><p>這裏就體現出音節的作用了，能解釋niHO’n和uTI’wa連の時的不同調形。</p><ol start="4"><li>加前綴お時，不論原先何調型，原先單詞一律變爲頭重，お爲低音：</li></ol><p>お手紙 teGAMI &gt; o-TE’gami</p><p>お洗濯 seNTAKU &gt; o-SE’ntaku</p><p>お風呂 huRO’ &gt; o-HU’ro</p><p>お壽司 suSI’ &gt; o-SU’si</p><p>お箸 HA’si &gt; o-HA’si</p><h1 id="動詞"><a class="markdownIt-Anchor" href="#動詞"></a> 動詞</h1><p>動詞的調形只分爲無重音和有重音兩類。有重音的動詞均爲-2調。</p><ol><li>命令形エ/ろ、使動アせる/させる、想要イたい/たい，原形爲平板形的仍爲平板，原形有重音的爲-2調：</li></ol><p>進む suSUMU &gt; suSUME, suSUMASERU, suSUMITAI</p><p>借りる kaRIRU &gt; kaRIRO, kaRIMASERU, kaRITAI</p><p>隱す kaKU’su &gt; kaKU’se, kaKUSASE’ru, kaKUSITA’i</p><p>建てる taTE’ru &gt; taTE’ro, taTASASE’ru, taTETA’i</p><ol start="2"><li>勸誘形オう/よう、尊敬形句尾イます/ます重音一律移至後綴：</li></ol><p>suSUMU &gt; suSUMO’o, suSUMIMA’su</p><p>kaRIRU &gt; kaRIYO’o, kaRIMA’su</p><p>kaKU’su &gt; kaKUSO’o, kaKUSIMA’su</p><p>taTE’ru &gt; taTEYO’o, taTEMA’su</p><ol start="3"><li>否定形アない/ない和て形如普通無重音詞綴，無重音仍爲平板，有重音的變爲-3調（當然如果本身て形只有兩個音節，就只能是頭高形了）：</li></ol><p>suSUMU &gt; suSUMANAI, suSUNDE</p><p>kaRIRU &gt; kaRINAI, kaRITE</p><p>kaKU’su &gt; kaKUSA’nai, kaKU’site</p><p>taTE’ru &gt; taTE’nai, TA’tete</p><ol start="4"><li>エば/れば、た形，無重音的總倒數第二音節爲重音，有重音的倒數第三音節爲重音。這裏ば和た爲附加音節，一定爲低調，而除掉附加音節本來情況和2.1是一樣的。但如果原本是平板形的，因爲附加的低調音節導致倒數第二音節有了調核，而倒數第二音節爲長音導致其第二音拍不能承載調核的話，調核就移到倒數第三音拍（如すすんだ的情況）：</li></ol><p>suSUMU &gt; suSUME’ba, suSU’nda</p><p>kaRIRU &gt; kaRIRE’ba, kaRI’ta</p><p>kaKU’su &gt; kaKU’seba, kaKU’sita</p><p>taTE’ru &gt; taTE’reba, TA’teta</p><h1 id="形容詞"><a class="markdownIt-Anchor" href="#形容詞"></a> 形容詞</h1><p>形容詞也是分爲有重音和無重音兩種情況，有重音的原形一定爲-2調（重音在詞幹最後音節）。</p><ol><li>く、さ形，原形無重音的仍爲平板，原形有重音的，只要詞幹是多音節，重音移至詞幹倒數第二音節，即文節爲-3調：</li></ol><p>赤い aKA-I &gt; aKA-KU, aKA-SA</p><p>白い siRO’-i &gt; SI’ro-ku, SI’ro-sa</p><p>樂しい taNOSI’-i &gt; taNO’si-ku, taNO’si-sa</p><ol start="2"><li>連くは、かった、ければ時，後綴一律爲低調，原形無重音的重音在詞幹最後音節，原形有重音的且詞幹爲多音節的，重音在詞幹倒數第二音節：</li></ol><p>aKA-I &gt; aKA’-kuwa, aKA’-katta, aKA’-kereba</p><p>siRO’-i &gt; SI’ro-kuwa, SI’ro-katta, SI’ro-kereba</p><p>taNOSI’-i &gt; taNO’si-kuwa, taNO’si-katta, taNO’si-kereba</p><hr /><p>另外，我發現其餘网站上的一些說法和本文還不盡相同。本文也有很多常見詞綴及複合詞的音調變化規律並沒有列入。如果有人知道在線的能査日語單詞、詞組重音的詞典也請告訴我。歡迎在新浪微博或 Telegram 上與我（ @polyhedron ）聯繫。</p><p>補充：</p><p>知乎用戶“张文治”給了一個査敎科書中部分詞彙的网站： <a href="http://www.gavo.t.u-tokyo.ac.jp/ojad/">http://www.gavo.t.u-tokyo.ac.jp/ojad/</a></p><p>polyhedron</p><p>2018.02.25<br />原發於新浪微博及知乎</p>]]></content>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="語言學" scheme="https://biopolyhedron.github.io/categories/%E8%AA%9E%E8%A8%80%E5%AD%B8/"/>
+    
+    
+    <category term="日語" scheme="https://biopolyhedron.github.io/tags/%E6%97%A5%E8%AA%9E/"/>
+    
+    <category term="東京話" scheme="https://biopolyhedron.github.io/tags/%E6%9D%B1%E4%BA%AC%E8%A9%B1/"/>
+    
+    <category term="重音" scheme="https://biopolyhedron.github.io/tags/%E9%87%8D%E9%9F%B3/"/>
+    
+    <category term="Japanese" scheme="https://biopolyhedron.github.io/tags/Japanese/"/>
+    
+    <category term="Tokyo dialect" scheme="https://biopolyhedron.github.io/tags/Tokyo-dialect/"/>
+    
+    <category term="accent" scheme="https://biopolyhedron.github.io/tags/accent/"/>
+    
+  </entry>
+  
+  <entry>
     <title>泰語音系、泰文拼寫總結</title>
     <link href="https://biopolyhedron.github.io/2016/10/21/thai-script-phonology/"/>
     <id>https://biopolyhedron.github.io/2016/10/21/thai-script-phonology/</id>
