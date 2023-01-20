@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://biopolyhedron.github.io').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="首先，西夏語（党項語）和西夏文的基本介紹推薦看一下史金波的《西夏文敎程》，我就不囉嗦了。西夏語明確是一種漢藏語，或者說是藏緬語，這一點從數詞和“我”等字的讀音，以及主賓謂、名詞-形容詞的語序都能看出來。但據我觀察，並不是任何現代漢藏語的直系祖先語言。 以下只是簡要介紹，以後有空再擴充。總體基於龔煌城的擬音，但加入我個人的一些看法。  聲調 西夏語只有兩個聲調：平聲和上聲。據戴忠沛的夏藏對音硏究，對">
+<meta property="og:type" content="article">
+<meta property="og:title" content="西夏語音系簡述">
+<meta property="og:url" content="https://biopolyhedron.github.io/2015/12/08/tangut-phonology-summary/index.html">
+<meta property="og:site_name" content="多面體的雹子 polyhedron&#39;s blog">
+<meta property="og:description" content="首先，西夏語（党項語）和西夏文的基本介紹推薦看一下史金波的《西夏文敎程》，我就不囉嗦了。西夏語明確是一種漢藏語，或者說是藏緬語，這一點從數詞和“我”等字的讀音，以及主賓謂、名詞-形容詞的語序都能看出來。但據我觀察，並不是任何現代漢藏語的直系祖先語言。 以下只是簡要介紹，以後有空再擴充。總體基於龔煌城的擬音，但加入我個人的一些看法。  聲調 西夏語只有兩個聲調：平聲和上聲。據戴忠沛的夏藏對音硏究，對">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/tangut-initials.jpg">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/tangut-rhyme-1.jpg">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/tangut-rhyme-2.jpg">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/tangut-rhyme-3.jpg">
+<meta property="article:published_time" content="2015-12-08T00:57:27.000Z">
+<meta property="article:modified_time" content="2023-01-20T03:52:30.735Z">
+<meta property="article:author" content="Zsjit Ngiam">
+<meta property="article:tag" content="音韻學">
+<meta property="article:tag" content="phonology">
+<meta property="article:tag" content="西夏語">
+<meta property="article:tag" content="西夏文">
+<meta property="article:tag" content="党項">
+<meta property="article:tag" content="反切">
+<meta property="article:tag" content="Tangut">
+<meta property="article:tag" content="fanqie">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://biopolyhedron.github.io/images/tangut-initials.jpg">
+
+<link rel="canonical" href="https://biopolyhedron.github.io/2015/12/08/tangut-phonology-summary/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css"><style>
+#needsharebutton-postbottom {
+  cursor: pointer;
+  height: 26px;
+  margin-top: 10px;
+  position: relative;
+}
+#needsharebutton-postbottom .btn {
+  border: 1px solid $btn-default-border-color;
+  border-radius: 3px;
+  display: initial;
+  padding: 1px 4px;
+}
+</style>
+  <title>西夏語音系簡述 | 多面體的雹子 polyhedron's blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154028988-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-154028988-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="多面體的雹子 polyhedron's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">多面體的雹子 polyhedron's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">分子人類學、語言學及各種其它  molecular anthropology, linguistics, etc.</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首䈎</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-HK">
+    <link itemprop="mainEntityOfPage" href="https://biopolyhedron.github.io/2015/12/08/tangut-phonology-summary/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zsjit Ngiam">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="多面體的雹子 polyhedron's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          西夏語音系簡述
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時閒：2015-12-08 08:57:27" itemprop="dateCreated datePublished" datetime="2015-12-08T08:57:27+08:00">2015-12-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時閒：2023-01-20 11:52:30" itemprop="dateModified" datetime="2023-01-20T11:52:30+08:00">2023-01-20</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AA%9E%E8%A8%80%E5%AD%B8/" itemprop="url" rel="index">
+                    <span itemprop="name">語言學</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2015/12/08/tangut-phonology-summary/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/12/08/tangut-phonology-summary/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>首先，西夏語（党項語）和西夏文的基本介紹推薦看一下史金波的《西夏文敎程》，我就不囉嗦了。西夏語明確是一種漢藏語，或者說是藏緬語，這一點從數詞和“我”等字的讀音，以及主賓謂、名詞-形容詞的語序都能看出來。但據我觀察，並不是任何現代漢藏語的直系祖先語言。</p>
+<p>以下只是簡要介紹，以後有空再擴充。總體基於龔煌城的擬音，但加入我個人的一些看法。</p>
+<h1 id="聲調"><a class="markdownIt-Anchor" href="#聲調"></a> 聲調</h1>
+<p>西夏語只有兩個聲調：平聲和上聲。據戴忠沛的夏藏對音硏究，對音鼻音基字聲母，西夏語平聲字用藏文標註時傾向於帶前加字，而西夏語上聲字傾向於不帶前加字。攷慮到現代藏語方言中基本上鼻、邊音字帶前、上加字時變爲高調而無前、上加字時爲低調，我傾向於西夏語的平聲爲高調而上聲爲低調。</p>
+<h1 id="聲母"><a class="markdownIt-Anchor" href="#聲母"></a> 聲母</h1>
+<p>西夏語的基本聲母根據《五音切韻》有一個分類，包括九品：重脣音、輕脣音、舌頭音、舌上音、牙音、齒頭音、正齒音、喉音、來日音。但這只是對漢語韻書的照貓畫虎，實際上據攷證，輕脣音、舌上音（相當於漢語的知組）在西夏語並不存在。一來輕脣音對應漢字f-和w-的西夏字和喉音在反切上字中有混同，二來漢語hu-和f-在西夏語對音（漢夏對音）對應同一類字，而這類字用漢語對音（夏漢對音）時只用漢語hu-的字來對。說明當時漢語分hu-、f-兩類音，而西夏語只有hu-一類（其實西夏語h-聲母字就很少，基本用於漢借詞和對音）。擬出的西夏文基本聲母如下：</p>
+<p><img src="/images/tangut-initials.jpg" alt="西夏語聲母" /></p>
+<h1 id="韻母"><a class="markdownIt-Anchor" href="#韻母"></a> 韻母</h1>
+<p>《同音》這本書標明了哪些字屬同音，但沒有反切。《同音》共找到兩個版本，初版是把所有聲母韻母相同但不論聲調的字都算作同音。《同音》再版把平聲和上聲分別列出。還有一本書叫《文海》。根據《文海》，西夏語平聲有97韻，上聲有86韻，分別編号。對照《同音》兩個版本和《文海》，就能把平上聲對應的韻母拼起來，共得到105個綜合韻。比如平聲第11韻（寫作1.11）和上聲第10韻（寫作2.10）對應，合起來成爲第11個綜合韻（寫作R.11）。《文海》的好處是有反切，蛋疼的是目前只發現了平聲卷（偶有缺損），上聲卷遺失。這樣一個上聲字只能通過《同音》初版找到其同聲韻的平聲字査反切。但這樣沒有對應平聲小韻的上聲字就沒辦法了，同時很多本可能繫聯的字也沒法繫聯了。</p>
+<p>西夏語的韻母我目前發現的已經有如下區分範疇：攝、等、鼻化、第一小循環、第二小循環、開合口、重韻、重紐等。</p>
+<p><img src="/images/tangut-rhyme-1.jpg" alt="西夏語韻部1" /><br />
+<img src="/images/tangut-rhyme-2.jpg" alt="西夏語韻部2" /><br />
+<img src="/images/tangut-rhyme-3.jpg" alt="西夏語韻部3" /><br />
+（以上爲龔煌城的韻母擬音，摘自李範文《夏漢字典》）</p>
+<p>攝由同主元音（及韻尾）的韻組成。比如R.1 – R.7的主元音爲/u/，R.15 – R.16對應漢語臻攝、侵攝、曾攝陽聲韻，R.17 – R.23的主元音爲/a/等等（不同硏究者劃的攝的數目也並不相同）。龔煌城的部分元音擬音我並不支持，如其第七攝，我認爲應該是以/e/或/ɛ/爲主元音且很可能不帶韻尾的（參攷夏藏和夏漢對音）。</p>
+<p>每個攝的漢夏對音基本是按固定的等的。比如第四攝（按龔煌城）的主元音是/a/，R.17用來註漢語一等字，R.18對二等字，R.19對三等字之類。西夏語的三四等韻感覺有時分有時不分，分的方法也許更取決於聲母（即類似漢語的韻圖等）。</p>
+<p>可以注意到，同一個攝內大多都是按照一二三（四）等連着數了兩次。龔煌城把每攝第二次的擬爲長元音，但我沒有在其文章中找到擬爲長元音的理據。我認爲龔擬的長元音實際上應與鼻化韻或鼻冠有關（待有空再詳細說）。</p>
+<p>從R.1到R.60基本是把所有的攝捋了一兩遍，但到了R.61到R.76又把這些攝又走了一遍（順序不同，且沒有連着的兩次），到R.77到R.98（或到R.103）又把這些攝又走了一遍。因此稱前60個綜合韻爲大循環韻，R.61到R.76稱爲第一小循環，R.77到R.98左右稱爲第二小循環，後面零散的幾韻稱爲第三小循環。第一小循環被西田龍雄和龔煌城擬爲緊元音。</p>
+<p>第二小循環韻從夏藏對音來說，無疑是與r有關的，西田和龔都擬成-r韻尾。但也許會有其它的擬法，比如卷舌元音或卷舌介音。</p>
+<p>此外，同聲母、同韻、同聲調的字還能有開合口的區別，這個跟漢語一樣。</p>
+<p>重韻是同攝、同等且非鼻化（即龔的長元音）特徵有異時存在兩個韻（且不是韻圖三四等區別）的情況。已知有R.1和R.4的重韻（均爲一等），及R.20和R.21（均爲三四等）的重韻，性質可能不同。</p>
+<p>重紐問題是我獨立發現的，不知道以前是否有人提過。一些同聲母（反切上字可互繫聯）、同韻、同聲調、同開合口的情況下存在兩組不同音的小韻，其反切下字並不可互相繫聯。目前我已在R.11韻平聲1.11韻中觀察到多個聲母中有此現象。其具體語音性質並不清楚。</p>
+<hr />
+<p>今天就說這麼多，算是對之前我學習、整理過程的總結。後面有空我會慢慢往細了做的。</p>
+<p>2015.12.08 原發於新浪博客</p>
+
+    </div>
+
+    
+    
+    <div class="post-widgets">
+    <div class="likely">
+        <div class="twitter">Tweet</div>
+        <div class="facebook">Share</div>
+        <div class="linkedin">Link</div>
+        <div class="gplus">Plus</div>
+        <div class="vkontakte">Share</div>
+        <div class="odnoklassniki">Class</div>
+        <div class="telegram">Send</div>
+        <div class="whatsapp">Send</div>
+        <div class="pinterest">Pin</div>
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.js"></script><div class="post-widgets">
+      <div id="needsharebutton-postbottom">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打賞
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Zsjit Ngiam 支付寶">
+        <p>支付寶</p>
+      </div>
+      <div style="display: inline-block;">
+        <img src="/images/dogecoin.png" alt="Zsjit Ngiam dogecoin">
+        <p>dogecoin</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%9F%B3%E9%9F%BB%E5%AD%B8/" rel="tag"># 音韻學</a>
+              <a href="/tags/phonology/" rel="tag"># phonology</a>
+              <a href="/tags/%E8%A5%BF%E5%A4%8F%E8%AA%9E/" rel="tag"># 西夏語</a>
+              <a href="/tags/%E8%A5%BF%E5%A4%8F%E6%96%87/" rel="tag"># 西夏文</a>
+              <a href="/tags/%E5%85%9A%E9%A0%85/" rel="tag"># 党項</a>
+              <a href="/tags/%E5%8F%8D%E5%88%87/" rel="tag"># 反切</a>
+              <a href="/tags/Tangut/" rel="tag"># Tangut</a>
+              <a href="/tags/fanqie/" rel="tag"># fanqie</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2016/02/25/middle-chinese-uvular/" rel="next" title="論中古漢語見組一、二、四等字聲母爲小舌音  The 1st, 2nd, and 4th děng of K- group initials in Middle Chinese were uvular">
+      論中古漢語見組一、二、四等字聲母爲小舌音  The 1st, 2nd, and 4th děng of K- group initials in Middle Chinese were uvular <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概覽
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%81%B2%E8%AA%BF"><span class="nav-number">1.</span> <span class="nav-text"> 聲調</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%81%B2%E6%AF%8D"><span class="nav-number">2.</span> <span class="nav-text"> 聲母</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9F%BB%E6%AF%8D"><span class="nav-number">3.</span> <span class="nav-text"> 韻母</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Zsjit Ngiam</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">58</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:biopolyhedron@gmail.com" title="E-Mail → mailto:biopolyhedron@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/ychromosome" title="新浪微雹 → https:&#x2F;&#x2F;weibo.com&#x2F;ychromosome" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微雹</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/polyhedron" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-zhihu"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://scholar.google.com/citations?user=ewSaZskAAAAJ" title="Google scholar → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user&#x3D;ewSaZskAAAAJ" rel="noopener" target="_blank"><i class="fa fa-fw fa-"></i>Google scholar</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/ngiamzsjit" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;ngiamzsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/polyhedron" title="Telegram channel → https:&#x2F;&#x2F;t.me&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram-plane"></i>Telegram channel</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/NgiamZsjit" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;NgiamZsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/biopolyhedron" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;biopolyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.yoogene.com/goods/goodslist/invite_token/5b2389a3b808b3310364956ecd94fd27" title="源基因遺傳測試 → https:&#x2F;&#x2F;www.yoogene.com&#x2F;goods&#x2F;goodslist&#x2F;invite_token&#x2F;5b2389a3b808b3310364956ecd94fd27" rel="noopener" target="_blank"><i class="fa fa-fw fa-dna"></i>源基因遺傳測試</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019.11.22 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zsjit Ngiam</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 強力驅動 v6.3.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主題 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+      pbOptions = {};
+        pbOptions.iconStyle = "box";
+        pbOptions.boxForm = "horizontal";
+        pbOptions.position = "bottomCenter";
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+  </script>
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://polyhedron.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {page: {
+            url: "https://biopolyhedron.github.io/2015/12/08/tangut-phonology-summary/",
+            identifier: "2015/12/08/tangut-phonology-summary/",
+            title: "西夏語音系簡述"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://polyhedron.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    window.addEventListener('load', loadComments, false);
+</script>
+
+</body>
+</html>
