@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://biopolyhedron.github.io').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="大家都知道《蒙古字韻》是一部用八思巴字拼寫漢字讀音的書。先不管《蒙古字韻》是否是當時的口語，也不管用八思巴字是否能完全表達出漢語的讀音和音位區別，但我覺得至少說蒙古字韻代表了一個能讀得出的獨立音系還是沒問題的。同時蒙古字韻能夠上承中古音，如韻圖體系，下啓近代官話（如《中原音韻》和《中州音韻》），能解釋語音變化中相當多的現象，又是難得的一個字相對很全的字典，因此是有相當高的價值的。 《蒙古字韻》時期">
+<meta property="og:type" content="article">
+<meta property="og:title" content="《蒙古字韻》音系中喉牙音分爲對立的非顎化、顎化兩類">
+<meta property="og:url" content="https://biopolyhedron.github.io/2016/02/11/mengguziyun-k/index.html">
+<meta property="og:site_name" content="多面體的雹子 polyhedron&#39;s blog">
+<meta property="og:description" content="大家都知道《蒙古字韻》是一部用八思巴字拼寫漢字讀音的書。先不管《蒙古字韻》是否是當時的口語，也不管用八思巴字是否能完全表達出漢語的讀音和音位區別，但我覺得至少說蒙古字韻代表了一個能讀得出的獨立音系還是沒問題的。同時蒙古字韻能夠上承中古音，如韻圖體系，下啓近代官話（如《中原音韻》和《中州音韻》），能解釋語音變化中相當多的現象，又是難得的一個字相對很全的字典，因此是有相當高的價值的。 《蒙古字韻》時期">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/mengguziyun-an-ien-1.png">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/mengguziyun-an-ien-2.png">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/mengguziyun-initial-deng.png">
+<meta property="article:published_time" content="2016-02-11T13:10:14.000Z">
+<meta property="article:modified_time" content="2023-04-04T11:26:40.043Z">
+<meta property="article:author" content="Zsjit Ngiam">
+<meta property="article:tag" content="音韻學">
+<meta property="article:tag" content="phonology">
+<meta property="article:tag" content="中古漢語">
+<meta property="article:tag" content="蒙古字韻">
+<meta property="article:tag" content="近代漢語">
+<meta property="article:tag" content="喉牙音">
+<meta property="article:tag" content="顎化">
+<meta property="article:tag" content="Menggu Ziyun">
+<meta property="article:tag" content="Middle Chinese">
+<meta property="article:tag" content="Late Chinese">
+<meta property="article:tag" content="velar">
+<meta property="article:tag" content="palatalization">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://biopolyhedron.github.io/images/mengguziyun-an-ien-1.png">
+
+<link rel="canonical" href="https://biopolyhedron.github.io/2016/02/11/mengguziyun-k/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css"><style>
+#needsharebutton-postbottom {
+  cursor: pointer;
+  height: 26px;
+  margin-top: 10px;
+  position: relative;
+}
+#needsharebutton-postbottom .btn {
+  border: 1px solid $btn-default-border-color;
+  border-radius: 3px;
+  display: initial;
+  padding: 1px 4px;
+}
+</style>
+  <title>《蒙古字韻》音系中喉牙音分爲對立的非顎化、顎化兩類 | 多面體的雹子 polyhedron's blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154028988-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-154028988-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="多面體的雹子 polyhedron's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">多面體的雹子 polyhedron's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">分子人類學、語言學及各種其它  molecular anthropology, linguistics, etc.</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首䈎</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-HK">
+    <link itemprop="mainEntityOfPage" href="https://biopolyhedron.github.io/2016/02/11/mengguziyun-k/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zsjit Ngiam">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="多面體的雹子 polyhedron's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          《蒙古字韻》音系中喉牙音分爲對立的非顎化、顎化兩類
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+
+              <time title="創建時閒：2016-02-11 21:10:14" itemprop="dateCreated datePublished" datetime="2016-02-11T21:10:14+08:00">2016-02-11</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新於</span>
+                <time title="修改時閒：2023-04-04 19:26:40" itemprop="dateModified" datetime="2023-04-04T19:26:40+08:00">2023-04-04</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AA%9E%E8%A8%80%E5%AD%B8/" itemprop="url" rel="index">
+                    <span itemprop="name">語言學</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2016/02/11/mengguziyun-k/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/02/11/mengguziyun-k/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>大家都知道《蒙古字韻》是一部用八思巴字拼寫漢字讀音的書。先不管《蒙古字韻》是否是當時的口語，也不管用八思巴字是否能完全表達出漢語的讀音和音位區別，但我覺得至少說蒙古字韻代表了一個能讀得出的獨立音系還是沒問題的。同時蒙古字韻能夠上承中古音，如韻圖體系，下啓近代官話（如《中原音韻》和《中州音韻》），能解釋語音變化中相當多的現象，又是難得的一個字相對很全的字典，因此是有相當高的價值的。</p>
+<p>《蒙古字韻》時期的音系前人已經總結過不少了，《中原音韻》的音系也有相當程度是從蒙古字韻推來的。我這裏只是提出一點關於音位總結的觀點：蒙古字韻時期，知照二等和知照三等（因爲是討論的中古晚期到近代早期音，本文中的“等”除非特別說明都是指韻圖等而非《切韻》系的反切等）基本屬同一音位，可能隨後面的等分爲兩種發音，即知照二等拼洪韻母爲[tʂ]，知照三等拼細介音爲[tʃ]這樣。<strong>而喉牙音聲母則全部需要分爲兩類，即非顎化的/k kʰ (g) ŋ x (ɣ) (ʔ) -/和顎化的/c cʰ (ɟ) ɲ ç (ʝ) (ʔj) j/（分別承自中古的見谿羣疑曉匣影喻，括号裏的音要不要取決於讀者是否相信蒙古字韻代表的音系仍保留全濁音及影喻母的清濁區別）。重點是，這兩組聲母各可以與洪細韻母相拼，且存在對立，因此必須分爲兩組聲母。《蒙古字韻》時期的洪細完全表現在韻母內部，介音是元音性的，聲母顎化與否搭配韻母的洪細無關。</strong> 以上獨立的顎化聲母並不推及脣舌齒音，比如/p f t ts tʂ/等，這些聲母並沒有相應的顎化聲母，但仍可以拼洪細兩類韻母。</p>
+<p>我提出這種觀點的基礎是，在一些韻上，喉牙音在蒙古字韻能夠分爲互有對立的四類，但脣舌齒音並不能。以中古的山攝開口爲例，中古各組聲母字在蒙古字韻中的拼寫如下（列名爲韻圖等，四等不分純四和重四，表內爲例字、蒙古字韻的轉寫和蒙古字韻。注意蒙古字韻的全清和全濁是反的，對應梵語清不送氣輔音b d g的用來拼中古漢語全清幫端見，對應梵語濁不送氣輔音p t k的用來拼中古漢語全濁並定羣，影喻、審禪、曉匣也是反的）：</p>
+<p><img src="/images/mengguziyun-an-ien-1.png" alt="表1" /></p>
+<p>裏面有幾個需要解釋的：知二和照二（莊）、知三和照三（章）組分別合併。幫組並沒有韻圖三四等（不論純四重四）之分，如免與緬同音、邊與變同音（不同調）。有幾處有-yan韻和-en韻之別，如幫組三四等（不分純四重四）、精組四等（不分純四重四）、知照組三等，但仔細觀察就能發現，這幾個位置幾乎所有濁聲母都是-en，清聲母都是-yan，是互補的（只有知母三等“邅jen”和章母“饘jyan”存在對立，存疑）。見組二、四等的“間”和“堅”雖然拼寫相同，前者在第八韻寒韻，而後者在第九韻先韻（蒙古字韻的排佈是先按韻基（下加字+元音+韻尾）排，然後按照梵語聲母的固定次序排），因此可以認爲二者並不同音。同時跟“堅、煙”同爲四等的匣母“賢”字寫作hyenꡜꡦꡠꡋ（這裏需要Unicode八思巴字體，看不了的可以下載字體：<a target="_blank" rel="noopener" href="https://www.babelstone.co.uk/Fonts/Phags-pa.html">https://www.babelstone.co.uk/Fonts/Phags-pa.html</a> ），放在先韻的最後。</p>
+<p>最終攷慮到中古來源，忽略掉聲母清濁造成的韻母不同和知三章組的對立問題，我們發現蒙古字韻的山攝開口實際上幫、端、精、知照組實際上各有兩類音節，而見組和影組各有四類音節。</p>
+<p>這時候我們可以看蒙古字韻的字母設置中，一般的中古聲母各只有一個字母，但匣、影、喻母各有兩個不同字母，匣是ꡣ和ꡯ，影是ꡖ和ꡗ，喻是ꡝ和ꡭ，至少影、喻母和韻圖的關係大體上是一、三等用前者，而二、四等用後者。這樣，如果我假定見組和曉、匣母也和影、喻母情況相同，只是表示上八思巴字發明的字母不夠造成了一些混亂的話，我們就可以把上表的音系簡化成一個非常整齊的樣子（表內爲擬音的國際音標，數字爲韻圖等）：<br />
+<img src="/images/mengguziyun-an-ien-2.png" alt="表2" /></p>
+<p>我們可以看到，韻母完全是按中古的韻圖等分野的。而聲母則是幫、端、精、知照、見非顎、見顎、影非顎、影顎這幾組，大體規律如下：</p>
+<p><img src="/images/mengguziyun-initial-deng.png" alt="表3" /></p>
+<p>這樣，對於一等與二等、三等與四等韻母主元音分不開的情況，蒙古字韻就必須合併了。比如幫組的一等毛和二等卯都是maw，三等廟和四等妙都是mew。而見、影組仍都能分出四等。幫組原先同攝的一二等和三四等需要在韻基不同的情況下纔能區別，比如山攝一等搬bon，二等班ban；三等悲bue，四等卑bi這樣，這些表現的都不是聲母或介音的區別了。</p>
+<p>從中古到蒙古字韻這種體系的演變，我認爲可以認爲韻圖期的二等帶有類似-r-的介音，這個介音更親近聲母，因此與聲母合併而不會使韻母顎化。在蒙古字韻前身音系中，幫組沒有相應的顎化聲母音位就直接消失，知照組已經與一等不同，二等介音消失也沒有困難，而見、影組就加出了一組顎化音位。緬語從明代以後也經歷了相似變化，/kl kr kj/三組現代都合併成了/tɕ/，但這個並不影響後面的元音，本來的ki並不顎化。</p>
+<p>蒙古字韻以後的變化也清楚了，見影組細音聲母影響到了介音，隨後洪細兩組聲母合併，就有了《中原音韻》那種一等干/kan/，二等間/kian/，三四等蹇堅/kiɛn/的結構。但這個變化之前，山攝的/an iɛn/，還有假攝的/a iɛ/是按洪細音互補的。見組開口假攝二等是/ca/，在假攝三等從/ia/變成/iɛ/時並沒有參與變化，後來纔又從/ca/又變到/kia/的，因此沒有與中古的假攝三等同韻成爲中元音，仍保持低元音。而佳、客（白讀）等字也可以解釋中閒iai這種頭尾相衝的韻母產生的原因：krai &gt; cai &gt; kiai &gt; tɕiai &gt; tɕiɛ。（/r/理解爲一個輔音性的介音就好，不必是顫音或閃音。）</p>
+<p>最後重複一下結論：《蒙古字韻》的喉牙音聲母分爲非顎化和顎化兩類。這兩組聲母各可以與洪細韻母相拼，且存在對立，因此必須分爲兩組聲母。《蒙古字韻》時期的洪細完全表現在韻母內部，介音是元音性的，聲母顎化與否搭配韻母的洪細無關。</p>
+
+    </div>
+
+    
+    
+    <div class="post-widgets">
+    <div class="likely">
+        <div class="twitter">Tweet</div>
+        <div class="facebook">Share</div>
+        <div class="linkedin">Link</div>
+        <div class="gplus">Plus</div>
+        <div class="vkontakte">Share</div>
+        <div class="odnoklassniki">Class</div>
+        <div class="telegram">Send</div>
+        <div class="whatsapp">Send</div>
+        <div class="pinterest">Pin</div>
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.js"></script><div class="post-widgets">
+      <div id="needsharebutton-postbottom">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打賞
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Zsjit Ngiam 支付寶">
+        <p>支付寶</p>
+      </div>
+      <div style="display: inline-block;">
+        <img src="/images/dogecoin.png" alt="Zsjit Ngiam dogecoin">
+        <p>dogecoin</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%9F%B3%E9%9F%BB%E5%AD%B8/" rel="tag"># 音韻學</a>
+              <a href="/tags/phonology/" rel="tag"># phonology</a>
+              <a href="/tags/%E4%B8%AD%E5%8F%A4%E6%BC%A2%E8%AA%9E/" rel="tag"># 中古漢語</a>
+              <a href="/tags/%E8%92%99%E5%8F%A4%E5%AD%97%E9%9F%BB/" rel="tag"># 蒙古字韻</a>
+              <a href="/tags/%E8%BF%91%E4%BB%A3%E6%BC%A2%E8%AA%9E/" rel="tag"># 近代漢語</a>
+              <a href="/tags/%E5%96%89%E7%89%99%E9%9F%B3/" rel="tag"># 喉牙音</a>
+              <a href="/tags/%E9%A1%8E%E5%8C%96/" rel="tag"># 顎化</a>
+              <a href="/tags/Menggu-Ziyun/" rel="tag"># Menggu Ziyun</a>
+              <a href="/tags/Middle-Chinese/" rel="tag"># Middle Chinese</a>
+              <a href="/tags/Late-Chinese/" rel="tag"># Late Chinese</a>
+              <a href="/tags/velar/" rel="tag"># velar</a>
+              <a href="/tags/palatalization/" rel="tag"># palatalization</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2015/12/08/tangut-phonology-summary/" rel="prev" title="西夏語音系簡述">
+      <i class="fa fa-chevron-left"></i> 西夏語音系簡述
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2016/02/25/middle-chinese-uvular/" rel="next" title="論中古漢語見組一、二、四等字聲母爲小舌音  The 1st, 2nd, and 4th děng of K- group initials in Middle Chinese were uvular">
+      論中古漢語見組一、二、四等字聲母爲小舌音  The 1st, 2nd, and 4th děng of K- group initials in Middle Chinese were uvular <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概覽
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Zsjit Ngiam</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">13</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">76</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:biopolyhedron@gmail.com" title="E-Mail → mailto:biopolyhedron@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/ychromosome" title="新浪微雹 → https:&#x2F;&#x2F;weibo.com&#x2F;ychromosome" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微雹</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/polyhedron" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-zhihu"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://scholar.google.com/citations?user=ewSaZskAAAAJ" title="Google scholar → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user&#x3D;ewSaZskAAAAJ" rel="noopener" target="_blank"><i class="fa fa-fw fa-"></i>Google scholar</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/ngiamzsjit" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;ngiamzsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/polyhedron" title="Telegram channel → https:&#x2F;&#x2F;t.me&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram-plane"></i>Telegram channel</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/NgiamZsjit" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;NgiamZsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/biopolyhedron" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;biopolyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.yoogene.com/goods/goodslist/invite_token/5b2389a3b808b3310364956ecd94fd27" title="源基因遺傳測試 → https:&#x2F;&#x2F;www.yoogene.com&#x2F;goods&#x2F;goodslist&#x2F;invite_token&#x2F;5b2389a3b808b3310364956ecd94fd27" rel="noopener" target="_blank"><i class="fa fa-fw fa-dna"></i>源基因遺傳測試</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019.11.22 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zsjit Ngiam</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 強力驅動 v6.3.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主題 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+      pbOptions = {};
+        pbOptions.iconStyle = "box";
+        pbOptions.boxForm = "horizontal";
+        pbOptions.position = "bottomCenter";
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+  </script>
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://polyhedron.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {page: {
+            url: "https://biopolyhedron.github.io/2016/02/11/mengguziyun-k/",
+            identifier: "2016/02/11/mengguziyun-k/",
+            title: "《蒙古字韻》音系中喉牙音分爲對立的非顎化、顎化兩類"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://polyhedron.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    window.addEventListener('load', loadComments, false);
+</script>
+
+</body>
+</html>
