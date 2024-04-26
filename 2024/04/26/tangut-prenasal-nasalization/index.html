@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    hostname: new URL('https://biopolyhedron.github.io').hostname,
+    root: '/',
+    scheme: 'Muse',
+    version: '7.6.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"always","padding":18,"offset":12,"onmobile":true},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: '',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}
+  };
+</script>
+
+  <meta name="description" content="（本文需要安裝西夏文字體Tangut Yinchuan來査看） 主要想法是： 一、党項語有必要做分期。至少能明確分清的有四期：   前造字期，即西夏建國之前、唐到宋初。此時的材料很少，目前知道的主要是早期漢番借詞，以及漢語譯音，比如《續資治通鑑長編》（聶鴻音1995），表現出西夏語有豐富的輔音韻尾。再有就是党項語與嘉絨語組的同源詞對照、語法關係等（不過這個就可能久遠到西夏國以前上千年了）。   造">
+<meta property="og:type" content="article">
+<meta property="og:title" content="西夏前期和後期党項語語音演化的一些想法">
+<meta property="og:url" content="https://biopolyhedron.github.io/2024/04/26/tangut-prenasal-nasalization/index.html">
+<meta property="og:site_name" content="多面體的雹子 polyhedron&#39;s blog">
+<meta property="og:description" content="（本文需要安裝西夏文字體Tangut Yinchuan來査看） 主要想法是： 一、党項語有必要做分期。至少能明確分清的有四期：   前造字期，即西夏建國之前、唐到宋初。此時的材料很少，目前知道的主要是早期漢番借詞，以及漢語譯音，比如《續資治通鑑長編》（聶鴻音1995），表現出西夏語有豐富的輔音韻尾。再有就是党項語與嘉絨語組的同源詞對照、語法關係等（不過這個就可能久遠到西夏國以前上千年了）。   造">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:image" content="https://biopolyhedron.github.io/images/tangut-nasal-rhymes.png">
+<meta property="article:published_time" content="2024-04-26T06:30:00.000Z">
+<meta property="article:modified_time" content="2024-04-26T07:32:20.315Z">
+<meta property="article:author" content="Zsjit Ngiam">
+<meta property="article:tag" content="音韻學">
+<meta property="article:tag" content="phonology">
+<meta property="article:tag" content="西夏語">
+<meta property="article:tag" content="西夏文">
+<meta property="article:tag" content="反切">
+<meta property="article:tag" content="Tangut">
+<meta property="article:tag" content="fanqie">
+<meta property="article:tag" content="党項語">
+<meta property="article:tag" content="鼻化">
+<meta property="article:tag" content="鼻尾">
+<meta property="article:tag" content="鼻冠">
+<meta property="article:tag" content="prenasal">
+<meta property="article:tag" content="nasalization">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://biopolyhedron.github.io/images/tangut-nasal-rhymes.png">
+
+<link rel="canonical" href="https://biopolyhedron.github.io/2024/04/26/tangut-prenasal-nasalization/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.css"><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css"><style>
+#needsharebutton-postbottom {
+  cursor: pointer;
+  height: 26px;
+  margin-top: 10px;
+  position: relative;
+}
+#needsharebutton-postbottom .btn {
+  border: 1px solid $btn-default-border-color;
+  border-radius: 3px;
+  display: initial;
+  padding: 1px 4px;
+}
+</style>
+  <title>西夏前期和後期党項語語音演化的一些想法 | 多面體的雹子 polyhedron's blog</title>
+  
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154028988-1"></script>
+    <script>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-154028988-1');
+      }
+    </script>
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="多面體的雹子 polyhedron's blog" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">多面體的雹子 polyhedron's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">分子人類學、語言學及各種其它  molecular anthropology, linguistics, etc.</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切換導航欄">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首䈎</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>標籤</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分類</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>歸檔</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-HK">
+    <link itemprop="mainEntityOfPage" href="https://biopolyhedron.github.io/2024/04/26/tangut-prenasal-nasalization/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Zsjit Ngiam">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="多面體的雹子 polyhedron's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          西夏前期和後期党項語語音演化的一些想法
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">發表於</span>
+              
+
+              <time title="創建時閒：2024-04-26 14:30:00 / 修改時閒：15:32:20" itemprop="dateCreated datePublished" datetime="2024-04-26T14:30:00+08:00">2024-04-26</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AA%9E%E8%A8%80%E5%AD%B8/" itemprop="url" rel="index">
+                    <span itemprop="name">語言學</span>
+                  </a>
+                </span>
+            </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+      <span class="post-meta-item-text">Disqus：</span>
+    
+    <a title="disqus" href="/2024/04/26/tangut-prenasal-nasalization/#comments" itemprop="discussionUrl">
+      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2024/04/26/tangut-prenasal-nasalization/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>（本文需要安裝西夏文字體Tangut Yinchuan來査看）</p>
+<p>主要想法是：</p>
+<p>一、党項語有必要做分期。至少能明確分清的有四期：</p>
+<ol>
+<li>
+<p>前造字期，即西夏建國之前、唐到宋初。此時的材料很少，目前知道的主要是早期漢番借詞，以及漢語譯音，比如《續資治通鑑長編》（聶鴻音1995），表現出西夏語有豐富的輔音韻尾。再有就是党項語與嘉絨語組的同源詞對照、語法關係等（不過這個就可能久遠到西夏國以前上千年了）。</p>
+</li>
+<li>
+<p>造字期，即西夏國前期、北宋中後期（李元昊命野利仁榮於1036-1039年造字）。此時的材料包括造字原則和《音同》老版（最晚1132年）。韻尾可能已經消失無幾，聲母複輔音應該還有鼻冠等，尚無穩定的聲調。《音同》按聲母分品以及分小韻，但沒有總結此時韻母的材料。</p>
+</li>
+<li>
+<p>經典期，即西夏國後期、南宋。此時的材料包括《文海》（存世本在1128年以後）、《音同》新版（12世紀中晚期）、《音同文海合編》（13世紀初期）、《番漢合時掌中珠》（1190年）等，尤其是《文海》和《合編》的反切、《音同》的分小韻材料、《掌中珠》的漢夏和夏漢對音。平上聲明確分開並固化，複輔音的消失造成韻母形成鼻化元音（“長元音韻”）、緊元音（第一小循環）、捲舌化元音（第二小循環）等一系列複雜的韻部。</p>
+</li>
+<li>
+<p>後西夏期（1227年以後），即元、明時期。此時逐漸無西夏單語者，也不再出韻書。材料包括漢夏、梵夏對音等（前面造字期和經典期的梵夏對音材料更多，只是在後西夏期可用材料太少）。鼻音韻尾和鼻化都徹底消失，表現爲元音和輔音韻尾都單寫出來。</p>
+</li>
+</ol>
+<p>攷慮到材料的豐富性和系統性，我覺得擬音應當首先做經典期，尤其是以《文海》和《合編》爲主，兼顧造字期。</p>
+<p>二、党項語在造字期，聲母很複雜，音系仍接近嘉絨語組和霍爾語組。其前置輔音到經典期時演變爲鼻化（龔煌城所謂“長元音韻”）、緊元音（第一小循環）、捲舌元音（第二小循環）等，而聲母的部分前置輔音消失。具體公式如下：</p>
+<p>NCV &gt; CṼ （鼻化，所謂“長元音韻”，N可以爲同位置鼻音，也許有異位置鼻音）<br />
+rCV &gt; CV˞  （捲舌元音，第二小循環，簡稱“二循”）<br />
+C₁C₂V &gt; C₂Ṿ（緊化，具體音值不知，第一小循環韻（簡稱“一循”）。其中C₁可能爲塞音、擦音、半元音等，需要有近一步資料來攷證）</p>
+<p>給兩個具體的例子：</p>
+<p>依孫伯君的《西夏新譯佛經陀羅尼的對音硏究》，在《佛頂尊勝陀羅尼》中，梵文sarva一詞對音爲𘅄(1693)𗬂(3561)，其中𘅄(1693)爲s聲母1.20韻，我暫擬爲/s⁴à/（上標⁴表示四等，等的具體發音尚不明晰。重音符表示平聲降調，相應的銳音符表示上聲升調，與新龍木雅語同源詞相對應），是日常用於對譯梵語sa的字。而𗬂(3561)是輕脣音1.80韻，在經典期（反切時期）擬爲/v¹à˞ / ，二循韻字。而梵語通常的va轉寫爲𘎧(5156)，輕脣音1.17韻，擬音爲v¹à，大循環字。如按將所有輔音寫出的習慣，sarva應作𘅄(1693)𘙇(0795)（小字）𘎧(5156)，其中𘙇(0795)（小字）爲通常用來對譯梵語r輔音的字。我因此判斷在初譯時𗬂(3561)其發音仍爲/rva/，到反切時期方變爲/v¹à˞ /音。</p>
+<p>有一個更有意思的例子說明了鼻冠輔音到鼻化元音韻的轉變。在晚期陀羅尼中，單n輔音最常見的譯法是𘆄(0724)字，以至於在明代的漢字詞都會用(0724)來譯-n尾。然而在《佛頂尊勝陀羅尼》中，-n通常用龔煌城所謂“鼻化韻”的字來對譯。如samāśvasayantu作𘅄𗏵𗓌（小字）𗮞𘓾𗅥，其中𘅄(1693)譯sa，𗏵(3369)（1.20韻 /m⁴à/）譯ma，𗓌(5032)（小字）爲“長音”，𗮞(5099)譯sva，𘓾(4660)譯yan，𗅥(1899) /t⁴ù/譯tu。其中𘓾(4660)爲1.26韻，龔煌城擬爲jã，這個字也是日常用來音譯漢語“煙燕燄燕鹽胭筵演”的番字。我認爲這就是n韻尾的體現，我擬爲/j³àn/。此外，《吉祥遍至口合本續》中𗟦(0598)（1.24韻 /m¹àn/）譯man、𗣭(3193) （1.16韻 /tsʰ⁴ìn/）譯chin（梵夏對音如梵藏對音一樣，梵語c組對藏、番語ts組），《佛頂尊勝陀羅尼》中𗨝(3249)（1.16韻/ʃ³ìn/譯ṣin）等也是以龔煌城認爲的“鼻化元音”韻字來對譯梵文後面帶有n的音節。</p>
+<p>然而在《吉祥遍至口合本續》中，我發現一個更有意思的，是bandha對爲𗍣(4459)𘃕(5792)。其中𗍣(4459) （2.17韻 /b⁴á/）對譯ba是常例，而da或dha一般用𗞞(4342)（2.17韻 /d⁴á/）來譯。這裏𘃕(5792)（d基字1.23韻“長元音”，龔煌城擬爲/dja̠¹/）我猜測就是對譯ndha的音。這裏有兩個其它證據支持此假設：</p>
+<p>第一，𘃕(5792)是1.23韻，屬於龔煌城所謂“長元音”韻，而非普通的大循環“短元音”韻。這些“長元音”韻在漢番對音中通常用來譯漢語次濁鼻音聲母字，而我們通常認爲西北方音的次濁聲母字有鼻冠特性，如n- &gt; nd-，g- &gt; ŋg-，m- &gt; mb-。說明長元音韻與鼻音有關（但在党項語中，“長元音”韻在全清、次清、全濁、次濁聲母都有字，不是僅限全濁或次濁）。這些“長元音”韻在反切上字上也有較強的內部繫聯傾向。（相反，龔煌城所謂“鼻化元音”韻即我擬的鼻尾韻的反切上字與普通韻互通。）從韻目排列來看，同一元音（或稱同一攝）通常是按普通韻-“長元音”韻（我擬爲可能帶鼻冠的鼻化元音）-“鼻化元音”韻（普通聲母的鼻尾字）排列的。</p>
+<p><img src="/images/tangut-nasal-rhymes.png" alt="《文海》鼻化和鼻尾韻的排列" /></p>
+<p>第二，𘃕(5792)字（1.23韻）的造字是一個切音字，由 𘃔(5756) （1.32韻 /d⁴ɨ̃̀/）和 𗃇(2551)（1.19韻 /l⁴à/）構成。然而djɨ̠¹ lja¹ &gt; dja̠¹或者d⁴ɨ̃̀ l⁴à &gt; d⁴ã̀這種反切是很不順的，切出字和反切下字不在一個韻，文海中給出𘃕(5792)的反切是𘃔(5756)𗖍(0837)，下字改成了1.23韻的/lja̠¹/，按我的擬音是d⁴ɨ̃̀ ɮ⁴ã̀ &gt; d⁴ã̀。而之所以造字時會這樣造，我的猜測是1.23韻和1.32韻在造字時就是普通元音，但有鼻冠，𘃕(5792) &lt; 𘃔(5756) 𗃇(2551) 其實是 nda &lt; ndɨ la切出來的。只是到了經典期時發生了鼻冠到鼻化的音變，𘃕(5792) nda &gt; (n)dã，𘃔(5756) ndɨ &gt; (n)dɨ̃ ，而𗃇(2551) ɮa的音沒變，纔出現了造字和切語不匹配的情況。</p>
+<p>至於一循（緊元音），以党項語在嘉絨語和霍爾語的同源詞來看，經常是對應前置輔音的，如新龍木雅語的j-。在《文海》的反切中，很多聲母的一循仍是內部繫聯，不與大循環和二循互切，因此我認爲經典期的一循可能仍爲複輔音或者有某些修飾的基字，但已經影響了元音的音質，使得足以被分爲獨立的韻。待今後繼續硏究。</p>
+<p>（本文前一部分於2023年2月17日已發佈於新浪微雹，全文整理於2024年4月26日。）</p>
+
+    </div>
+
+    
+    
+    <div class="post-widgets">
+    <div class="likely">
+        <div class="twitter">Tweet</div>
+        <div class="facebook">Share</div>
+        <div class="linkedin">Link</div>
+        <div class="gplus">Plus</div>
+        <div class="vkontakte">Share</div>
+        <div class="odnoklassniki">Class</div>
+        <div class="telegram">Send</div>
+        <div class="whatsapp">Send</div>
+        <div class="pinterest">Pin</div>
+    </div>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/ilyabirman-likely@2/release/likely.min.js"></script><div class="post-widgets">
+      <div id="needsharebutton-postbottom">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    </div>
+        <div class="reward-container">
+  <div></div>
+  <button disable="enable" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打賞
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/alipay.png" alt="Zsjit Ngiam 支付寶">
+        <p>支付寶</p>
+      </div>
+      <div style="display: inline-block;">
+        <img src="/images/dogecoin.png" alt="Zsjit Ngiam dogecoin">
+        <p>dogecoin</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E9%9F%B3%E9%9F%BB%E5%AD%B8/" rel="tag"># 音韻學</a>
+              <a href="/tags/phonology/" rel="tag"># phonology</a>
+              <a href="/tags/%E8%A5%BF%E5%A4%8F%E8%AA%9E/" rel="tag"># 西夏語</a>
+              <a href="/tags/%E8%A5%BF%E5%A4%8F%E6%96%87/" rel="tag"># 西夏文</a>
+              <a href="/tags/%E5%8F%8D%E5%88%87/" rel="tag"># 反切</a>
+              <a href="/tags/Tangut/" rel="tag"># Tangut</a>
+              <a href="/tags/fanqie/" rel="tag"># fanqie</a>
+              <a href="/tags/%E5%85%9A%E9%A0%85%E8%AA%9E/" rel="tag"># 党項語</a>
+              <a href="/tags/%E9%BC%BB%E5%8C%96/" rel="tag"># 鼻化</a>
+              <a href="/tags/%E9%BC%BB%E5%B0%BE/" rel="tag"># 鼻尾</a>
+              <a href="/tags/%E9%BC%BB%E5%86%A0/" rel="tag"># 鼻冠</a>
+              <a href="/tags/prenasal/" rel="tag"># prenasal</a>
+              <a href="/tags/nasalization/" rel="tag"># nasalization</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/02/25/Beijing-double-rhyming/" rel="prev" title="北京話rap雙押分析">
+      <i class="fa fa-chevron-left"></i> 北京話rap雙押分析
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+    
+  <div class="comments" id="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目錄
+        </li>
+        <li class="sidebar-nav-overview">
+          本站概覽
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Zsjit Ngiam</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">文章</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分類</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">82</span>
+        <span class="site-state-item-name">標籤</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="/atom.xml" title="RSS → &#x2F;atom.xml"><i class="fa fa-fw fa-rss"></i>RSS</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:biopolyhedron@gmail.com" title="E-Mail → mailto:biopolyhedron@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/ychromosome" title="新浪微雹 → https:&#x2F;&#x2F;weibo.com&#x2F;ychromosome" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>新浪微雹</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.zhihu.com/people/polyhedron" title="知乎 → https:&#x2F;&#x2F;www.zhihu.com&#x2F;people&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-zhihu"></i>知乎</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://scholar.google.com/citations?user=ewSaZskAAAAJ" title="Google scholar → https:&#x2F;&#x2F;scholar.google.com&#x2F;citations?user&#x3D;ewSaZskAAAAJ" rel="noopener" target="_blank"><i class="fa fa-fw fa-"></i>Google scholar</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/ngiamzsjit" title="Telegram → https:&#x2F;&#x2F;t.me&#x2F;ngiamzsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram"></i>Telegram</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://t.me/polyhedron" title="Telegram channel → https:&#x2F;&#x2F;t.me&#x2F;polyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-telegram-plane"></i>Telegram channel</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/NgiamZsjit" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;NgiamZsjit" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://github.com/biopolyhedron" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;biopolyhedron" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.yoogene.com/goods/goodslist/invite_token/5b2389a3b808b3310364956ecd94fd27" title="源基因遺傳測試 → https:&#x2F;&#x2F;www.yoogene.com&#x2F;goods&#x2F;goodslist&#x2F;invite_token&#x2F;5b2389a3b808b3310364956ecd94fd27" rel="noopener" target="_blank"><i class="fa fa-fw fa-dna"></i>源基因遺傳測試</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019.11.22 – 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Zsjit Ngiam</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 強力驅動 v6.3.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主題 – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.6.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+      pbOptions = {};
+        pbOptions.iconStyle = "box";
+        pbOptions.boxForm = "horizontal";
+        pbOptions.position = "bottomCenter";
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+  </script>
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://polyhedron.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  function loadComments() {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: {page: {
+            url: "https://biopolyhedron.github.io/2024/04/26/tangut-prenasal-nasalization/",
+            identifier: "2024/04/26/tangut-prenasal-nasalization/",
+            title: "西夏前期和後期党項語語音演化的一些想法"
+          }
+        }
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://polyhedron.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  }
+    window.addEventListener('load', loadComments, false);
+</script>
+
+</body>
+</html>
